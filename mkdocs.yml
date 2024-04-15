@@ -118,12 +118,13 @@ nav:
           - First Steps: articles/improving-documentation-projects-1/index.md  
           - Getting Feedback from Your Users: articles/improving-documentation-projects-2/index.md  
           - Actioning Our Users' Feedback: articles/improving-documentation-projects-3/index.md      
-      - Learning about Diátaxis:  
+  - Learning Notes:  
+      - About Diátaxis:  
           - Framework: learning-notes/diataxis/index.md 
           - Tutorials: learning-notes/diataxis/tutorials/index.md  
           - How-to Guides: learning-notes/diataxis/how-tos/index.md  
           - Tutorial or How-To Guides?: learning-notes/diataxis/checklist/index.md            
-  - Books Read: books-read/index.md
+  # - Books Read: books-read/index.md
       #- Reference: 
       #- Changelog:
   - My Resume: about-me/index.md
