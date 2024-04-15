@@ -29,7 +29,7 @@
 #### Goal  
 Improve the existing product development documentation, for both technical and non-technical audiences, and increase collaboration and documentation awareness.    
 
-### Project Details    
+#### Project Details    
 
 | Topic | Details |    
 |------- | ------------- |  
@@ -37,7 +37,7 @@ Improve the existing product development documentation, for both technical and n
 | Documentation Platform | Web |      
 | Organization | Agile and SAFE |
 
-### Responsibilities and Achievements
+#### Responsibilities and Achievements
 
 | Reponsibility | Achievements |  
 |---------------- | ------------------ |  

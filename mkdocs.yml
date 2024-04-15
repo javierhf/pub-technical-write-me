@@ -107,6 +107,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - My Resume: about-me/index.md
   - Articles:
       - Hiring a Technical Writer: articles/before-hiring-a-technical-writer/index.md      
       - Survival Kit (for Developers): articles/survival-kit/index.md  
@@ -127,4 +128,3 @@ nav:
   # - Books Read: books-read/index.md
       #- Reference: 
       #- Changelog:
-  - My Resume: about-me/index.md
