@@ -1,48 +1,34 @@
 ---
-title: Single-Responsibility Principle for Documentation Projects  
+title: My Technical Writer Portfolio  
 status: new   
 
 ---   
 
-# Maximizing Success: Key Considerations Before Hiring a Technical Writer
+# My Technical Writer Portfolio
 
-> **What this article covers**  
-> _Some considerations for companies when hiring a technical writer._   
+> **What this page covers**  
+> _My professional portfolio as Technical Writer, containing new content created from scracth, and content, publicely aviable from Internet companies, that I've improved ._   
 > **Tools**  
-> _N/A._  
+> _Markdown, GitHub, GitBook_  
 
-## Overview    
+## Overview  
 
-**Hiring a technical writer is not just an expense but an investment,** an opportunity to enhance our product's quality. The following sections will help to take the most of your time and budget  by:
+**This page contains two types of portfolio items**:  
 
-* Helping you define your requirements more precisely.
-* Facilitating a more effective communication with your technical writer.  
+- Different types of content created from scratch.  
+- Publicly available technical-related content that I've improved.  
+> _Note: As a A/B test._
 
-## Your Project Needs and Resources   
+## Disclaimer   
 
-**Understanding your project's needs and the resources at your disposal is crucial** for *saving time*, and *avoiding misunderstandings and misalignments* in the future.  
-
-**While technical writers are experts in their field,** it is essential for you to be able to articulate your project's needs clearly. 
-
-Here is a table with questions to guide your initial considerations:       
-
-| Question |  Insights |  
-|------------- |-------------- |   
-| **Why do I need a technical writer?** | <ul><li>Is it to manage and refine existing documentation?</li><li>Or to develop new product or technical documentation from scratch?</li></ul><br>Naming the documentation needs of your project helps you to differentiate between the required and the desired tech stack, background, and experience of your technical writer.|  
-| **How do I envision my project's documentation?** | Convey your expectations and vision to the technical writer even during the interview. Highlight your priorities but remain open to potential adjustments. |  
-| **What budget is allocated for hiring a technical writer?** | Budget awareness facilitates planning by estimating the project scope and duration, allowing the technical writer to align their efforts accordingly.|
-  
-**Taking these questions into account is invaluable for:**
-
-* Establishing a mutually beneficial professional relationship.
-* Planning effectively, aligning your expectations with realistic timelines and outcomes.
+_TBD_
 
 
-## Conclusion  
 
-**Hiring a technical writer is a thoughtful investment,** a strategic step leading the way to  your product's success and quality.   
+## Original Content    
 
-By clearly *understanding your project's needs* and *envisioning the desired outcomes,* you'll be establishing the foundations of a sucessful collaboration that benefits both your product and your users.
+_TBD_
 
+## Enhanced Content  
 
-     
+_TBD_
