@@ -108,10 +108,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - My Resume: about-me/index.md
-  - My Portfolio:  
+  - Professional Portfolio:  
       - Overview: my-portfolio/index.md  
       - API Documentation: my-portfolio/api-docs/index.md
-  - Articles:
+  - My Articles:
       - Hiring a Technical Writer: articles/before-hiring-a-technical-writer/index.md      
       - Survival Kit (for Developers): articles/survival-kit/index.md  
       # - A/B Tests for Documentation:
@@ -122,9 +122,8 @@ nav:
           - First Steps: articles/improving-documentation-projects-1/index.md  
           - Getting Feedback from Your Users: articles/improving-documentation-projects-2/index.md  
           - Actioning Our Users' Feedback: articles/improving-documentation-projects-3/index.md      
-  - Learning Notes:  
-      - About Diátaxis:  
-          - Framework: learning-notes/diataxis/index.md 
-          - Tutorials: learning-notes/diataxis/tutorials/index.md  
-          - How-to Guides: learning-notes/diataxis/how-tos/index.md  
-          - Tutorial or How-To Guides?: learning-notes/diataxis/checklist/index.md            
+  - Learning Diátaxis:  
+      - Framework: learning-notes/diataxis/index.md 
+      - Tutorials: learning-notes/diataxis/tutorials/index.md  
+      - How-to Guides: learning-notes/diataxis/how-tos/index.md  
+      - Tutorial or How-To Guides?: learning-notes/diataxis/checklist/index.md            
