@@ -3,7 +3,7 @@
 * [README](README.md)
 * [docs](docs/README.md)
   * [Technical-Write Me](docs/index.md)
-  * [About Me](docs/about-me/README.md)
+  * [Professional Experience](docs/about-me/README.md)
     * [Senior Technical Writer and Documentation Manager](docs/about-me/index.md)
   * [My Portfolio](docs/my-portfolio/README.md)
     * [API Docs](docs/my-portfolio/api-docs/README.md)
