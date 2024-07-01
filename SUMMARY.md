@@ -4,7 +4,7 @@
 * [content](content/README.md)
   * [Technical-Write Me](content/index.md)
   * [About me](content/about-me/README.md)
-    * [Javier Hernández - Senior Technical Writer and Documentaiton Manager](content/about-me/index.md)
+    * [Senior Technical Writer and Documentaiton Manager](content/about-me/index.md)
   * [🙃 Books Read (Coming soon!)](content/books-read/README.md)
     * [index](content/books-read/index.md)
   * [My Portfolio](content/my-portfolio/README.md)
