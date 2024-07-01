@@ -109,8 +109,8 @@ nav:
   - Home: index.md
   - My Resume: about-me/index.md
   - My Portfolio:  
-      - Overview: index.md  
-      - API Documentation: api-docs/index.md
+      - Overview: my-portfolio/index.md  
+      - API Documentation: my-portfolio/api-docs/index.md
   - Articles:
       - Hiring a Technical Writer: articles/before-hiring-a-technical-writer/index.md      
       - Survival Kit (for Developers): articles/survival-kit/index.md  
@@ -128,6 +128,3 @@ nav:
           - Tutorials: learning-notes/diataxis/tutorials/index.md  
           - How-to Guides: learning-notes/diataxis/how-tos/index.md  
           - Tutorial or How-To Guides?: learning-notes/diataxis/checklist/index.md            
-  # - Books Read: books-read/index.md
-      #- Reference: 
-      #- Changelog:
