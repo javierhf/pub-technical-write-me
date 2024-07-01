@@ -4,7 +4,7 @@ title: Technical-write Me
 
 # Technical-Write Me
 
-![Technical-Write me](../docs/assets/technical-write-me-heading.png)
+![Technical-Write me](./assets/technical-write-me-heading.png)
 
 ## Overview
 
@@ -32,9 +32,9 @@ Once we have done that, creating and maintaining effective communication and fee
 
 | Project                                                                                          | Summary                                                                                                                                                                                                          | Period      |
 | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [![MB.io Logo](../docs/assets/mbio-logo.png)](https://www.mercedes-benz.io)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
-| [![Infinera Logo](../docs/assets/infinera-logo1.png)](https://www.infinera.com/)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
-| [![AIDA Logo](../docs/assets/aida-logo.png)](https://www.domingoalonsogroup.com/en/branchs/aida) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
+| [![MB.io Logo](./assets/mbio-logo.png)](https://www.mercedes-benz.io)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
+| [![Infinera Logo](./assets/infinera-logo1.png)](https://www.infinera.com/)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
+| [![AIDA Logo](./assets/aida-logo.png)](https://www.domingoalonsogroup.com/en/branchs/aida) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
 
 ## LinkedIn Profile
 

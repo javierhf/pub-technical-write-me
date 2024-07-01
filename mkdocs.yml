@@ -109,7 +109,6 @@ nav:
   - Home: index.md
   - My Resume: about-me/index.md
   - Professional Portfolio:  
-      - Overview: my-portfolio/index.md  
       - API Documentation: my-portfolio/api-docs/index.md
   - My Articles:
       - Hiring a Technical Writer: articles/before-hiring-a-technical-writer/index.md      
