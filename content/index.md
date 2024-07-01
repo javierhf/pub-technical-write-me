@@ -4,11 +4,11 @@ title: Technical-write Me
 
 # Technical-Write Me
 
-![Technical-Write me](./../docs/assets/technical-write-me-heading.png)
+![Technical-Write me](../docs/assets/technical-write-me-heading.png)
 
 ## Overview
 
-**Welcome to [Technical-docs-me](https://javierhf.github.io/technical-write-me/) my online space about technical writing**. Here you will find smy portfolio and some articles about my technical writing experience and ideas.
+**Welcome to** [**Technical-docs-me**](https://javierhf.github.io/technical-write-me/) **my online space about technical writing**. Here you will find my portfolio and some articles about my technical writing experience and ideas.
 
 Whether you're a technical writer or an IT professional needing some help with your documentation project, I hope you find this place useful.
 
@@ -30,11 +30,11 @@ Once we have done that, creating and maintaining effective communication and fee
 
 **Check the following table** to read about my latest projects. Each of them has a special place in my journey as a professional:
 
-| Project                                                                                     | Summary                                                                                                                                                                                                          | Period      |
-| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [![MB.io Logo](./../docs/assets/mbio-logo.png)](https://www.mercedes-benz.io)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
-| [![Infinera Logo](./../docs/assets/infinera-logo1.png)](https://www.infinera.com/)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
-| [![AIDA Logo](./../docs/assets/aida-logo.png)](https://www.domingoalonsogroup.com/en/branchs/aida) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
+| Project                                                                                          | Summary                                                                                                                                                                                                          | Period      |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [![MB.io Logo](../docs/assets/mbio-logo.png)](https://www.mercedes-benz.io)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
+| [![Infinera Logo](../docs/assets/infinera-logo1.png)](https://www.infinera.com/)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
+| [![AIDA Logo](../docs/assets/aida-logo.png)](https://www.domingoalonsogroup.com/en/branchs/aida) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
 
 ## LinkedIn Profile
 
