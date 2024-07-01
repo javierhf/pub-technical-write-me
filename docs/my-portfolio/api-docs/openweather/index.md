@@ -49,7 +49,7 @@ GET is the only HTTP method available for all resources. The root url for the AP
 Current and forecast data
 
 **GET**   <https://api.openweathermap.org/data/3.0/onecall>
-##### Parameters
+###### Parameters
 
 |Name|Required|Description|
 | :- | :- | :- |
@@ -59,9 +59,9 @@ Current and forecast data
 |*exclude*|No|<p>By using this parameter you can exclude some parts of the weather data from the API response. It should be a comma-delimited list (without spaces).</p><p>Available values:</p><p>- *current*</p><p>- *minutely*</p><p>- *hourly*</p><p>- *daily*</p><p>- *alerts*</p>|
 |*units*|No|Units of measurement. *standard*, *metric* and *imperial* units are available. <br><br>If you do not use the *units* parameter, standard units will be applied by default. Learn more|
 |*lang*|No|You can use the *lang* parameter to get the output in your language. Learn more|
-##### Request Example
+###### Request Example
 https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}
-##### Response Example  
+###### Response Example  
 
 ```json
 {
@@ -103,7 +103,7 @@ The sky is covered with overcast clouds, and there is no precipitation expected 
 Weather data for timestamp.
 
 **GET**   <https://api.openweathermap.org/data/3.0/onecall/timemachine>
-##### Parameters
+###### Parameters
 
 |Name|Required|Description|
 | :- | :- | :- |
@@ -114,9 +114,9 @@ Weather data for timestamp.
 |*units*|No|Units of measurement. *standard*, *metric* and *imperial* units are available. <br><br>If you do not use the *units* parameter, standard units will be applied by default. Learn more|
 |*lang*|No|You can use the *lang* parameter to get the output in your language. Learn more|
 
-##### Request Example
+###### Request Example
 https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API key}
-##### Response Example  
+###### Response Example  
 
 ```json
 {
@@ -364,7 +364,7 @@ https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API 
 Agreggated weather data for a particular date from 2<sup>nd</sup> January 1979 till long-term forecast for 1,5 years ahead.
 
 **GET**   <https://api.openweathermap.org/data/3.0/onecall/day_summary>
-##### Parameters
+###### Parameters
 
 |Name|Required|Description|
 | :- | :- | :- |
@@ -375,9 +375,9 @@ Agreggated weather data for a particular date from 2<sup>nd</sup> January 1979 t
 |*units*|No|Units of measurement. *standard*, *metric* and *imperial* units are available. <br><br>If you do not use the *units* parameter, standard units will be applied by default. Learn more|
 |*lang*|No|You can use the *lang* parameter to get the output in your language. Learn more|
 
-##### Request Example
+###### Request Example
 https://api.openweathermap.org/data/3.0/onecall/day\_summary?lat=39.099724&lon=-94.578331&date=2020-03-04&appid={API key}
-##### Response Example  
+###### Response Example  
 
 ```json  
 
@@ -453,7 +453,7 @@ https://api.openweathermap.org/data/3.0/onecall/day\_summary?lat=39.099724&lon=-
 Weather overview information with a human-readable weather summary for today and tomorrow’s forecast, utilizing OpenWeather AI technologies.
 
 **GET**   <https://api.openweathermap.org/data/3.0/onecall/overview>
-##### Parameters
+###### Parameters
 
 |Name|Required|Description|
 | :- | :- | :- |
@@ -464,10 +464,10 @@ Weather overview information with a human-readable weather summary for today and
 |*units*|No|Units of measurement. *standard*, *metric* and *imperial* units are available. <br><br>If you do not use the *units* parameter, standard units will be applied by default. Learn more|
 |*lang*|No|You can use the *lang* parameter to get the output in your language. Learn more|
 
-##### Request Example
+###### Request Example
 https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}  
 
-##### Response Example  
+###### Response Example  
 
 ```json   
  
