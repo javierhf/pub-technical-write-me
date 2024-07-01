@@ -1,8 +1,8 @@
-# Javier Hernández - Senior Technical Writer
+# Senior Technical Writer and Documentation Manager  
+## Overview  
 
-## Overview
 
-**The following table provides a quick view of my latest projects**. Each of them has a special place in my journey as a technical writer:
+**Hi! My name is Javier Hernández, I'm a Senior Technical Writer and Documentation Manager**. The following table provides a quick view of my latest projects. Each of them has a special place in my journey as a technical writer:
 
 | Project                                                                                             | Summary                                                                                                                                                                                                          | Period      |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |

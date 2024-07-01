@@ -8,7 +8,7 @@ title: Technical-write Me
 
 ## Overview
 
-**Welcome to** [**Technical-docs-me**](https://javierhf.github.io/technical-write-me/). In this site you will find some articles about my technical writing experience and ideas.
+**Welcome to [Technical-docs-me](https://javierhf.github.io/technical-write-me/) my online space about technical writing**. Here you will find smy portfolio and some articles about my technical writing experience and ideas.
 
 Whether you're a technical writer or an IT professional needing some help with your documentation project, I hope you find this place useful.
 
