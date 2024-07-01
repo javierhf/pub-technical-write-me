@@ -1,4 +1,4 @@
-# Senior Technical Writer and Documentation Manager  
+# Professional Experience
 ## Overview  
 
 
@@ -23,7 +23,7 @@
 * Managing and improving documentation projects
 * Implement communication strategy
 
-## Professional Experience
+## Projects' Details
 
 ### Mercedes-Benz.io (2021 - 2023)
 
