@@ -4,7 +4,7 @@ title: Technical-write Me
 
 # Technical-Write Me
 
-![Technical-Write me](../docs/assets/technical-write-me-heading.png)
+![Technical-Write me](./../docs/assets/technical-write-me-heading.png)
 
 ## Overview
 
