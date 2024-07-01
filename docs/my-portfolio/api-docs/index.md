@@ -760,7 +760,3 @@ Check out the following table with the best practices that will enable you to ge
 - **Units of Measurement**: The API supports standard (Kelvin, meters/sec), metric (Celsius, meters/sec), and imperial (Fahrenheit, miles/hour) units for temperature, wind speed, and other measurements.
 #### ***W***
 - **Weather Maps 2.0**: A service that provides various weather maps, including forecast, historical, and current weather maps, which can be integrated into web and mobile applications.
-
-[Información con relleno sólido]: Aspose.Words.b34ee801-f974-4539-9f7a-e988446505ad.001.png
-[Advertencia con relleno sólido]: Aspose.Words.b34ee801-f974-4539-9f7a-e988446505ad.002.png
-[Advertencia con relleno sólido]: Aspose.Words.b34ee801-f974-4539-9f7a-e988446505ad.003.png
