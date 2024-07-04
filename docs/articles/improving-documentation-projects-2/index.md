@@ -1,17 +1,16 @@
-# index
+---
+title: Improving an Existing Developer Documentation (2 of 3)  
+ 
+---   
 
-***
-
-### title: Improving an Existing Developer Documentation (2 of 3)
-
-## Improving an Existing Documentation Project (2 of 3)
+# Improving an Existing Developer Documentation (2 of 3)
 
 > **What this article covers**\
 > _Basic guideline to design a survey to get feedback from your documentation users_.\
 > **Tools**\
 > _MS Forms_.
 
-### Getting Feedback from Your Users
+## Getting Feedback from Your Users
 
 **Now that we know the current status of our documentation better** (_See_ [_Part 1_](https://javierhf.github.io/technical-write-me/articles/improving-documentation-projects-1/)), it is time to talk about our users. Why? Because we have created the documentation for them to be able to use our products, platforms or tools.
 

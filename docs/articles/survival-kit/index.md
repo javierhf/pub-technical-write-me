@@ -19,9 +19,8 @@ title: Developer Documentation Survival Kit
 
 !!! info "Info"
 
-```
-Improving any documentation project, requires the commitment of both management roles and  development teams.
-```
+    Improving any documentation project, requires the commitment of both management roles and  development teams.  
+    
 
 * [x] Commitment to improve/manage your documentation
 * [x] Direct communication with management roles
