@@ -67,7 +67,7 @@ The following table show the security requirements for each endpoint of the Pet 
 | **API Key parameters** | <p><strong><code>name: 'api_key'</code></strong><br><strong><code>location: 'header'</code></strong></p> |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
 
-
+**To implement the API Key**  follows these steps:
 
 1. **Get API Key:**\
    Get the API key from the API provider (usually through the API management portal).
@@ -76,4 +76,156 @@ The following table show the security requirements for each endpoint of the Pet 
    `GET /pet/{petId} HTTP/1.1`\
    `Host: petstore3.swagger.io`\
    `api_key: YOUR_API_KEY`    \
-   \
+
+
+### Resources: Endpoints and Methods (TODO)
+
+`/endpoint`
+
+_Method_ Method description
+
+Sample Request
+
+Sample/Response Definitions Schema
+
+### Request Parameters TO DO
+
+### Response Schema TO DO
+
+### Status and Error Codes Handling
+
+#### `/pet`
+
+**`put`**
+
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Pet not found        | _N/A_                |
+| **'422'**   | Validation exception | _TO DO_              |
+
+**`post`**
+
+| Status Code | Description          | Solution                      |
+| ----------- | -------------------- | ----------------------------- |
+| **'200'**   | Successful operation | _N/A_                         |
+| **'400'**   | Invalid input        | _Review your input structure_ |
+| **'422'**   | Validation exception | _TO DO_                       |
+
+#### `/pet/findByStatus`
+
+**`get`**
+
+| Status Code | Description          | Solution                       |
+| ----------- | -------------------- | ------------------------------ |
+| **'200'**   | Successful operation | _N/A_                          |
+| **'400'**   | Invalid status value | _Provide a valid status value_ |
+
+#### /`pet/{petId}`
+
+**`get`**
+
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Pet not found        | _N/A_                |
+
+**`post`**
+
+| Status Code | Description         | Solution             |
+| ----------- | ------------------- | -------------------- |
+| **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
+
+**`delete`**
+
+| **Status Code** | **Description**   | **Solution**         |
+| --------------- | ----------------- | -------------------- |
+| **'400'**       | Invalid pet value | _Provide a valid ID_ |
+
+#### /`store/order/{orderId}`
+
+**`get`**
+
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Order not found      | _N/A_                |
+
+**`delete`**
+
+
+
+| Status Code | Description         | Solution           |
+| ----------- | ------------------- | ------------------ |
+| '400'       | Invalid ID supplied | Provide a valid ID |
+| '404'       | Order nor found     | N/A                |
+
+#### `/pet`
+
+**`put`**
+
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Pet not found        | _N/A_                |
+| **'422'**   | Validation exception | _TO DO_              |
+
+**`post`**
+
+| Status Code | Description          | Solution                      |
+| ----------- | -------------------- | ----------------------------- |
+| **'200'**   | Successful operation | _N/A_                         |
+| **'400'**   | Invalid input        | _Review your input structure_ |
+| **'422'**   | Validation exception | _TO DO_                       |
+
+#### `/pet/findByStatus`
+
+**`get`**
+
+| Status Code | Description          | Solution                       |
+| ----------- | -------------------- | ------------------------------ |
+| **'200'**   | Successful operation | _N/A_                          |
+| **'400'**   | Invalid status value | _Provide a valid status value_ |
+
+#### `/pet/{petId}`
+
+**`get`**
+
+| **Status Code** | **Description**      | **Solution**         |
+| --------------- | -------------------- | -------------------- |
+| **'200'**       | Successful operation | _N/A_                |
+| **'400'**       | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**       | Pet not found        | _N/A_                |
+
+**`post`**
+
+| **Status Code** | **Description**     | **Solution**         |
+| --------------- | ------------------- | -------------------- |
+| **'400'**       | Invalid ID supplied | _Provide a valid ID_ |
+
+**`delete`**
+
+| **Status Code** | **Description**   | **Solution**         |
+| --------------- | ----------------- | -------------------- |
+| **'400'**       | Invalid pet value | _Provide a valid ID_ |
+
+#### `/store/order/{orderId}`
+
+**`get`**
+
+| **Status Code** | **Description**      | **Solution**         |
+| --------------- | -------------------- | -------------------- |
+| **'200'**       | Successful operation | _N/A_                |
+| **'400'**       | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**       | Order not found      | _N/A_                |
+
+**`delete`**
+
+| **Status Code** | **Description**     | **Solution**         |
+| --------------- | ------------------- | -------------------- |
+| **'400'**       | Invalid ID supplied | _Provide a valid ID_ |
+| **'404'**       | Order not found     | _N/A_                |
