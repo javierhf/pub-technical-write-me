@@ -2,7 +2,7 @@
 
 * [Home](README.md)
 * [Content](docs/README.md)
-  * [My Portfolio](docs/my-portfolio/README.md)
+  * [API Documentation](docs/my-portfolio/README.md)
     * [Openweather API](docs/my-portfolio/api-docs/openweather/index.md)
   * [Articles](docs/articles/README.md)
     * [Key Considerations Before Hiring a Technical Writer](docs/articles/before-hiring-a-technical-writer/index.md)
