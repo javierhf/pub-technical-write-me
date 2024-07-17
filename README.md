@@ -2,9 +2,9 @@
 title: Technical-write Me
 ---
 
-# Technical-Write Me
+# Home
 
-![Technical-Write me](./../../GitHub/technical-write-me/docs/assets/technical-write-me-heading.png)
+<figure><img src=".gitbook/assets/technical-write-me-heading.png" alt=""><figcaption></figcaption></figure>
 
 ## Overview
 
@@ -12,11 +12,11 @@ title: Technical-write Me
 
 **Hi! My name is Javier Hernández, I'm a Senior Technical Writer and Documentation Manager**. The following table provides a quick view of my latest projects. Each of them has a special place in my journey as a technical writer:
 
-| Project                                                                                             | Summary                                                                                                                                                                                                          | Period      |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| ![MB.io](./../../GitHub/technical-write-me/docs/assets/mbio-logo.png)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
-| ![Infinera](./../../GitHub/technical-write-me/docs/assets/infinera-logo1.png)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
-| ![Domingo Alonso AIDA](./../../GitHub/technical-write-me/docs/assets/aida-logo.png) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
+| Project                                                                    | Summary                                                                                                                                                                                                          | Period      |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| ![](<.gitbook/assets/mbio-logo (1).png>)                                   | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
+| ![](<.gitbook/assets/infinera-logo1 (3).png>)                              | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
+| <img src=".gitbook/assets/aida-logo (10).png" alt="" data-size="original"> | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
 
 ## Academic Record
 
@@ -91,15 +91,14 @@ Migrate legacy user documentation based on pdf to a web-based documentation. Pro
 
 #### Responsibilities and Achievements
 
-| Responsibility          | Achievements                                                                                                                                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Project Management**  | <ul><li>Collaborate with subject-matter experts to create and refine documentation</li><li>Design end-user documentation for web applications</li><li>Collaborate with Product Owners to
- refine documentation design</li></ul> |
-| **Content Management**  | <ul><li>Create, publish, and update end-user documentation for web applications</li></ul><ul><li>Update documentation according to iteration increments in agile projects</li></ul>                                            |
-| **UX Design & Writing** | <ul><li>Provide UX wireframes for agile product teams</li><li>^Provide UX content for web and tablet applications</li></ul>                                                                                                    |  
+| Responsibility              | Achievements                                                                                                                                                                                       |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Management**      | <ul><li>Collaborate with subject-matter experts to create and refine documentation</li><li>Design end-user documentation for web applications</li><li>Collaborate with Product Owners to</li></ul> |
+| refine documentation design |                                                                                                                                                                                                    |
+| **Content Management**      | <ul><li>Create, publish, and update end-user documentation for web applications</li></ul><ul><li>Update documentation according to iteration increments in agile projects</li></ul>                |
+| **UX Design & Writing**     | <ul><li>Provide UX wireframes for agile product teams</li><li>^Provide UX content for web and tablet applications</li></ul>                                                                        |
 
 ## LinkedIn Profile
 
 * [LinkedIn Profile](https://www.linkedin.com/in/javier-hernandez-fernandez/)
 * [My resume](https://github.com/javierhf/My-resume)
-
