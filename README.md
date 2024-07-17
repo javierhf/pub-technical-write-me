@@ -4,7 +4,7 @@ title: Technical-write Me
 
 # Technical-Write Me
 
-![Technical-Write me](./assets/technical-write-me-heading.png)
+![Technical-Write me](./../../GitHub/technical-write-me/docs/assets/technical-write-me-heading.png)
 
 ## Overview
 
@@ -14,9 +14,9 @@ title: Technical-write Me
 
 | Project                                                                                             | Summary                                                                                                                                                                                                          | Period      |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| ![MB.io](./assets/mbio-logo.png)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
-| ![Infinera](./assets/infinera-logo1.png)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
-| ![Domingo Alonso AIDA](./assets/aida-logo.png) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
+| ![MB.io](./../../GitHub/technical-write-me/docs/assets/mbio-logo.png)                      | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
+| ![Infinera](./../../GitHub/technical-write-me/docs/assets/infinera-logo1.png)                 | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
+| ![Domingo Alonso AIDA](./../../GitHub/technical-write-me/docs/assets/aida-logo.png) | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
 
 ## Academic Record
 
