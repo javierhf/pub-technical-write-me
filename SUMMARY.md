@@ -4,6 +4,7 @@
 * [Content](docs/README.md)
   * [API Documentation](docs/my-portfolio/README.md)
     * [Openweather API](docs/my-portfolio/api-docs/openweather/index.md)
+    * [Pet Store API](docs/my-portfolio/pet-store-api.md)
   * [Articles](docs/articles/README.md)
     * [Key Considerations Before Hiring a Technical Writer](docs/articles/before-hiring-a-technical-writer/index.md)
     * [Improving Documentation Projects - 1 of 3](docs/articles/improving-documentation-projects-1/index.md)
