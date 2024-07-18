@@ -1,2 +1,0 @@
-# single-responsibility-principle-tw
-

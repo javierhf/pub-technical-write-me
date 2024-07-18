@@ -11,16 +11,17 @@ title: Developer Documentation Survival Kit
 
 ## Overview
 
-**Product development project benefits from having good and effective documentation.** However, budget constraints are often an obstacle to achieving that goal by hiring a technical writer. &#x20;
+**Product development project benefits from having good and effective documentation.** However, budget constraints are often an obstacle to achieving that goal by hiring a technical writer.
 
-**This article offers an easy-to-handle Swiss knife** with the key ideas you need to manage and improve your documentation project. &#x20;
+**This article offers an easy-to-handle Swiss knife** with the key ideas you need to manage and improve your documentation project.
 
 ## Prerequisites
 
-!!! info "Info"
 
-    Improving any documentation project, requires the commitment of both management roles and  development teams.  
-    
+
+{% hint style="info" %}
+Involve management and technical roles to improve your documentation project
+{% endhint %}
 
 * [x] Commitment to improve/manage your documentation
 * [x] Direct communication with management roles
@@ -28,19 +29,19 @@ title: Developer Documentation Survival Kit
 
 ## Swiss Knife
 
-!!! info "Reminder"
 
-```
-Good documentation makes your work more efficient, and contributes to your users' satisfaction.
-```
+
+{% hint style="info" %}
+Good documentation makes your work more efficient, and contributes your team's and users' success.
+{% endhint %}
 
 **The swiss knife to manage and improve documentation projects** includes the following set of fundamental ideas (blades):
 
-* Know Your Ground
-* Know Your Documentation Needs
-* Prioritize and Plan
-* Commitment
-* _Iterate!_
+1. Know Your Ground
+2. Know Your Documentation Needs
+3. Prioritize and Plan
+4. Commitment
+5. _Iterate!_
 
 In the following sections we'll talk more about these _blades_.
 
@@ -48,7 +49,7 @@ In the following sections we'll talk more about these _blades_.
 
 **Know your ground before taking any further step.** Knowing your ground means:
 
-> To know the deficiencies of our documentation, and identify what is preventing it from being successfull and effective. &#x20;
+> To know the deficiencies of our documentation, and identify what is preventing it from being successfull and effective.
 
 **To know your ground, analyse your documentation** and consider the following checklist:
 
@@ -59,7 +60,7 @@ In the following sections we'll talk more about these _blades_.
 > * _What they need to do it_
 > * _How to do it_
 
-* [ ] My documentation provides a prerequisites\_ when required
+* [ ] My documentation provides a _prerequisites_ when required
 * [ ] My documentation is clear enough for any type of users
 * [ ] My documentation is clear, specific and concise (no verbosity)
 * [ ] A clear workflow is implemented to review and update the documentation
@@ -105,19 +106,19 @@ Now you are in a good shape to _prioritize and plan_ your documentation effort.
 
 **Once you have prioritize what to start improving or managing** create a roadmap or a prioritize backlog to track and update your progress.
 
-!!! help "Help"
 
-```
-Consider the most critical topic and the most valuable depending on your product, project and business objective.
-```
+
+{% hint style="warning" %}
+Consider the most critical topica and the most valuable, depending on your product, project and business objective
+{% endhint %}
 
 ### Blade 4 - Commitment
 
-!!! info "Info"
 
-```
-Improving any documentation project, requires the commitment of both management roles and  development teams.
-```
+
+{% hint style="info" %}
+Involve management and technical roles to improve your documentation project
+{% endhint %}
 
 **Now that you know your ground and your needs, and after prioritizing**, it time to commit to improve and manage your documentation actively and regularly.
 
@@ -129,11 +130,11 @@ Improving any documentation project, requires the commitment of both management 
 4. Inform management roles about this.
 5. Stick to it unless there is an emergency.
 
-!!! help "Help"
 
-```
-Setting a reminder in Outlook or using a script or GitHub Action is really helpful. 
-```
+
+{% hint style="info" %}
+Setting a reminder in Outlook or using a script or GitHub Actions is really helpful
+{% endhint %}
 
 ## Bonus Information
 

@@ -6,8 +6,7 @@ status: new
 # OpenWeather API
 
 > **Disclaimer:**\
-> _The one and only goal of this page is to apply my ideas and experience of technical writing to the Openweather - One CAll 3.0 API documentation to give readers the chance of comparing and start a fruitful conversation with learning purposes._\
-> _No criticism intended_\
+> _The one and only goal of this page is to apply my ideas and experience of technical writing to the Openweather - One CAll 3.0 API documentation to give readers the chance of comparing and start a fruitful conversation with learning purposes. No criticism intended_\
 > **Tools**\
 > _Markdown, GitHub, GitBook_
 

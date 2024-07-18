@@ -1,4 +1,4 @@
-# index
+# Part 3 of 3
 
 ***
 
@@ -37,14 +37,14 @@ _Let´s the fun began!_
 
 **The following table shows the screenshots of the survey results,** for each category, and some quick thoughts about them:
 
-| Category                                                                | Results                                                                                                                   | Quick Thoughts                                                                                                                                                           |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Awareness**                                                           | ![Awareness](./images/awareness.png)                              | Our documentation is known but there is still space to reach more readers/users.                                                                                         |
-| **Frequency of use**                                                    | ![Frequency of use](./images/frequency-use.png)                   | Our documentation is being used. Yay!                                                                                                                                    |
-| **Search and page access behavior**                                     | ![search and page access behaviour](./images/search-behavior.png) | If a great number of users do _CTRL+F_ to find content on a page, we should review our page design to ensure we are supporting that behaviour.                           |
-| **Page design**                                                         | ![Page design](./images/how-content-is-shown.png)                 | Even if the majority of our users prefer the content being gradually reveal, a great deal of our users prefer the content being shown all at once. Let's find a balance! |
-| <p><strong>Next steps</strong><br>(<em>According to our users</em>)</p> | ![Next steps](./images/next-steps.png)                            | Keeping our documentation up-to-date requires finding a cross-team collaboration strategy to involve all the required Subject Matter Experts (SME).                      |
-| **General perception**                                                  | ![General perception](./images/general-perception.png)            | Our documentation is perceive as useful. What about opening the door more more content?                                                                                  |
+| Category                                                                | Results                                                                                               | Quick Thoughts                                                                                                                                                           |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Awareness**                                                           | ![Awareness](../improving-documentation-projects-3/images/awareness.png)                              | Our documentation is known but there is still space to reach more readers/users.                                                                                         |
+| **Frequency of use**                                                    | ![Frequency of use](../improving-documentation-projects-3/images/frequency-use.png)                   | Our documentation is being used. Yay!                                                                                                                                    |
+| **Search and page access behavior**                                     | ![search and page access behaviour](../improving-documentation-projects-3/images/search-behavior.png) | If a great number of users do _CTRL+F_ to find content on a page, we should review our page design to ensure we are supporting that behaviour.                           |
+| **Page design**                                                         | ![Page design](../improving-documentation-projects-3/images/how-content-is-shown.png)                 | Even if the majority of our users prefer the content being gradually reveal, a great deal of our users prefer the content being shown all at once. Let's find a balance! |
+| <p><strong>Next steps</strong><br>(<em>According to our users</em>)</p> | ![Next steps](../improving-documentation-projects-3/images/next-steps.png)                            | Keeping our documentation up-to-date requires finding a cross-team collaboration strategy to involve all the required Subject Matter Experts (SME).                      |
+| **General perception**                                                  | ![General perception](../improving-documentation-projects-3/images/general-perception.png)            | Our documentation is perceive as useful. What about opening the door more more content?                                                                                  |
 
 ### What to Do Next?
 
