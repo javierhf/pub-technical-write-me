@@ -1,7 +1,7 @@
 # Table of contents
 
-* [Home](README.md)
-* [Content](docs/README.md)
+* [About Me](README.md)
+* [My Portfolio](docs/README.md)
   * [API Documentation](docs/my-portfolio/README.md)
     * [Openweather API](docs/my-portfolio/api-docs/openweather/index.md)
     * [Pet Store API](docs/my-portfolio/pet-store-api.md)
