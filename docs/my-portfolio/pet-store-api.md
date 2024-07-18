@@ -88,9 +88,9 @@ Sample Request
 
 Sample/Response Definitions Schema
 
-### Request Parameters TO DO
+### <mark style="color:orange;">Request Parameters (Coming soon!)</mark>
 
-### Response Schema TO DO
+### <mark style="color:orange;">Response Schema (Coming soon!)</mark>
 
 ### Status and Error Codes Handling
 
@@ -195,37 +195,37 @@ Sample/Response Definitions Schema
 
 **`get`**
 
-| **Status Code** | **Description**      | **Solution**         |
-| --------------- | -------------------- | -------------------- |
-| **'200'**       | Successful operation | _N/A_                |
-| **'400'**       | Invalid ID supplied  | _Provide a valid ID_ |
-| **'404'**       | Pet not found        | _N/A_                |
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Pet not found        | _N/A_                |
 
 **`post`**
 
-| **Status Code** | **Description**     | **Solution**         |
-| --------------- | ------------------- | -------------------- |
-| **'400'**       | Invalid ID supplied | _Provide a valid ID_ |
+| Status Code | Description         | Solution             |
+| ----------- | ------------------- | -------------------- |
+| **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
 
 **`delete`**
 
-| **Status Code** | **Description**   | **Solution**         |
-| --------------- | ----------------- | -------------------- |
-| **'400'**       | Invalid pet value | _Provide a valid ID_ |
+| Status Code | Description       | Solution             |
+| ----------- | ----------------- | -------------------- |
+| **'400'**   | Invalid pet value | _Provide a valid ID_ |
 
 #### `/store/order/{orderId}`
 
 **`get`**
 
-| **Status Code** | **Description**      | **Solution**         |
-| --------------- | -------------------- | -------------------- |
-| **'200'**       | Successful operation | _N/A_                |
-| **'400'**       | Invalid ID supplied  | _Provide a valid ID_ |
-| **'404'**       | Order not found      | _N/A_                |
+| Status Code | Description          | Solution             |
+| ----------- | -------------------- | -------------------- |
+| **'200'**   | Successful operation | _N/A_                |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
+| **'404'**   | Order not found      | _N/A_                |
 
 **`delete`**
 
-| **Status Code** | **Description**     | **Solution**         |
-| --------------- | ------------------- | -------------------- |
-| **'400'**       | Invalid ID supplied | _Provide a valid ID_ |
-| **'404'**       | Order not found     | _N/A_                |
+| Status Code | Description         | Solution             |
+| ----------- | ------------------- | -------------------- |
+| **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
+| **'404'**   | Order not found     | _N/A_                |
