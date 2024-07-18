@@ -78,7 +78,7 @@ The following table show the security requirements for each endpoint of the Pet 
    `api_key: YOUR_API_KEY`    \
 
 
-### Resources: Endpoints and Methods (TODO)
+### _<mark style="color:orange;">(Coming soon!) Resources: Endpoints and Methods</mark>_
 
 `/endpoint`
 
@@ -88,15 +88,15 @@ Sample Request
 
 Sample/Response Definitions Schema
 
-### <mark style="color:orange;">Request Parameters (Coming soon!)</mark>
+### _<mark style="color:orange;">(Coming soon!)</mark>_ _<mark style="color:orange;">Request Parameters</mark>_
 
-### <mark style="color:orange;">Response Schema (Coming soon!)</mark>
+### _<mark style="color:orange;">(Coming soon!) Response Schema</mark>_
 
 ### Status and Error Codes Handling
 
 #### `/pet`
 
-**`put`**
+**PUT**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -105,7 +105,7 @@ Sample/Response Definitions Schema
 | **'404'**   | Pet not found        | _N/A_                |
 | **'422'**   | Validation exception | _TO DO_              |
 
-**`post`**
+**POST**
 
 | Status Code | Description          | Solution                      |
 | ----------- | -------------------- | ----------------------------- |
@@ -115,7 +115,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/findByStatus`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution                       |
 | ----------- | -------------------- | ------------------------------ |
@@ -124,7 +124,7 @@ Sample/Response Definitions Schema
 
 #### /`pet/{petId}`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -132,13 +132,13 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Pet not found        | _N/A_                |
 
-**`post`**
+**POST**
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |
 | **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
 
-**`delete`**
+**DELETE**
 
 | **Status Code** | **Description**   | **Solution**         |
 | --------------- | ----------------- | -------------------- |
@@ -146,7 +146,7 @@ Sample/Response Definitions Schema
 
 #### /`store/order/{orderId}`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -154,7 +154,7 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Order not found      | _N/A_                |
 
-**`delete`**
+**DELETE**
 
 
 
@@ -165,7 +165,7 @@ Sample/Response Definitions Schema
 
 #### `/pet`
 
-**`put`**
+**PUT**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -174,7 +174,7 @@ Sample/Response Definitions Schema
 | **'404'**   | Pet not found        | _N/A_                |
 | **'422'**   | Validation exception | _TO DO_              |
 
-**`post`**
+**POST**
 
 | Status Code | Description          | Solution                      |
 | ----------- | -------------------- | ----------------------------- |
@@ -184,7 +184,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/findByStatus`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution                       |
 | ----------- | -------------------- | ------------------------------ |
@@ -193,7 +193,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/{petId}`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -201,13 +201,13 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Pet not found        | _N/A_                |
 
-**`post`**
+**POST**
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |
 | **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
 
-**`delete`**
+**DELETE**
 
 | Status Code | Description       | Solution             |
 | ----------- | ----------------- | -------------------- |
@@ -215,7 +215,7 @@ Sample/Response Definitions Schema
 
 #### `/store/order/{orderId}`
 
-**`get`**
+**GET**
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -223,7 +223,7 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Order not found      | _N/A_                |
 
-**`delete`**
+**DELETE**
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |
