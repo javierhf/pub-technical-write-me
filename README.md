@@ -8,15 +8,11 @@ title: Technical-write Me
 
 ## Overview
 
-**Welcome to** [**Technical-docs-me**](https://javierhf.github.io/technical-write-me/) **my online space and portfolio as Technical Writer**. Here you will find my portfolio and some articles about my technical writing experience and ideas.
+**Welcome to** [**Technical-docs-me**](https://javierhf.github.io/technical-write-me/) **my professional online space and portfolio as Technical Writer**. My name is Javier Hernández, and I'm a Senior Technical Writer and Documentation Manager. For the last almost 8 years I've been helping development and product teams to create, organize, and improve their documentation, both for external (customers) and internal users. &#x20;
 
-**Hi! My name is Javier Hernández, I'm a Senior Technical Writer and Documentation Manager**. The following table provides a quick view of my latest projects. Each of them has a special place in my journey as a technical writer:
+**The following table provides a quick view of my latest projects**. Each of them has a special place in my journey as a technical writer:
 
-| Project                                                                    | Summary                                                                                                                                                                                                          | Period      |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| ![](<.gitbook/assets/mbio-logo (1).png>)                                   | My latest project (2021 - 2023). Here I could apply all of my previous learnings and ideas regarding project management, community building, communication strategy and improvement planning and prioritization. | 2021 - 2023 |
-| ![](<.gitbook/assets/infinera-logo1 (3).png>)                              | This was the place where my project management skills were consolidated.                                                                                                                                         | 2020 - 2021 |
-| <img src=".gitbook/assets/aida-logo (10).png" alt="" data-size="original"> | My first technical writing project where I learn the fundamentals, UX Design and the Agile mindset.                                                                                                              | 2014 - 2017 |
+<table><thead><tr><th width="290">Project</th><th width="309">Summary</th><th>Period</th></tr></thead><tbody><tr><td><img src=".gitbook/assets/mbio-logo (1).png" alt=""></td><td><p>My latest project (2021 - 2023). Here I applied all of my professional experience and ideas to improve an existing developer documentation from many perspectives: </p><ul><li>User Experience</li><li>Content effectiveness and clarity</li><li>Information Architecture</li><li>Community involvement</li><li>User feedback and direct communication</li><li>Documentation awareness</li><li>Communication strategy</li></ul></td><td>2021 - 2023</td></tr><tr><td><img src=".gitbook/assets/infinera-logo1 (3).png" alt=""></td><td>This was the place where my project management skills were consolidated, and I learned to develop documentation as a product, both at a content creation and organizational level</td><td>2020 - 2021</td></tr><tr><td><img src=".gitbook/assets/aida-logo (10).png" alt="" data-size="original"></td><td><p>My first technical writing project. I acquire the fundamental knowledge of the fundamental parts of technical writing: </p><ul><li>Content effectiveness</li><li>Direct and fluent communication with Subject Matter Experts (Product Owners, Testers, Developers)</li><li>User Experience design</li><li>Learn to write and read code</li></ul></td><td>2014 - 2017</td></tr></tbody></table>
 
 ## Academic Record
 
@@ -25,11 +21,12 @@ title: Technical-write Me
 
 ## Expertise
 
-* End-user and developer documentation
+* End-user, product, and developer documentation
 * Docs-like-code
 * Confluence
 * Managing and improving documentation projects
-* Implement communication strategy
+* Communication strategy
+* User involvement
 
 ## Professional Experience
 
@@ -91,12 +88,11 @@ Migrate legacy user documentation based on pdf to a web-based documentation. Pro
 
 #### Responsibilities and Achievements
 
-| Responsibility              | Achievements                                                                                                                                                                                       |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Project Management**      | <ul><li>Collaborate with subject-matter experts to create and refine documentation</li><li>Design end-user documentation for web applications</li><li>Collaborate with Product Owners to</li></ul> |
-| refine documentation design |                                                                                                                                                                                                    |
-| **Content Management**      | <ul><li>Create, publish, and update end-user documentation for web applications</li></ul><ul><li>Update documentation according to iteration increments in agile projects</li></ul>                |
-| **UX Design & Writing**     | <ul><li>Provide UX wireframes for agile product teams</li><li>^Provide UX content for web and tablet applications</li></ul>                                                                        |
+| Responsibility          | Achievements                                                                                                                                                                                       |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Management**  | <ul><li>Collaborate with subject-matter experts to create and refine documentation</li><li>Design end-user documentation for web applications</li><li>Collaborate with Product Owners to</li></ul> |
+| **Content Management**  | <ul><li>Create, publish, and update end-user documentation for web applications</li></ul><ul><li>Update documentation according to iteration increments in agile projects</li></ul>                |
+| **UX Design & Writing** | <ul><li>Provide UX wireframes for agile product teams</li><li>^Provide UX content for web and tablet applications</li></ul>                                                                        |
 
 ## LinkedIn Profile
 
