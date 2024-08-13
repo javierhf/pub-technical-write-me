@@ -12,7 +12,7 @@
       * [Part 2 of 3](docs/articles/how-to-improve-documentation-projects/index-1.md)
       * [Part 3 of 3](docs/articles/how-to-improve-documentation-projects/index-2.md)
     * [Single-Responsibility Principle for Technical Documentation](docs/articles/index-1.md)
-    * [Developer Documentation Survival Kit](docs/articles/index-2.md)
+    * [Developer Documentation Swiss-Knife](docs/articles/index-2.md)
   * [Learning About...](docs/learning-notes/README.md)
     * [Diataxis](docs/learning-notes/diataxis/README.md)
       * [Diátaxis Documentation Framework](docs/learning-notes/diataxis/index.md)

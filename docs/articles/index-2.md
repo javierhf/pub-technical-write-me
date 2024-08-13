@@ -2,18 +2,20 @@
 title: Developer Documentation Survival Kit
 ---
 
-# Developer Documentation Survival Kit
+# Developer Documentation Swiss-Knife
 
 > **What this article covers**\
-> _Some considerations for companies when hiring a technical writer._\
+> _Basic ideas to develop and manage a documentation project successfully._\
 > **Tools**\
 > _N/A._
 
 ## Overview
 
-**Product development project benefits from having good and effective documentation.** However, budget constraints are often an obstacle to achieving that goal by hiring a technical writer.
+**Product development project benefits from having good and effective documentation.** A documentation set is _good_ when it covers all the topics our users and customers require, and it is _effective_ when it provides content that is _easy to find_, easy to understand, and easy to act upon, while being complete according to all the known contexts of use.&#x20;
 
-**This article offers an easy-to-handle Swiss knife** with the key ideas you need to manage and improve your documentation project.
+However, we all know that budget constraints too often get in the way, becoming an obstacle to hire the dedicated role we need: a technical writer.
+
+**This article offers an easy-to-handle Swiss knife** to manage and improve your documentation project when you can afford a technical writer.
 
 ## Prerequisites
 
@@ -23,50 +25,46 @@ title: Developer Documentation Survival Kit
 Involve management and technical roles to improve your documentation project
 {% endhint %}
 
-* [x] Commitment to improve/manage your documentation
-* [x] Direct communication with management roles
-* [x] Save a small slot of time for documentation work
+* [x] Involvement and direct communication with management roles.
+* [x] Save a small slot of time for documentation work.
 
-## Swiss Knife
+## Technical Documentation Swiss-Knife
+
+**The swiss-knife to manage and improve documentation projects** includes the following set of basic ideas (blades):
+
+1. Know Your Ground.
+2. Know Your Documentation Needs.
+3. Prioritize and Plan.
+4. Commit to your documention.
+
+### Blade 1 - Know Your Ground
+
+**Know your ground before taking any further step.** Knowing your ground means to:
+
+> * know the deficiencies of your documentation,&#x20;
+> * identify what is preventing it from being useful, and effective.
+
+**To know your ground you need to analyse your documentation** from different perspective. Consider the following checklist and ticked the ones you have covered:
+
+* [ ] My documentation provide content for all the topics my users need to know
+* [ ] My documentation pages tells users:
+
+> * _what is the page about,_
+> * _what they can do,_
+> * _how to do it,_
+> * _who to ask for help._
+
+* [ ] My documentation informs about _prerequisites_ (if any)
+* [ ] My documentation provides all the required information for the specific user case/type of page
+* [ ] My documentation is clear, specific and concise (no verbose)
+* [ ] There is a clear workflow to gather feedback, review and update the documentation
+* [ ] My documentation architecture mirrors the workflow of regular users
 
 
 
-{% hint style="info" %}
-Good documentation makes your work more efficient, and contributes your team's and users' success.
+{% hint style="warning" %}
+**The items you have not ticked** are the ones you need to tackle.
 {% endhint %}
-
-**The swiss knife to manage and improve documentation projects** includes the following set of fundamental ideas (blades):
-
-1. Know Your Ground
-2. Know Your Documentation Needs
-3. Prioritize and Plan
-4. Commitment
-5. _Iterate!_
-
-In the following sections we'll talk more about these _blades_.
-
-### Blade 1 - Knowing Your Ground
-
-**Know your ground before taking any further step.** Knowing your ground means:
-
-> To know the deficiencies of our documentation, and identify what is preventing it from being successfull and effective.
-
-**To know your ground, analyse your documentation** and consider the following checklist:
-
-* [ ] My documentation provide all the information any user needs to understand:
-
-> * _What it is_
-> * _What they can do_
-> * _What they need to do it_
-> * _How to do it_
-
-* [ ] My documentation provides a _prerequisites_ when required
-* [ ] My documentation is clear enough for any type of users
-* [ ] My documentation is clear, specific and concise (no verbosity)
-* [ ] A clear workflow is implemented to review and update the documentation
-* [ ] My documentation mirror the natural workflow of regular users.
-
-**The items you have not ticked** are the ones you need to tackle
 
 Knowing your ground can be a terrifying experience leaving in a hopeless-like state of mind. But despair do not! Be patient, take small steps. Then _iterate!_
 
@@ -76,29 +74,26 @@ Knowing your ground can be a terrifying experience leaving in a hopeless-like st
 
 > "Know your documentation needs."
 
-**Knowing your documentation needs helps you to contextualize** the insights you've gained using the _knowing your ground_ blade.
+**Knowing your documentation needs helps you to contextualize** the insights you've gained from the previous checklist.
 
 **To know our documentation needs** answer the following questions:
 
-* Do I need a coherent (single) writing style for my documentation?
-* Do I need a full-blended documentation to support my customers' success?
-* Do I need a writing style guide?
-* Do I just need to increase clarity?
+* Do I have a clear and coherent writing style for my documentation?
+* Do I need to increase clarity?
 * Do I just need to reduce verbosisty?
-* Do I need to review and update my documentation?
-* Do I know what my users think about my documentation?
+* How often do I need to review and update my documentation?
+* Who can review the documentation updates?
+* Who can ensure the correctness of the documentation?
+* Do I have communication channels for my users to provide feedback?
 * What is the _minimum viable and valuable documentation_ for my project/product?
 
-Now you are in a good shape to _prioritize and plan_ your documentation effort.
+Once you answer these questions, you'll be ready to _prioritize and plan_ your documentation effort.
 
 ### Blade 3 - Prioritize and Plan your Documentation Effort
 
-**Every project is different** and knowing your ground and knowing your needs increase the knowledge of your own project. With these new insights, you can now prioritize and plan.
+**Every project is different,** but knowing your ground and your documentation needs increases the chances of having a successful documentation project. With these new insights, you can now prioritize and plan.
 
-**To prioritize your documentation efforts** you have to identify:
-
-* the most critical topic/issue
-* the most valuable topic/issue.
+**To prioritize your documentation efforts** you need to to identify the most critical topic/issue, and the most valuable topic/issue. Then decided where to start with depending on your product's priorities and needs.
 
 **Starting with the most critical** topic means that you will _address the topic which is the most critical to develop your product_ in the first place.
 
@@ -112,7 +107,7 @@ Now you are in a good shape to _prioritize and plan_ your documentation effort.
 Consider the most critical topica and the most valuable, depending on your product, project and business objective
 {% endhint %}
 
-### Blade 4 - Commitment
+### Blade 4 - Commit to Your Documentation
 
 
 
@@ -120,17 +115,14 @@ Consider the most critical topica and the most valuable, depending on your produ
 Involve management and technical roles to improve your documentation project
 {% endhint %}
 
-**Now that you know your ground and your needs, and after prioritizing**, it time to commit to improve and manage your documentation actively and regularly.
+**Now that you know your ground and your needs, and after prioritizing**, it is time to commit to your documentation. Only then you'll be able to improve and manage your documentation actively and regularly.
 
-**To support and reinforce you commitment** try these steps:
+**To support you commitment** the following tips may help you:
 
-1. Save a slot of time to manage/improve your documentation.
-2. Create a reminder.
+1. Save a slot of time to manage/improve your documentation on a weekly basis.
+2. Create an automatic reminder (Outlook, Calendar, GitHub Actions, Slack, Teams, etc).
 3. Involve other team members.
-4. Inform management roles about this.
-5. Stick to it unless there is an emergency.
-
-
+4. Inform management roles about the importance of the documentation.
 
 {% hint style="info" %}
 Setting a reminder in Outlook or using a script or GitHub Actions is really helpful
@@ -140,9 +132,9 @@ Setting a reminder in Outlook or using a script or GitHub Actions is really help
 
 If you are reading this article, you probably don't have much time to search, read and implement style guides and good practices. Don't worry, in the following table I share with you some fundamentals of documentation writing you can learn and apply easily:
 
-| Topic               | Description                                                                                                                                                                                                                                                                                                            |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Text Formatting** | <ul><li>Bold - Apply bold to the first meaningfull part of a the first sentence of a paragraph to support page scanning.</li><li>Italics - Apply italics to file and folder names, and to highlight text segment inside a paragraph.</li><li><code>code</code> - Apply `` for code snippets abd cli commands</li></ul> |
-| **Page Content**    | <ul><li>Provide an introduction for every page</li><li>Develop 1 single topic/idea per page and section</li><li>Provide clear and concise titles</li></ul>                                                                                                                                                             |
-| **Writing**         | <p>Provide just:</p><ol><li>the right information</li><li>in the right context</li><li>in the right order</li></ol>                                                                                                                                                                                                    |
-| **Quality**         | <ul><li>Use a grammar check in your IDE (Have you checked Vale?)</li><li>Use a link checker in your IDE</li><li>Create a checklist to review your content</li></ul>                                                                                                                                                    |
+| Topic               | Description                                                                                                                                                                                                                                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Text Formatting** | <ul><li><strong>Bold</strong> - Apply bold to the first meaningfull part of a the first sentence of a paragraph to support page scanning.</li><li><em>Italics</em> - Apply italics to file and folder names, and to highlight text segment inside a paragraph.</li><li><code>code</code> - Apply `` for code snippets abd cli commands</li></ul> |
+| **Page Content**    | <ul><li>Provide an introduction for every page.</li><li>Develop 1 single topic/idea per page and section.</li><li>Provide clear and concise titles.</li></ul>                                                                                                                                                                                    |
+| **Writing**         | <p>Provide just:</p><ol><li>the right information,</li><li>in the right context,</li><li>in the right order.</li></ol>                                                                                                                                                                                                                           |
+| **Quality**         | <ul><li>Use a grammar check in your IDE (Have you checked Vale?).</li><li>Use a link checker in your IDE.</li><li>Create a checklist to review your content.</li></ul>                                                                                                                                                                           |
