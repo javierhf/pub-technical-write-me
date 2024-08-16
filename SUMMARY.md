@@ -16,6 +16,6 @@
   * [Learning About...](docs/learning-notes/README.md)
     * [Diataxis](docs/learning-notes/diataxis/README.md)
       * [Diátaxis Documentation Framework](docs/learning-notes/diataxis/index.md)
-      * [Tutorials or How-to Guides: a Checklist](docs/learning-notes/diataxis/checklist/index.md)
+      * [Tutorials](docs/learning-notes/diataxis/index-1.md)
       * [How-Tos](docs/learning-notes/diataxis/how-tos/index.md)
-      * [Tutorials](docs/learning-notes/diataxis/tutorials/index.md)
+      * [Tutorials or How-to Guides](docs/learning-notes/diataxis/index-3.md)
