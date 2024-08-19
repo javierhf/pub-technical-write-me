@@ -5,17 +5,23 @@
 
 
 {% hint style="warning" %}
-**Disclaimer**\
-This page is _NOT_ the official documentation of Swagger's Pet Store API. The sole purpose of this page is to showcase my technical writing skills by applying my ideas and experience to Swagger's Pet Store API.
+**Disclaimer**
+
+This is my version of the [Swagger Pet Store API](https://petstore.swagger.io/) public and official documentation. The sole purpose of this page is to showcase my technical writing experience and ideas.&#x20;
 {% endhint %}
 
 ### Overview
 
 **The Pet Store API is a REST API that provides a comprehensive set of endpoints and functionalities** to manage your pet store business from pets, users, and orders.
 
-**The Pet Store API implements reusable data structure, request bodies, and security schemes, and uses two types of authentication: OAuth2 and API Keys**. OAuth is used for operations requiring user-specific permissions, and API keys to secure other operations.
+**The Pet Store API implements the following features:**
 
-**To work the Pet Store API,** we have designed the following endpoints:
+* reusable data structure,&#x20;
+* request bodies, and security schemes.
+
+**The Pet Store API** **uses two types of authentication**: _OAuth2_ (operations requiring user-specific permissions) and _API Keys_ (operations security).&#x20;
+
+**To work with the Pet Store API,** we have designed the following endpoints:
 
 
 
@@ -23,31 +29,25 @@ This page is _NOT_ the official documentation of Swagger's Pet Store API. The so
 
 ### Security Fundamentals
 
-**Regarding authentication and authorization**, the Pet Store API uses the methods described in the following table:
+**Regarding authentication and authorization**, the Pet Store API uses _OAuth2_ (operations requiring user-specific permissions) and _API Keys_ (operations security). Check the following table for more information:
 
-| Method                     | Scope                                                     | Description                                                                                                                                                                                                                                                                                                 |
-| -------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **OAuth2 (Implicit flow)** | <p><code>write:pets</code>\<br><code>read:pets</code></p> | <p>OAuth2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.</p><p></p><p>The Pet Store API uses the implicit flow of OAuth2, which is suitable for public clients that cannot keep a secret (such as single-page applications).<br></p> |
-| **API Key**                | _N/A_                                                     | <p>API Key authentication is a simple way of securing access by including a key in the request header.</p><p><br>This method is typically used for server-to-server communication.</p>                                                                                                                      |
+<table><thead><tr><th width="238">Security Method</th><th width="156">Scope</th><th>Description</th></tr></thead><tbody><tr><td><strong>OAuth2 (Implicit flow)</strong></td><td><code>write:pets</code><br><code>read:pets</code></td><td><p>OAuth2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.</p><p></p><p>The Pet Store API uses the implicit flow of OAuth2, which is suitable for public clients that cannot keep a secret (such as single-page applications).<br></p></td></tr><tr><td><strong>API Key</strong></td><td><em>N/A</em></td><td><p>API Key authentication is a simple way of securing access by including a key in the request header.</p><p><br>This method is typically used for server-to-server communication.</p></td></tr></tbody></table>
 
-**Each endpoint has a scope depending on the security method,** as shown in the following table:
+**Each security method is applied to specific** **endpoints** as shown in the following table:
 
-| Security Method               | Endpoint                                                                                                                                                                          | Scope                                                    |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| **OAuth2 ('petstore\_auth')** | <p><code>/pet</code><br><code>/pet/findByStatus</code><br><code>/pet/findByTags</code><br><code>/pet/{petId}</code><br><code>/pet/{petId}</code><br><code>/store/order</code></p> | <p><code>write:pets</code><br><code>read:pets</code></p> |
-| **API Key ('api\_key')**      | <p><code>/store/inventory</code><br><code>/pet/{petId}</code></p>                                                                                                                 |                                                          |
+<table><thead><tr><th width="179">Security Method</th><th width="390">Endpoint</th><th>Scope</th></tr></thead><tbody><tr><td><strong>OAuth2 ('petstore_auth')</strong></td><td><code>/pet</code><br><code>/pet/findByStatus</code><br><code>/pet/findByTags</code><br><code>/pet/{petId}</code><br><code>/pet/{petId}</code><br><code>/store/order</code></td><td><code>write:pets</code><br><code>read:pets</code></td></tr><tr><td><strong>API Key ('api_key')</strong></td><td><code>/store/inventory</code><br><code>/pet/{petId}</code></td><td></td></tr></tbody></table>
 
 ### Implementing OAuth2 (Implicit Flow)
 
 <table><thead><tr><th width="238">Topic</th><th>Information</th></tr></thead><tbody><tr><td><strong>Authorization URL</strong></td><td>https://petstore3.swagger.io/oauth/authorize></td></tr><tr><td><strong>Scopes</strong></td><td><code>write:pets</code>: Allows modification of pets in your account.<br><code>read:pets</code>: Allows reading your pets.</td></tr></tbody></table>
 
-**To implement OAuth2 (Implicit flow)** you have to _request authorization,_ _receive the access token,_ and _use the access token as_ follows:
+**To implement OAuth2 (Implicit flow)** you have to _request authorization,_ _receive the access token,_ and _use the access token_ as described in the following steps:
 
 1. **Request authorization:**\
    Redirect the user to the authorization URL with the required parameters (client ID, redirect URI, response type, and scope), for example:  `https://petstore3.swagger.io/oauth/authorize?client_id=<YOUR_CLIENT_ID>&redirect_uri==<YOUR_REDIRECT_URI>&response_type=token&scope=write:pets read:pets`
 2. **Receive access token:**
-   1. After the user grants permission, they are redirected back to your application with the access token in the URL fragment
-   2. Extract the access token from the URL
+   1. After the user grants permission, they are redirected back to your application with the access token in the URL fragment.
+   2. Extract the access token from the URL.
 3.  **Use access token:**\
     Include the access token in the ‘Authorization’ header for API requests, for example:\
     `GET /pet HTTP/1.1`
@@ -60,7 +60,9 @@ This page is _NOT_ the official documentation of Swagger's Pet Store API. The so
 
 ### Implementing API Key
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>API Key parameters</strong></td><td></td></tr><tr><td><strong><code>name: 'api_key'</code></strong><br><strong><code>location: 'header'</code></strong></td><td></td></tr></tbody></table>
+| Topic                  | Information                                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------------- |
+| **API Key parameters** | <p><strong><code>name: 'api_key'</code></strong><br><strong><code>location: 'header'</code></strong></p> |
 
 **To implement the API Key** follow these steps:
 
@@ -75,7 +77,7 @@ This page is _NOT_ the official documentation of Swagger's Pet Store API. The so
 
 ### _<mark style="color:orange;">(Coming soon!) Resources: Endpoints and Methods</mark>_
 
-`/endpoint`
+#### `/endpoint`
 
 _Method_ Method description
 
@@ -91,7 +93,7 @@ Sample/Response Definitions Schema
 
 #### `/pet`
 
-**PUT**
+_**PUT**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -100,7 +102,7 @@ Sample/Response Definitions Schema
 | **'404'**   | Pet not found        | _N/A_                |
 | **'422'**   | Validation exception | _TO DO_              |
 
-**POST**
+_**POST**_
 
 | Status Code | Description          | Solution                      |
 | ----------- | -------------------- | ----------------------------- |
@@ -110,7 +112,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/findByStatus`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution                       |
 | ----------- | -------------------- | ------------------------------ |
@@ -119,7 +121,7 @@ Sample/Response Definitions Schema
 
 #### /`pet/{petId}`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -127,21 +129,21 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Pet not found        | _N/A_                |
 
-**POST**
+_**POST**_
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |
 | **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
 
-**DELETE**
+_**DELETE**_
 
-| **Status Code** | **Description**   | **Solution**         |
-| --------------- | ----------------- | -------------------- |
-| **'400'**       | Invalid pet value | _Provide a valid ID_ |
+| Status Code | Description       | Solution             |
+| ----------- | ----------------- | -------------------- |
+| **'400'**   | Invalid pet value | _Provide a valid ID_ |
 
 #### /`store/order/{orderId}`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -149,9 +151,7 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Order not found      | _N/A_                |
 
-**DELETE**
-
-
+_**DELETE**_
 
 | Status Code | Description         | Solution           |
 | ----------- | ------------------- | ------------------ |
@@ -160,7 +160,7 @@ Sample/Response Definitions Schema
 
 #### `/pet`
 
-**PUT**
+_**PUT**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -169,7 +169,7 @@ Sample/Response Definitions Schema
 | **'404'**   | Pet not found        | _N/A_                |
 | **'422'**   | Validation exception | _TO DO_              |
 
-**POST**
+_**POST**_
 
 | Status Code | Description          | Solution                      |
 | ----------- | -------------------- | ----------------------------- |
@@ -179,7 +179,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/findByStatus`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution                       |
 | ----------- | -------------------- | ------------------------------ |
@@ -188,7 +188,7 @@ Sample/Response Definitions Schema
 
 #### `/pet/{petId}`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -196,13 +196,13 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Pet not found        | _N/A_                |
 
-**POST**
+_**POST**_
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |
 | **'400'**   | Invalid ID supplied | _Provide a valid ID_ |
 
-**DELETE**
+_**DELETE**_
 
 | Status Code | Description       | Solution             |
 | ----------- | ----------------- | -------------------- |
@@ -210,7 +210,7 @@ Sample/Response Definitions Schema
 
 #### `/store/order/{orderId}`
 
-**GET**
+_**GET**_
 
 | Status Code | Description          | Solution             |
 | ----------- | -------------------- | -------------------- |
@@ -218,7 +218,7 @@ Sample/Response Definitions Schema
 | **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
 | **'404'**   | Order not found      | _N/A_                |
 
-**DELETE**
+_**DELETE**_
 
 | Status Code | Description         | Solution             |
 | ----------- | ------------------- | -------------------- |

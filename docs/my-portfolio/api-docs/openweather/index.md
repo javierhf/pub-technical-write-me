@@ -7,19 +7,18 @@ status: new
 
 {% hint style="warning" %}
 **Disclaimer**\
-This is my version of the Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3) public and official documentation. The sole purpose of this page is to showcase my technical writing experience and ideas. \
-
-
-Check the original content of the [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3) and compare it with my version. Constructive dialog is intended.
+This is my version of the Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3) public and official documentation. The sole purpose of this page is to showcase my technical writing experience and ideas.&#x20;
 {% endhint %}
-
-
 
 ## Reference Documentation
 
-**OpenWeather - One Call 3.0 API provides essential weather data, short-term and long-term forecasts, and aggregated weather data** easily via our One Call API 3.0.
+**OpenWeather - One Call 3.0 API provides the following information:**
 
-**One Call API 3.0 is based on the proprietary OpenWeather Model and provides 4 endpoints.** Our endpoints are updated every 10 minutes to deliver the most accurate and up-to-date weather data.
+* essential weather data,&#x20;
+* short-term and long-term forecasts,&#x20;
+* aggregated weather data easily.
+
+**One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoints**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
 
 ### OpenWeather One Call API 3.0 Endpoints
 
@@ -45,7 +44,7 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 Please note that One Call 3.0 is included in the "One Call by Call" subscription _ONLY_. [Learn more](https://openweathermap.org/price).
 {% endhint %}
 
-**The root url for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
+**The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
 
 #### _**`/onecall`**_
 

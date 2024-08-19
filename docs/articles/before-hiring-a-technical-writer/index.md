@@ -1,48 +1,36 @@
 ---
-title: Single-Responsibility Principle for Documentation Projects  
-status: new   
+title: Single-Responsibility Principle for Documentation Projects
+status: new
+---
 
----   
+# Key Considerations Before Hiring a Technical Writer
 
-# Maximizing Success: Key Considerations Before Hiring a Technical Writer
+> **What this article covers**\
+> _Some hiring considerations for companies in need of a technical writer._\
+> **Tools**\
+> _N/A._
 
-> **What this article covers**  
-> _Some considerations for companies when hiring a technical writer._   
-> **Tools**  
-> _N/A._  
+## Overview
 
-## Overview    
+**Hiring a technical writer is not just an expense but an investment,** an opportunity to enhance our product's quality. The following sections will help you to make the most of your time and budget.
 
-**Hiring a technical writer is not just an expense but an investment,** an opportunity to enhance our product's quality. The following sections will help to take the most of your time and budget  by:
+## Know Your Project Needs and Resources
 
-* Helping you define your requirements more precisely.
-* Facilitating a more effective communication with your technical writer.  
+**Understanding your project's needs and the resources at your disposal is crucial** for _saving time_, and _avoiding misunderstandings and misalignments_ in the future.
 
-## Your Project Needs and Resources   
+**While technical writers are experts in their field,** you need to be able to articulate your project's needs clearly and evaluate your current situation.
 
-**Understanding your project's needs and the resources at your disposal is crucial** for *saving time*, and *avoiding misunderstandings and misalignments* in the future.  
+The following may help you to sail some initial considerations:
 
-**While technical writers are experts in their field,** it is essential for you to be able to articulate your project's needs clearly. 
+<table><thead><tr><th width="395">Question</th><th>Tips</th></tr></thead><tbody><tr><td><strong>Why do I need a technical writer?</strong></td><td><p></p><p>Do you need a technical writer to:</p><ul><li>Manage and refine existing documentation?</li></ul><ul><li>Develop new product or technical Documentation from scratch?</li><li>Both?</li></ul><p><br>Naming the documentation needs of your project helps you to differentiate between the required and the desired tech stack, background, and experience of your technical writer.</p></td></tr><tr><td><strong>How do I envision my project's documentation?</strong></td><td><p>Convey your expectations and vision before considering hiring a technical writer. Then share your thoughts with your candidates to find the right one for your project. </p><p></p><p>Highlight your priorities, but remain open to potential adjustments.</p></td></tr><tr><td><strong>Do I have a budget to allocate for hiring a technical writer?</strong></td><td>Budget awareness facilitates project planning scope and duration, allowing your technical writer to align and prioritize efforts accordingly.</td></tr></tbody></table>
 
-Here is a table with questions to guide your initial considerations:       
-
-| Question |  Insights |  
-|------------- |-------------- |   
-| **Why do I need a technical writer?** | <ul><li>Is it to manage and refine existing documentation?</li><li>Or to develop new product or technical documentation from scratch?</li></ul><br>Naming the documentation needs of your project helps you to differentiate between the required and the desired tech stack, background, and experience of your technical writer.|  
-| **How do I envision my project's documentation?** | Convey your expectations and vision to the technical writer even during the interview. Highlight your priorities but remain open to potential adjustments. |  
-| **What budget is allocated for hiring a technical writer?** | Budget awareness facilitates planning by estimating the project scope and duration, allowing the technical writer to align their efforts accordingly.|
-  
 **Taking these questions into account is invaluable for:**
 
 * Establishing a mutually beneficial professional relationship.
 * Planning effectively, aligning your expectations with realistic timelines and outcomes.
 
+## Conclusion
 
-## Conclusion  
+**Hiring a technical writer is a thoughtful investment,** a strategic step leading the way to your product's success and quality.
 
-**Hiring a technical writer is a thoughtful investment,** a strategic step leading the way to  your product's success and quality.   
-
-By clearly *understanding your project's needs* and *envisioning the desired outcomes,* you'll be establishing the foundations of a sucessful collaboration that benefits both your product and your users.
-
-
-     
+By clearly _understanding your project's needs_ and _envisioning the desired outcomes,_ you'll be establishing the foundations of a successful collaboration that benefits both your product and your users.
