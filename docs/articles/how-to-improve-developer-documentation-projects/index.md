@@ -1,37 +1,53 @@
 # Part 1 of 3
 
-## Improving an Existing Developer Documentation (1 of 3)
+## Improving an Your Developer Documentation Project (1 of 3)
 
 > **What this article covers**\
-> _First steps on how to improve an existing documentation project._\
+> _First steps on how to improve your developer documentation project._\
 > **Tools**\
-> _Confluence, GitHub web and desktop versions, and MarkdownPad2._
+> _Confluence, GitHub (web and desktop versions), and MarkdownPad2._
 
-### Introduction
+## Introduction
 
 **Developer Documentation is a curated set of files** **describing all the active workflows, setups, tools, conventions, best practices, and How-tos** of your software development product. Documentation supports your team members in their daily and future developments and helps new joiners reach cruise speed during the onboarding period.&#x20;
 
 _But to do so, your documentation must be up-to-date and well-structured_.
 
-**Keeping the docs up-to-date and in good shape requires resources and dedicated time**. Yet often our project time or budget constraints prevent us from taking care of our docs properly.
+**Keeping the docs in good shape requires resources and dedicated time**. Yet often our project time or budget constraints prevent us from taking care of our docs properly.
 
 In the following sections, you will find a concise description of some steps you can take to start improving your documentation project.
 
-### Step 1 - Create Awareness
+## First Steps
 
-**Creating documentation awareness** helps us to remember our colleagues the following:
+**We can improve an existing documentation project from many perspectives**. The following steps represent the approach I've found more efficient in the middle and long term because it helps us to create _documentation awareness_ (steps 1 and 2) and aligns _user feedback_ (step 3) with our observations and ideas from the beginning.  &#x20;
 
-* Our documentation aims to solve users' problems.
-* We need frequent user feedback to improve our documentation.
-* We need internal support and collaboration to improve our documentation widely.
+### Step 1 - Create Documentation Awareness
 
-**Help Product Owners, Scrum Masters, and all leading roles to understand** the importance of keeping good documentation.
+**Creating documentation awareness is the continuous process by which we communicate the existence and importance** of the documentation project.  This communication craves _collaboration of teams and individuals (workmates)_ from all roles and seniority levels.&#x20;
 
-### Step 2 - Organize Your Improvement Project
+**To communicate the existence and importance of a documentation project,** we need a communication plan to build the _documentation_ dedicated _meeting point._ A basic communication plan could include the following actions:
 
-**Developer documentation has to be visible and easily accessible,** and your documentation has to be managed as a product to increase its visibility. To do so, keeping a _space_ (Confluence, company blog, etc.) to visualize, describe, and track your improvement project is a useful idea.
 
-**Space Structure**
+
+| Topic             | Actions                                                                                                                                                                                                                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Communication** | <p></p><ul><li>Communicate the need for feedback and collaboration to all management roles and teams using it.</li><li>Create two dedicated chat channels for documentation updates and documentation support topics.</li><li>Shared meaningful and frequent documentation updates in the main chat channels.</li></ul> |
+| **Training**      | <ul><li>Participate in onboarding processes.</li><li><p>Participate in cross-team meetings with documentation topics, for example:</p><ul><li>Good practices</li><li>Basic style guide</li><li>Effective communication</li><li>How to give feedback</li><li>Information Architecture</li></ul></li></ul>                |
+| **Feedback**      | <ul><li>Create a survey to gather user feedback about different documentation aspects.</li><li>Run the user feedback once a year (at least).</li></ul>                                                                                                                                                                  |
+
+
+
+{% hint style="info" %}
+**Help Product Owners, Scrum Masters, and all involved leading roles** to understand the importance of having efficient documentation and involving users and collaborators.
+{% endhint %}
+
+### Step 2 - Create Your Improvement Project
+
+**Look at your documentation project as a product because a product seeks success and needs to be managed to succeed**. Managing our documentation project as a product helps us to increase its visibility and cross-team awareness while supporting continuous improvement.&#x20;
+
+**To manage our documentation as a product** using a _space_ (company Confluence, blog, etc.) to describe, visualize, and track the entire progress of the project. It also helps to radiate documentation good practices, documentation style guide, information architecture fundamentals, etc.
+
+#### **Space Structure**
 
 **The structure of an improvement project may differ** depending on your needs. Take the following _space_ structure as a reference that you can adapt to your needs:
 
