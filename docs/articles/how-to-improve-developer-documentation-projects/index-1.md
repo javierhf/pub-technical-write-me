@@ -11,11 +11,9 @@ title: Improving an Existing Developer Documentation (2 of 3)
 
 ## Getting Feedback from Your Users
 
-**Now that we know the current status of our documentation better** (_See_ [_Part 1_](https://javierhf.github.io/technical-write-me/articles/improving-documentation-projects-1/)), it is time to talk about our users. Why? Because we have created the documentation for them to be able to use our products, platforms or tools.
+**We have created our documentation for our users** so we need to know what our users need, and track these need in time.  How? A user survey.
 
-**But what do we know about our users' needs? Who are they?** We may all have assumptions about them. But in fact, we know nothing most of the time.
-
-**A user survey is a good method to know about our users**: how our users perceive and use our docs, which are their current needs. With this information in mind, we can decide what to improve first.
+**A user survey is a good method to get feedback from our users** about: how they perceive and use our documentations, which are their current needs and pain points. We can use this information to decide what to improve first.
 
 Read the following steps to know how to prepare your user survey.
 
