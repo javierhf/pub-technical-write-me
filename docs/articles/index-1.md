@@ -4,9 +4,11 @@ title: Single-Responsibility Principle for Documentation Projects
 
 # Single-Responsibility Principle for Technical Documentation
 
-> **What this article covers**\
-> How to apply the _single-responsibility principle for on technical writing projects._\
-> **Tools**\
+> **What this article covers**
+>
+> _A customized application of the single-responsibility for on technical writing._\
+> **Tools**
+>
 > _N/A._
 
 ## Overview
@@ -39,33 +41,33 @@ But _how do we apply and support this separation of responsibilities?_
 
 ## Single-Responsibility Principle (SRP) for Documentation Projects
 
-**It seems simple but applying the SRP to documentation projects requires a little change** in the product team's mindset:
+**Applying the SRP to documentation projects requires a shift** in the product team's mindset:
 
-* Now they will provide the information
-* The technical writer will create the content
+* Team members or collaborators provide the information.
+* The technical writer creates the content.
 
 ### Key Concepts
 
-**Applying the SRP to documentation projects** starts by understanding three key concepts as described in the following table:
+**Applying the SRP to documentation projects** involves understanding the key concepts described in the following table:
 
-| Concept              | Remarks                                                                                                                                                                                                                                              |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Information**      | Information consists of all pieces of text (introduction, process steps, features, and code descriptions), screenshots and raw data provided by collaborators, in the right order, in the right context and containing information which is correct. |
-| **Content**          | <p>Content is the information after being standardized. </p><p></p><p>Standardized information reflects the style guide and the technical writing best practices.</p>                                                                                |
-| **Shared Ownership** | Every page is the result of cross-team collaboration, so all teams own the documentation and are encourage to provide feedback to improve it.                                                                                                        |
+| Concept              | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Information**      | <p>All pieces of text, screenshots and raw data provided by collaborators. </p><p></p><p>Text includes <em>introduction</em>, process steps, <em>features</em>, and <em>code elements</em> (libraries, parameters, snippets, endpoints).</p><p></p><p>Information is provided as a draft containing the right informative elements, <em>in the right order and</em> <em>in the right context</em>.</p> |
+| **Content**          | Information that has been standardized according to the style guide, Information Architecture and technical writing best practices.                                                                                                                                                                                                                                                                    |
+| **Shared Ownership** | <p>Documentation is a team effort, with everyone contributing to and owning the final result.<br><br>The visible face of the documentation set is the Technical Writer.</p>                                                                                                                                                                                                                            |
 
-**Keeping these concepts in mind,** we can define the following roles, and their responsibilities:
+**With these concepts in mind,** we define the following roles and responsibilities:
 
-| Role                 | Responsibility                                                                                                                                                              |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Collaborators**    | <p>Provide a documentation draft with information that:</p><ol><li>is correct,</li><li>is presented in the right order,</li><li>is embedded in the right context.</li></ol> |
-| **Reviewers**        | Validate the information provided by collaborators when required.                                                                                                           |
-| **Technical Writer** | <ol><li>Converts information into content.</li><li>Manages release process.</li></ol>                                                                                       |
+| Role                  | Responsibility                                                                                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Collaborators**     | <p>Provide information that is:</p><ol><li>correct,</li><li>presented in the right order,</li><li>embedded in the right context.</li></ol>                                 |
+| **Reviewers**         | Validate the information provided by collaborators when required.                                                                                                          |
+| **Technical Writers** | <ol><li>Convert information into content.</li><li>Manages the release process.</li><li>Creates content from scratch.</li><li>Manages documentation as a product.</li></ol> |
 
 ## Conclusion
 
-**Single-Responsibility Principle is the new mindset:** assigning a limited and specific set of tasks for all the roles participating in the documentation workflow, ensuring we all add value where we are experts, and embracing documentation as a shared ownership to provide a documentation we are proud of.&#x20;
+**Single-Responsibility Principle is the new mindset** assigning a limited and specific set of tasks for all the roles participating in the documentation workflow, ensuring everyone adds value according to their expertise, and embracing documentation as a shared ownership to provide a documentation we are proud of.&#x20;
 
-**The Single Responsibility Principle (SRP) for documentation projects shifts the concept of documentation ownership** from individual to shared. This shift increases the chances of developing a quality documentation encouraging cross-team collaboration.&#x20;
+**The Single Responsibility Principle (SRP) changes the concept of documentation ownership** from _individual ownership_ to _shared ownership_. Now, all product development roles can contribute to the final product: _we all own the docs!_&#x20;
 
-This idea of shared ownership may be not be easy for everyone to accept, but it impacts the quality of our documentation positively. When we all own the documentation, we all take care of it.
+While this shift to _shared ownership_ may be challenging for some, technical writers can ease the transition with effective communication strategies.
