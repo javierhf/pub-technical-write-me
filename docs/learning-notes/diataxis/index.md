@@ -1,6 +1,9 @@
 ---
 title: Diátaxis documentation framework
 status: new
+description: >-
+  Disclaimer: This page contains my personal reading notes on the Diátaxis
+  documentation framework.
 ---
 
 # Diátaxis Documentation Framework

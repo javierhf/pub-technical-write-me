@@ -1,13 +1,22 @@
+---
+description: >-
+  Disclaimer This is my version of the public and official documentation of the
+  Swagger Pet Store API . The sole purpose of this page is to showcase my
+  technical writing practice.
+---
+
 # Pet Store API
 
 ## Pet Store API Documentation
 
 
 
-{% hint style="warning" %}
-**Disclaimer**
+{% hint style="info" %}
+**About this page**
 
-This is my version of the [Swagger Pet Store API](https://petstore.swagger.io/) public and official documentation. The sole purpose of this page is to showcase my technical writing experience and ideas.&#x20;
+This is my version of the[`Swagger Pet Store API`](https://petstore.swagger.io/)`documentation.`The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
+
+If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
 {% endhint %}
 
 ### Overview
@@ -79,17 +88,17 @@ This is my version of the [Swagger Pet Store API](https://petstore.swagger.io/) 
 
 #### `/endpoint`
 
-_Method_ Method description
+_Method description_
 
-Sample Request
+_Sample Request_
 
-Sample/Response Definitions Schema
+_Sample/Response Definitions Schema_
 
 ### _<mark style="color:orange;">(Coming soon!)</mark>_ _<mark style="color:orange;">Request Parameters</mark>_
 
 ### _<mark style="color:orange;">(Coming soon!) Response Schema</mark>_
 
-### _<mark style="color:yellow;">(Complete information!)</mark>_ <mark style="color:yellow;">Status and Error Codes Handling</mark>
+### _<mark style="color:yellow;">(Section under review!)</mark>_ <mark style="color:yellow;">Status and Error Codes Handling</mark>
 
 #### `/pet`
 

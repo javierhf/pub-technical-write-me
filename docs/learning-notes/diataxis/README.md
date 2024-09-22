@@ -1,2 +1,3 @@
 # Diataxis
 
+T**he following pages contain my personal reading notes on profession-related topics.** If you want to know more about my background and experience, [drop me a message](https://www.linkedin.com/in/javier-hernandez-fernandez/)!

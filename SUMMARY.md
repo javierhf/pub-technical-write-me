@@ -1,11 +1,10 @@
 # Table of contents
 
-* [About Me](README.md)
-* [My Portfolio](docs/README.md)
+* [My Portfolio](README.md)
   * [API Documentation](docs/my-portfolio/README.md)
     * [OpenWeather API](docs/my-portfolio/api-docs/openweather/index.md)
     * [Pet Store API](docs/my-portfolio/pet-store-api.md)
-  * [Articles](docs/articles/README.md)
+  * [My Articles](docs/articles/README.md)
     * [Key Considerations Before Hiring a Technical Writer](docs/articles/before-hiring-a-technical-writer/index.md)
     * [How to Improve Developer Documentation Projects](docs/articles/how-to-improve-developer-documentation-projects/README.md)
       * [Part 1 of 3](docs/articles/how-to-improve-developer-documentation-projects/index.md)

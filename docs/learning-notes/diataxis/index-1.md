@@ -1,6 +1,9 @@
 ---
 title: Tutorials in Diátaxis
 status: new
+description: >-
+  Disclaimer: This page contains my personal reading notes on the Diátaxis
+  documentation framework.
 ---
 
 # Tutorials
