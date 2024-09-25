@@ -14,7 +14,7 @@ description: >-
 {% hint style="info" %}
 **About this page**
 
-This is my version of the[`Swagger Pet Store API`](https://petstore.swagger.io/)`documentation.`The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
+This is my version of the[`Swagger Pet Store API`](https://petstore.swagger.io/)`.`The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
 
 If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
 {% endhint %}
@@ -34,7 +34,7 @@ If you want to create the product or project documentation your users will love,
 
 
 
-<table><thead><tr><th width="278">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/pet</code></td><td>All pets stored in your shop</td><td>By default, updates occur every 2 minutes</td></tr><tr><td><code>/pet/findByStatus</code></td><td>Pets by status (<em>active</em>, <em>sold</em>, <em>reserved</em>, <em>incoming,</em> )</td><td>Allows combined statuses for example: <em>reserved</em> and <em>incoming</em></td></tr><tr><td><code>pet/{petId}</code></td><td>Get pet by ID</td><td><code>petId</code> format is customizable</td></tr><tr><td><code>/store/inventory</code></td><td>Get all pets in the store's inventory</td><td>By default, Inventory is sorted by status</td></tr><tr><td><code>/store/order/</code></td><td>Get all orders of the store</td><td>By default, last orders are shown first</td></tr><tr><td><code>/store/order/{orderId}</code></td><td>Get order by ID</td><td><code>orderId</code> format is customizable</td></tr><tr><td><code>/user</code></td><td>Get all users of the store</td><td>By default, users are updated every day (24 hours)</td></tr><tr><td><code>/user/login</code></td><td>Get all users currently logged in into the system</td><td>By default, passwords are not shown. Access time is shown in the time zone of the current system</td></tr><tr><td><code>/user/logout</code></td><td>Get all logged out users</td><td>Access time is shown in the time zone of the current system</td></tr><tr><td><code>/user/{username}</code></td><td>Ger user information by user name</td><td>Case sensitive</td></tr></tbody></table>
+<table><thead><tr><th width="278">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/pet</code></td><td>Get all pets stored in your shop.</td><td>By default, updates occur every 2 minutes.</td></tr><tr><td><code>/pet/findByStatus</code></td><td>Get pets by status (<em>active</em>, <em>sold</em>, <em>reserved</em>, <em>incoming,</em> ).</td><td>Allows combined statuses, for example: <em>reserved</em> and <em>incoming.</em></td></tr><tr><td><code>pet/{petId}</code></td><td>Get pet by ID.</td><td><code>petId</code> format is customizable.</td></tr><tr><td><code>/store/inventory</code></td><td>Get all pets in the store's inventory.</td><td>By default, Inventory is sorted by status.</td></tr><tr><td><code>/store/order/</code></td><td>Get all orders of the store.</td><td>By default, last orders are shown first.</td></tr><tr><td><code>/store/order/{orderId}</code></td><td>Get order by ID.</td><td><code>orderId</code> format is customizable.</td></tr><tr><td><code>/user</code></td><td>Get all users of the store.</td><td>By default, users are updated every day (24 hours).</td></tr><tr><td><code>/user/login</code></td><td>Get all users currently logged in into the system.</td><td>By default, passwords are not shown. Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/logout</code></td><td>Get all logged-out users.</td><td>Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/{username}</code></td><td>Ger user information by username.</td><td>Case sensitive</td></tr></tbody></table>
 
 ### Security Fundamentals
 
@@ -104,20 +104,20 @@ _Sample/Response Definitions Schema_
 
 _**PUT**_
 
-| Status Code | Description          | Solution             |
-| ----------- | -------------------- | -------------------- |
-| **'200'**   | Successful operation | _N/A_                |
-| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
-| **'404'**   | Pet not found        | _N/A_                |
-| **'422'**   | Validation exception | _TO DO_              |
+| Status Code | Description          | Solution                                   |
+| ----------- | -------------------- | ------------------------------------------ |
+| **'200'**   | Successful operation | _N/A_                                      |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_                       |
+| **'404'**   | Pet not found        | _N/A_                                      |
+| **'422'**   | Validation exception | _<mark style="color:orange;">TO DO</mark>_ |
 
 _**POST**_
 
-| Status Code | Description          | Solution                      |
-| ----------- | -------------------- | ----------------------------- |
-| **'200'**   | Successful operation | _N/A_                         |
-| **'400'**   | Invalid input        | _Review your input structure_ |
-| **'422'**   | Validation exception | _TO DO_                       |
+| Status Code | Description          | Solution                                   |
+| ----------- | -------------------- | ------------------------------------------ |
+| **'200'**   | Successful operation | _N/A_                                      |
+| **'400'**   | Invalid input        | _Review your input structure_              |
+| **'422'**   | Validation exception | _<mark style="color:orange;">TO DO</mark>_ |
 
 #### `/pet/findByStatus`
 
@@ -171,20 +171,20 @@ _**DELETE**_
 
 _**PUT**_
 
-| Status Code | Description          | Solution             |
-| ----------- | -------------------- | -------------------- |
-| **'200'**   | Successful operation | _N/A_                |
-| **'400'**   | Invalid ID supplied  | _Provide a valid ID_ |
-| **'404'**   | Pet not found        | _N/A_                |
-| **'422'**   | Validation exception | _TO DO_              |
+| Status Code | Description          | Solution                                   |
+| ----------- | -------------------- | ------------------------------------------ |
+| **'200'**   | Successful operation | _N/A_                                      |
+| **'400'**   | Invalid ID supplied  | _Provide a valid ID_                       |
+| **'404'**   | Pet not found        | _N/A_                                      |
+| **'422'**   | Validation exception | _<mark style="color:orange;">TO DO</mark>_ |
 
 _**POST**_
 
-| Status Code | Description          | Solution                      |
-| ----------- | -------------------- | ----------------------------- |
-| **'200'**   | Successful operation | _N/A_                         |
-| **'400'**   | Invalid input        | _Review your input structure_ |
-| **'422'**   | Validation exception | _TO DO_                       |
+| Status Code | Description          | Solution                                   |
+| ----------- | -------------------- | ------------------------------------------ |
+| **'200'**   | Successful operation | _N/A_                                      |
+| **'400'**   | Invalid input        | _Review your input structure_              |
+| **'422'**   | Validation exception | _<mark style="color:orange;">TO DO</mark>_ |
 
 #### `/pet/findByStatus`
 

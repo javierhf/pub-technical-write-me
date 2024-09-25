@@ -29,9 +29,9 @@ title: Single-Responsibility Principle for Documentation Projects
 
 **Lucky for us, we have technical writers, a role that absorbs many of the previous roles.** Technical writers:
 
-* Edit the collaborations with other team members
-* Manage the documentation project and platform
-* Collaborate with new content actively
+* Edit the collaborations with other team members.
+* Manage the documentation project and platform.
+* Collaborate with new content actively.
 
 **Having a technical writer allows your collaborators (Subject-matter experts)** to focus where they provide more value:
 
@@ -58,15 +58,15 @@ But _how do we apply and support this separation of responsibilities?_
 
 **With these concepts in mind,** we define the following roles and responsibilities:
 
-| Role                  | Responsibility                                                                                                                                                             |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Collaborators**     | <p>Provide information that is:</p><ol><li>correct,</li><li>presented in the right order,</li><li>embedded in the right context.</li></ol>                                 |
-| **Reviewers**         | Validate the information provided by collaborators when required.                                                                                                          |
-| **Technical Writers** | <ol><li>Convert information into content.</li><li>Manages the release process.</li><li>Creates content from scratch.</li><li>Manages documentation as a product.</li></ol> |
+| Role                  | Responsibility                                                                                                                                                         |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Collaborators**     | <p>Provide information that is:</p><ol><li>Correct</li><li>Presented in the right order</li><li>Embedded in the right context</li></ol>                                |
+| **Reviewers**         | Validate the information provided by collaborators when required.                                                                                                      |
+| **Technical Writers** | <ol><li>Convert information into content</li><li>Manages the release process</li><li>Creates content from scratch</li><li>Manages documentation as a product</li></ol> |
 
 ## Conclusion
 
-**Single-Responsibility Principle is the new mindset** assigning a limited and specific set of tasks for all the roles participating in the documentation workflow, ensuring everyone adds value according to their expertise, and embracing documentation as a shared ownership to provide a documentation we are proud of.&#x20;
+**The single-Responsibility Principle is the new mindset of** assigning a limited and specific set of tasks for all the roles participating in the documentation workflow, ensuring everyone adds value according to their expertise, and embracing documentation as a shared ownership to provide documentation we are proud of.&#x20;
 
 **The Single Responsibility Principle (SRP) changes the concept of documentation ownership** from _individual ownership_ to _shared ownership_. Now, all product development roles can contribute to the final product: _we all own the docs!_&#x20;
 

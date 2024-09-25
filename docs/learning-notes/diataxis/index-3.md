@@ -15,13 +15,13 @@ description: >-
 
 **To distinguish a tutorial from a How-to guide** we need to think about the following document aspects:
 
-* _goal orientation_,
-* _user's prior knowledge_,
-* _scope and depth_,
-* _format and structure_,
-* _result_,
-* _level of detail_,
-* _examples and practical application_.
+* _Goal orientation_
+* _User's prior knowledge_
+* _Scope and depth_
+* _Format and structure_
+* _Result_
+* _Level of detail_
+* _Examples and practical application_
 
 In the following section, you will find a table to help you identify if your document or draft is a tutorial or a checklist.&#x20;
 

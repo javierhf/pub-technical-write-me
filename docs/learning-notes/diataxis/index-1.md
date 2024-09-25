@@ -19,20 +19,20 @@ description: >-
 
 **Tutorials turn new learners into users** and, because of that, are entitled to the “glorious purpose” of providing a first successful experience of the product. To do so, tutorials have to provide:
 
-* a complete overview of the expected result,
-* meaningful information,
-* steps to succeed that:
+* A complete overview of the expected result
+* Meaningful information
+* Steps to succeed that:
 
-> * are specific and complete,
-> * appear in the right order,
-> * come in the right context.
+> * Are specific and complete
+> * Appear in the right order
+> * Come in the right context
 
 ## Characteristics
 
 **Tutorials are learning-oriented so they provide a learning experience.** This learning experience _MUST_ avoid:&#x20;
 
-* extensive explanations, abstractions, and generalizations,&#x20;
-* present choices and information.&#x20;
+* Extensive explanations, abstractions, and generalizations
+* Present choices and information
 
 **In other words, tutorials are lessons** _with a teacher and a learner, each of them with_ their specific responsibilities:
 
@@ -45,12 +45,12 @@ description: >-
 
 ### Getting Started with the Incredible Platform
 
-**To get started with the Incredible Platform** you need your user account and apply the common security configuration. In this tutorial, you will learn all the steps you need to access the Incredible Platform resources and tools for your product team.
+**To start with the Incredible Platform** you need your user account and apply the common security configuration. In this tutorial, you will learn all the steps you need to access the Incredible Platform resources and tools for your product team.
 
 ### Prerequisites
 
-* [x] Your user account.
-* [x] Access to the Incredible Platform's VPN.
+* [x] Your user account
+* [x] Access to the Incredible Platform's VPN
 
 ### Accessing the Incredible Platform
 
@@ -69,10 +69,10 @@ description: >-
 
 ## Applying the Common Security Configuration
 
-**Now that you are logged in to the Incredible Platform,** you need to apply a common security configuration for all your future products. To do so follow these steps:
+**Now that you are logged in to the Incredible Platform,** apply a common security configuration for all your future products. To do so follow these steps:
 
-1. Select **Platform Configuration**
-2. Go to **Security and Backup > Product settings**
+1. Select **Platform Configuration.**
+2. Go to **Security and Backup > Product settings.**
 3. Confirm that your username and product name are correct.
 4. Provide all the required information about your product and team.
 5. Set a B_ackup Periodicity_.

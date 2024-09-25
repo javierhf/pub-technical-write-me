@@ -1,6 +1,6 @@
 # Part 1 of 3
 
-## Improving an Your Developer Documentation Project (1 of 3)
+## Improving Your Developer Documentation Project (1 of 3)
 
 > **What this article covers**\
 > _First steps on how to improve your developer documentation project._\
@@ -9,17 +9,17 @@
 
 ## Introduction
 
-**Developer Documentation is a curated set of files** organizing and disclosing all the information your product and platform users needs to succeed, for example:
+**Developer Documentation is a curated set of files** organizing and disclosing all the information your product and platform users need to succeed, for example:
 
-* basic setups,
-* style guides and best pratices,
-* security configurations,&#x20;
-* overview information,&#x20;
-* getting started and how-tos,
-* reference guides,
-* FAQ and troubleshootig pages.
+* Basic setups
+* Style guides and best practices
+* Security configurations
+* Overview information
+* Getting started and how-tos
+* Reference guides
+* FAQ and troubleshooting pages
 
-**Documentation supports your team members in their daily and future developments and helps new joiners** reach cruise speed during the onboarding period. _But to do so, you need your docs to be_ _in good shape_ and this requires resources and dedicated time.&#x20;
+**Documentation supports your team members in their daily and future developments and helps new joiners** reach cruise speed during the onboarding period. _But to do so, you need your docs to be_ _in good shape,_ resources, and dedicated time.&#x20;
 
 In the following sections, you will find a concise description of some steps you can take to start improving your documentation project.
 
@@ -31,9 +31,9 @@ In the following sections, you will find a concise description of some steps you
 
 **Creating documentation awareness is the continuous process by which we communicate the existence and use** of the documentation aiming to:
 
-* _increase a successful product development,_
-* _resources' usage efficienc,_
-* _cross-team collaboration._
+* _Increase successful product development._
+* _Resources' usage efficiency._
+* _Cross-team collaboration._
 
 **To communicate the existence and importance of any documentation project,** we can use the following communication plan:
 
@@ -42,7 +42,7 @@ In the following sections, you will find a concise description of some steps you
 | Topic             | Actions                                                                                                                                                                                                                                                                                                                 |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Communication** | <p></p><ul><li>Communicate the need for feedback and collaboration to all management roles and teams using it.</li><li>Create two dedicated chat channels for documentation updates and documentation support topics.</li><li>Shared meaningful and frequent documentation updates in the main chat channels.</li></ul> |
-| **Training**      | <ul><li>Participate in onboarding processes.</li><li><p>Participate in cross-team meetings with documentation topics, for example:</p><ul><li>Good practices</li><li>Basic style guide</li><li>Effective communication</li><li>How to give feedback</li><li>Information Architecture</li></ul></li></ul>                |
+| **Training**      | <ul><li>Participate in onboarding processes.</li><li><p>Participate in cross-team meetings with documentation topics, for example:</p><ul><li>Good practices</li><li>Basic style guide</li><li>Effective communication</li><li>Giving feedback</li><li>Information Architecture</li></ul></li></ul>                     |
 | **Feedback**      | <ul><li>Create a survey to gather user feedback about different documentation aspects.</li><li>Run the user feedback once a year (at least).</li></ul>                                                                                                                                                                  |
 
 **Communication is a continuous and daily task** that requires _active listening and empathy._ Save some time every week to review all the feedback, and make sure you help Product Owners, Scrum Masters, and similar leading roles to understand the importance and needs of having an efficient documentation.
@@ -62,7 +62,7 @@ A product is successful if it helps its users to succeed in their tasks, and doe
 
 **Once your improvement project space is set up,** you are ready to:
 
-* Make and official presentation (remember to invite leading roles).
+* Make an official presentation (remember to invite leading roles).
 * Track your progress and documentation issues/blocking points.
 * Centralize all your project resources.
 

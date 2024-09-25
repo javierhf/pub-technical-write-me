@@ -23,8 +23,8 @@ title: Developer Documentation Survival Kit
 Involve management and technical roles to improve your documentation project
 {% endhint %}
 
-* [x] Management roles are involved in the documentation process.
-* [x] Small amount of time allocated for documentation work.
+* [x] Involve management roles in the documentation process.
+* [x] Save a small amount of time for documentation work.
 
 ## Technical Documentation Swiss-Knife
 
@@ -39,24 +39,24 @@ Involve management and technical roles to improve your documentation project
 
 **Know your ground before taking any further step.** This means:
 
-> * Identifying deficiencies in your documentation,&#x20;
+> * Identifying deficiencies in your documentation.&#x20;
 > * Determining what is preventing it from being useful, and effective.
 
 Consider the following checklist to analyze the current status of your documentation:
 
-* [ ] My documentation provide content for all the topics my users need to know
+* [ ] My documentation provides content for all the topics my users need to know.
 * [ ] My documentation pages tell users:
 
-> * _what is the page about,_
-> * _what they can do,_
-> * _how to do it,_
-> * _who to ask for help._
+> * _What is the page about_
+> * _What they can do_
+> * _How to do it_
+> * _Who to ask for help_
 
-* [ ] My documentation informs about _prerequisites_ (if any)
-* [ ] My documentation provides all the required information for the specific user case/type of page
-* [ ] My documentation is clear, specific and concise (no verbose)
-* [ ] There is a clear workflow to gather feedback, review and update the documentation
-* [ ] My documentation architecture mirrors the workflow of regular users
+* [ ] My documentation informs about _prerequisites_ (if any).
+* [ ] My documentation provides all the required information for the specific user case/type of page.
+* [ ] My documentation is clear, specific and concise (no verbose).
+* [ ] There is a clear workflow to gather feedback, review and update the documentation.
+* [ ] My documentation architecture mirrors the workflow of regular users.
 
 
 
@@ -89,9 +89,9 @@ Consider the following checklist to analyze the current status of your documenta
 
 ### Blade 3 - Prioritize and Plan your Documentation Effort
 
-**Every project is different, but understanding where your documentation is and its needs** increases the chances of success. With these new insights, you can now prioritize and plan. To prioritize your efforts, _identify the most critical topic/issue_, _and the most valuable one._ Then decide where to start with based on your product's priorities and needs.
+**Every project is different, but understanding where your documentation is and its needs** increases the chances of success. With these new insights, you can now prioritize and plan. To prioritize your efforts, _identify the most critical topic/issue_, _and the most valuable one._ Then decide where to start based on your product's priorities and needs.
 
-**Starting with the most critical** topic means _addressing the topic/issue that is to develop your product._
+**Starting with the most critical** topic means _addressing the topic/issue which is to develop your product._
 
 **Starting with the most valuable** topic means _addressing the topic that offers the most value to your customer or project_.
 
@@ -100,7 +100,7 @@ Consider the following checklist to analyze the current status of your documenta
 
 
 {% hint style="warning" %}
-Consider the most critical topic and the most valuable, depending on your product, project and business objectives.
+Consider the most critical topic and the most valuable, depending on your product, project, and business objectives.
 {% endhint %}
 
 ### Blade 4 - Commit to Your Documentation
@@ -111,26 +111,26 @@ Consider the most critical topic and the most valuable, depending on your produc
 Involve management and technical roles to improve your documentation project.
 {% endhint %}
 
-**Now that you know your ground and needs, and have prioritized**, it is time to commit to your documentation. This commitment is key to improve and manage your documentation actively and regularly.
+**Now that you know your ground and needs, and have prioritized**, it is time to commit to your documentation. This commitment is key to improving and managing your documentation actively and regularly.
 
 **To support your commitment,** consider these tips:
 
-1. Allocate an amount of time for documentation efforts (on a weekly basis, ideally).
-2. Create an automatic reminder (Outlook, Calendar, GitHub Actions, Slack, Teams, etc).
+1. Allocate time for documentation efforts (every week, ideally).
+2. Create an automatic reminder (Outlook, Calendar, GitHub Actions, Slack, Teams, etc.).
 3. Involve other team members.
 4. Inform management about the importance of the documentation.
 
 {% hint style="info" %}
-Setting a reminder in Outlook or using a script or GitHub Actions can be really helpful.
+Setting a reminder in Outlook or using a script or GitHub Actions can be helpful.
 {% endhint %}
 
 ## Bonus: Basic Style Guide
 
-If you are reading this article, you probably don't have much time to search, read and implement style guides and good practices. Don't worry, here are some fundamental documentation writing tips you can learn and apply quickly:
+If you are reading this article, you probably don't have much time to search, read, and implement style guides and good practices. Don't worry, here are some fundamental documentation writing tips you can learn and apply quickly:
 
-| Topic               | Description                                                                                                                                                                                                                                                                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Text Formatting** | <ul><li><strong>Bold</strong> - Apply bold to the first meaningfull part of a the first sentence of a paragraph to support page scanning.</li><li><em>Italics</em> - Apply italics to file and folder names, and to highlight text segment inside a paragraph.</li><li><code>code</code> - Apply `` for code snippets abd cli commands</li></ul> |
-| **Page Content**    | <ul><li>Provide an introduction for every page.</li><li>Develop 1 single topic/idea per page and section.</li><li>Provide clear and concise titles.</li></ul>                                                                                                                                                                                    |
-| **Writing**         | <p>Provide just:</p><ol><li>the right information,</li><li>in the right context,</li><li>in the right order.</li></ol>                                                                                                                                                                                                                           |
-| **Quality**         | <ul><li>Use a grammar check in your IDE (Have you checked Vale?).</li><li>Use a link checker in your IDE.</li><li>Create a checklist to review your content.</li></ul>                                                                                                                                                                           |
+| Topic               | Description                                                                                                                                                                                                                                                                                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Text Formatting** | <ul><li><strong>Bold</strong> - Apply bold to the first meaningfull part of a the first sentence of a paragraph to support page scanning.</li><li><em>Italics</em> - Apply italics to file and folder names, and to highlight text segment inside a paragraph.</li><li><code>code</code> - Apply `` for code snippets and cli commands.</li></ul> |
+| **Page Content**    | <ul><li>Provide an introduction for every page.</li><li>Develop 1 single topic/idea per page and section.</li><li>Provide clear and concise titles.</li></ul>                                                                                                                                                                                     |
+| **Writing**         | <p>Provide just:</p><ol><li>The right information</li><li>In the right context</li><li>In the right order</li></ol>                                                                                                                                                                                                                               |
+| **Quality**         | <ul><li>Use a grammar check in your IDE (Have you checked Vale?).</li><li>Use a link checker in your IDE.</li><li>Create a checklist to review your content.</li></ul>                                                                                                                                                                            |
