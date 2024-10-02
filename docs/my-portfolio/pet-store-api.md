@@ -46,7 +46,7 @@ If you want to create the product or project documentation your users will love,
 
 <table><thead><tr><th width="179">Security Method</th><th width="390">Endpoint</th><th>Scope</th></tr></thead><tbody><tr><td><strong>OAuth2 ('petstore_auth')</strong></td><td><code>/pet</code><br><code>/pet/findByStatus</code><br><code>/pet/findByTags</code><br><code>/pet/{petId}</code><br><code>/pet/{petId}</code><br><code>/store/order</code></td><td><code>write:pets</code><br><code>read:pets</code></td></tr><tr><td><strong>API Key ('api_key')</strong></td><td><code>/store/inventory</code><br><code>/pet/{petId}</code></td><td></td></tr></tbody></table>
 
-### Implementing OAuth2 (Implicit Flow)
+#### Implementing OAuth2 (Implicit Flow)
 
 <table><thead><tr><th width="238">Topic</th><th>Information</th></tr></thead><tbody><tr><td><strong>Authorization URL</strong></td><td>https://petstore3.swagger.io/oauth/authorize></td></tr><tr><td><strong>Scopes</strong></td><td><code>write:pets</code>: Allows modification of pets in your account.<br><code>read:pets</code>: Allows reading your pets.</td></tr></tbody></table>
 
@@ -67,7 +67,7 @@ If you want to create the product or project documentation your users will love,
 
 
 
-### Implementing API Key
+#### Implementing API Key
 
 | Topic                  | Information                                                                                              |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
