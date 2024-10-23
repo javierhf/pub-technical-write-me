@@ -6,7 +6,7 @@
 
 **Hi! I’m Javier Hernández, a** [**Senior Technical Writer and Documentation Manager**](https://www.linkedin.com/in/javier-hernandez-fernandez/) with nearly 8 years of experience _helping teams create clear_, effective documentation that _enhances user experience and business success_. I specialize in simplifying complex concepts and collaborating with Subject-Matter Experts (SMEs), colleagues, and users to continuously improve documentation for the software industry.
 
-[**Visit my online portfolio**](https://technical-write-me.gitbook.io/) to explore samples of my work and my approach to technical writing. If you think I might be a good fit for your project or if you'd like to learn more about my background, [drop me a message](https://www.linkedin.com/in/javier-hernandez-fernandez/)!
+[**Visit my online portfolio**](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio) to explore samples of my work and my approach to technical writing. If you think I might be a good fit for your project or if you'd like to learn more about my background, [drop me a message](https://www.linkedin.com/in/javier-hernandez-fernandez/)!
 
 ## What I've Done
 
@@ -21,5 +21,5 @@ I have extensive experience in crafting content and communication strategies tha
 
 ## Related Links
 
-* [Technical-write Me](https://technical-write-me.gitbook.io/) (my portfolio)
+* [Technical-write Me](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio) (my portfolio)
 * [My Linkedin Profile](https://www.linkedin.com/in/javier-hernandez-fernandez/)
