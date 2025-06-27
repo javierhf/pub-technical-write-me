@@ -1,3 +1,3 @@
 # Learning About...
 
-T**he following pages contain **_**my personal reading notes**_** on profession-related topics.**&#x20;
+T**he following pages contain&#x20;**_**my personal reading notes**_**&#x20;on profession-related topics.**&#x20;

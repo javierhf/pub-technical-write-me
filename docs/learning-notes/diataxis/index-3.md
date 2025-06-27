@@ -9,7 +9,7 @@ description: >-
 # Tutorials or How-to Guides
 
 > **What this notes cover**\
-> _My checklist (draft) to distinguish between tutorials and how-to guides applying the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
+> &#xNAN;_&#x4D;y checklist (draft) to distinguish between tutorials and how-to guides applying the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
 
 ## Overview
 

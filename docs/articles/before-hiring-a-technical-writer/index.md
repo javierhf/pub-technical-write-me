@@ -6,9 +6,9 @@ status: new
 # Key Considerations Before Hiring a Technical Writer
 
 > **What this article covers**\
-> _Some hiring considerations for companies in need of a technical writer._\
+> &#xNAN;_&#x53;ome hiring considerations for companies in need of a technical writer._\
 > **Tools**\
-> _N/A._
+> &#xNAN;_&#x4E;/A._
 
 ## Overview
 

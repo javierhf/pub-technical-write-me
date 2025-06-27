@@ -5,9 +5,9 @@ title: Improving an Existing Developer Documentation (2 of 3)
 # Part 2 of 3
 
 > **What this article covers**\
-> _First steps on how to improve your developer documentation project._\
+> &#xNAN;_&#x46;irst steps on how to improve your developer documentation project._\
 > **Tools**\
-> _Confluence, GitHub (web and desktop versions), and MarkdownPad2._
+> &#xNAN;_&#x43;onfluence, GitHub (web and desktop versions), and MarkdownPad2._
 
 ## Getting Feedback from Your Users
 
@@ -15,7 +15,7 @@ title: Improving an Existing Developer Documentation (2 of 3)
 
 _But, how do we gather feedback from our users?_
 
-**User surveys are an effective method to gather feedback**. Surveys allow us to gain _insights into how users perceive and utilize your documentation_, _identify their current need_s, _and uncover any pain points_ they may have. With this information in our hands, we can make informed decisions on:
+**User surveys are an effective method to gather feedback**. Surveys allow us to gain _insights into how users perceive and utilize your documentation_, _identify their current nee&#x64;_&#x73;, _and uncover any pain points_ they may have. With this information in our hands, we can make informed decisions on:
 
 * _What needs to be improved_
 * _Which areas to prioritize_
@@ -26,7 +26,7 @@ Read the following steps to know how to prepare your user survey.
 
 **To design a user survey,** **we need to know what to ask and how to ask it**. But language is tricky, so even if we are technical writers, we should double-check the survey's questions with another colleague (and a UX researcher, if possible).
 
-**Check out the following questions of a real user survey** for a developer documentation**.**Take them as a reference to create your survey:
+**Check out the following questions of a real user survey** for a developer documentatio&#x6E;**.**&#x54;ake them as a reference to create your survey:
 
 1. Which product/platform do you use?
 2. What is your role?

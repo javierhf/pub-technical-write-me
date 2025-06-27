@@ -3,9 +3,9 @@
 ## Improving an Existing Documentation Project (3 of 3)
 
 > **What this article covers**\
-> _Analysis of the results of the survey and the derived improvement actions_.\
+> &#xNAN;_&#x41;nalysis of the results of the survey and the derived improvement actions_.\
 > **Tools**\
-> _MS Forms and Excel_.
+> &#xNAN;_&#x4D;S Forms and Excel_.
 
 ### Actioning Your Users' Feedback
 

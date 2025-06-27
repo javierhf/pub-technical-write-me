@@ -9,7 +9,7 @@ description: >-
 # Diátaxis Documentation Framework
 
 > **What this notes cover**\
-> _My learning notes about the_ [_Diátaxis_](https://diataxis.fr/) _documentation authoring framework._
+> &#xNAN;_&#x4D;y learning notes about the_ [_Diátaxis_](https://diataxis.fr/) _documentation authoring framework._
 
 ## Overview
 

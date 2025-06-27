@@ -9,7 +9,7 @@ description: >-
 # How-Tos
 
 > **What this notes cover**\
-> _My learning notes about how-to guides in the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
+> &#xNAN;_&#x4D;y learning notes about how-to guides in the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
 
 ## Overview
 

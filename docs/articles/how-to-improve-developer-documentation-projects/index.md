@@ -3,9 +3,9 @@
 ## Improving Your Developer Documentation Project (1 of 3)
 
 > **What this article covers**\
-> _First steps on how to improve your developer documentation project._\
+> &#xNAN;_&#x46;irst steps on how to improve your developer documentation project._\
 > **Tools**\
-> _Confluence, GitHub (web and desktop versions), and MarkdownPad2._
+> &#xNAN;_&#x43;onfluence, GitHub (web and desktop versions), and MarkdownPad2._
 
 ## Introduction
 
@@ -79,4 +79,4 @@ A product is successful if it helps its users to succeed in their tasks, and doe
 <table><thead><tr><th width="287">Documentation Issue</th><th>Fix strategy</th></tr></thead><tbody><tr><td><strong>Grammar, spelling, syntax</strong></td><td>Use a text checker to support your writing. Some good options are <a href="https://app.grammarly.com/">Grammarly</a>, <a href="https://hemingwayapp.com/">Hemingway</a> or <a href="https://quillbot.com/grammar-check">QuillBot</a> or<a href="https://vale.sh/"> Vale</a>.</td></tr><tr><td><strong>Page structure</strong></td><td><ul><li>Make sure you present the information in the right and logical order for your user.</li><li>Use or create templates for your documentation. Templates make it easy for user to find what they need.</li></ul></td></tr><tr><td><strong>Naming</strong></td><td><ul><li>Define a naming strategy for page titles, sections and subsections.</li><li>Implement your strategy.</li></ul></td></tr><tr><td><strong>Page elements</strong></td><td><p>Standardize the use of the following elements: </p><ul><li>lists and tables,</li><li>tabs,</li><li>notes and collapsable elements,</li><li>image size.</li></ul></td></tr><tr><td><strong>Text unclear</strong> or <strong>too verbose</strong></td><td><ul><li>Stick to 1 topic (idea) per page.</li><li>Ensure your page provides the exact amount of information the user needs.</li><li>Be concise in your writing.</li></ul></td></tr><tr><td><strong>Random text formatting</strong></td><td><p>Create a basic style guide for text formatting. For example:</p><ul><li><p><strong>bold</strong> for:</p><ul><li> the first sentence of a paragraph to support page scanning (and if meaningfull),</li><li>text in the first column of a table,</li></ul></li><li><em>italics</em> for files and folder names,</li><li>different font for code snippets and code elements.</li></ul></td></tr><tr><td><strong>Too many topics on a single page</strong></td><td>Stick to "One topic per page". Each page should provie one answer only to the question "What is this pages about?".</td></tr><tr><td><strong>Unnecessary screenshots</strong></td><td>Use screenshots or images <em>ONLY</em> when strictly necessary. If you can explain it briefly, do not use screenshots.</td></tr><tr><td><strong>Type of notes</strong></td><td>Standardize each type of use case for notes (Info, Help, Warning, etc.).</td></tr></tbody></table>
 
 > **What\`s Next?**\
-> _In the next article, we will describe how to run a user survey to gather useful feedback from your users/readers. This invaluable feedback will help us prioritize the documentation issues to fix first._
+> &#xNAN;_&#x49;n the next article, we will describe how to run a user survey to gather useful feedback from your users/readers. This invaluable feedback will help us prioritize the documentation issues to fix first._

@@ -9,7 +9,7 @@ description: >-
 # Tutorials
 
 > **What this notes cover**\
-> _My learning notes about tutorials in the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
+> &#xNAN;_&#x4D;y learning notes about tutorials in the_ [_Diátaxis_](https://diataxis.fr/) _documentation framework._
 
 ## Overview
 
@@ -23,9 +23,9 @@ description: >-
 * Meaningful information
 * Steps to succeed that:
 
-> * Are specific and complete
-> * Appear in the right order
-> * Come in the right context
+> - Are specific and complete
+> - Appear in the right order
+> - Come in the right context
 
 ## Characteristics
 
@@ -75,7 +75,7 @@ description: >-
 2. Go to **Security and Backup > Product settings.**
 3. Confirm that your username and product name are correct.
 4. Provide all the required information about your product and team.
-5. Set a B_ackup Periodicity_.
+5. Set a &#x42;_&#x61;ckup Periodicity_.
 6. Select **Save and Close**.
 
 Congratulations! Your user is now active in the Incredible Platform.

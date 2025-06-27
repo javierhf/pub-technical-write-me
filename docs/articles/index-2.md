@@ -5,9 +5,9 @@ title: Developer Documentation Survival Kit
 # Documentation Project Swiss-Knife
 
 > **What this article covers**\
-> _Basic ideas to develop and manage a documentation project successfully._\
+> &#xNAN;_&#x42;asic ideas to develop and manage a documentation project successfully._\
 > **Tools**\
-> _N/A._
+> &#xNAN;_&#x4E;/A._
 
 ## Overview
 
@@ -47,10 +47,10 @@ Consider the following checklist to analyze the current status of your documenta
 * [ ] My documentation provides content for all the topics my users need to know.
 * [ ] My documentation pages tell users:
 
-> * _What is the page about_
-> * _What they can do_
-> * _How to do it_
-> * _Who to ask for help_
+> - _What is the page about_
+> - _What they can do_
+> - _How to do it_
+> - _Who to ask for help_
 
 * [ ] My documentation informs about _prerequisites_ (if any).
 * [ ] My documentation provides all the required information for the specific user case/type of page.

@@ -24,7 +24,7 @@ If you want to create the product or project documentation your users will love,
 * Short-term and long-term forecasts
 * Aggregated weather data easily
 
-**One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoints**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
+**One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoint&#x73;**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
 
 ### OpenWeather One Call API 3.0 Endpoints
 
@@ -360,7 +360,7 @@ _Weather data for timestamp_.
 
 _Aggregated weather data for a particular date from 2nd January 1979 till long-term forecast for 1,5 years ahead_.
 
-**GET** [https://api.openweathermap.org/data/3.0/onecall/day\_summary](https://api.openweathermap.org/data/3.0/onecall/day\_summary)
+**GET** [https://api.openweathermap.org/data/3.0/onecall/day\_summary](https://api.openweathermap.org/data/3.0/onecall/day_summary)
 
 **Parameters**
 
@@ -526,13 +526,13 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 
 **To get started with the OpenWeather API** follow these steps:
 
-1. [Sign up](https://home.openweathermap.org/users/sign\_up) to OpenWeather to create your account.
+1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather to create your account.
 2. Open the [Pricing](https://openweathermap.org/price) page.
-3. Under **Professional Collections**, select [Get API Key](https://home.openweathermap.org/users/sign\_up) (free plan).
+3. Under **Professional Collections**, select [Get API Key](https://home.openweathermap.org/users/sign_up) (free plan).
 
 **You will receive a confirmation email.** Complete the email instructions and then follow these steps:
 
-1. Open your [OpenWeather API key](https://home.openweathermap.org/api\_keys) page.
+1. Open your [OpenWeather API key](https://home.openweathermap.org/api_keys) page.
 2. Provide a name for your new API Key.
 
 ### Making Your First API Call
@@ -663,11 +663,11 @@ API response (JSON):
 
 ### _<mark style="color:orange;">(Coming soon!)</mark>_ <mark style="color:orange;"></mark><mark style="color:orange;">Authentication</mark>
 
-[**Sign up**](https://home.openweathermap.org/users/sign\_up) **to OpenWeather** as explained in the \[First Steps]\(ADD LINK) section to get your credentials.
+[**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather** as explained in the \[First Steps]\(ADD LINK) section to get your credentials.
 
 ### _<mark style="color:orange;">(Coming soon!)</mark>_ <mark style="color:orange;"></mark><mark style="color:orange;">Authorization</mark>
 
-**After signing up,** create an [**OpenWeather API key**](https://home.openweathermap.org/api\_keys) as explained in the \[First Steps]\(ADD LINK) section.
+**After signing up,** create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys) as explained in the \[First Steps]\(ADD LINK) section.
 
 ### Status and Error Codes
 
