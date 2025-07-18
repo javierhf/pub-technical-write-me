@@ -17,12 +17,6 @@ title: Developer Documentation Survival Kit
 
 ## Prerequisites
 
-
-
-{% hint style="info" %}
-Involve management and technical roles to improve your documentation project
-{% endhint %}
-
 * [x] Involve management roles in the documentation process.
 * [x] Save a small amount of time for documentation work.
 
@@ -57,8 +51,6 @@ Consider the following checklist to analyze the current status of your documenta
 * [ ] My documentation is clear, specific and concise (no verbose).
 * [ ] There is a clear workflow to gather feedback, review and update the documentation.
 * [ ] My documentation architecture mirrors the workflow of regular users.
-
-
 
 {% hint style="warning" %}
 **The items you have not ticked** are the ones you need to tackle.
@@ -97,15 +89,11 @@ Consider the following checklist to analyze the current status of your documenta
 
 **Once you've prioritized, create a roadmap or backlog** to track and update your progress.
 
-
-
 {% hint style="warning" %}
 Consider the most critical topic and the most valuable, depending on your product, project, and business objectives.
 {% endhint %}
 
 ### Blade 4 - Commit to Your Documentation
-
-
 
 {% hint style="info" %}
 Involve management and technical roles to improve your documentation project.
