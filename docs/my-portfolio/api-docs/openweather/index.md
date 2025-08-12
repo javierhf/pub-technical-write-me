@@ -17,11 +17,11 @@ description: >-
 * Short-term and long-term forecasts
 * Aggregated weather data easily
 
-**One Call API 3.0 is based on the proprietary OpenWeather model** and provides 4 endpoint&#x73;**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
+**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
 
 ### OpenWeather One Call API 3.0 Endpoints
 
-**One Call API 3.0 contains 4 endpoints** providing access to various data as shown in the following table:
+**The One Call API 3.0 provides four endpoints** for various data, as shown in the following table:
 
 <table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
@@ -31,16 +31,16 @@ description: >-
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 {% endhint %}
 
-### _API Keys and Default API Calls_
+### _API Keys and API Call Limit_
 
-**You can generate as many API keys as needed for your subscription.** We track the total usage from all of them.
+You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
 
-**One Call API 3.0 sets a default limit of 2000 API calls per day**. If you need to change this limit, please check the information in the ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings. For more information, read our documentation page.
+The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
 
 ### Resources: Endpoints and Methods
 
 {% hint style="info" %}
-Please note that One Call 3.0 is included in the "One Call by Call" subscription _ONLY_. [Learn more](https://openweathermap.org/price).
+Please note that One Call 3.0 is included in the One Call by Call subscription _ONLY_. [Learn more](https://openweathermap.org/price).
 {% endhint %}
 
 **The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
@@ -493,15 +493,19 @@ with light to moderate winds from the west-southwest."
 
 ## Conceptual Documentation
 
-**OpenWeather - One Call 3.0 API provides essential weather data, short-term and long-term forecasts, and aggregated weather data** easily via our One Call API 3.0.
+**The OpenWeather - One Call 3.0 API provides the following information:**
 
-**One Call API 3.0 is based on the proprietary OpenWeather Model and provides 4 endpoints.** Our endpoints are updated every 10 minutes to deliver the most accurate and up-to-date weather data.
+* Essential weather data
+* Short-term and long-term forecasts
+* Aggregated weather data easily
+
+**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
 
 ### OpenWeather One Call API 3.0 Endpoints
 
 **One Call API 3.0 contains 4 endpoints**, providing access to various data as shown in the following table:
 
-<table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
+<table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour.</li><li>Hourly forecast for 48 hours.</li><li>Daily forecast for 8 days.</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
@@ -509,11 +513,11 @@ with light to moderate winds from the west-southwest."
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 {% endhint %}
 
-### _API Keys and Default API Calls_
+### _API Keys and API Call Limit_
 
-**You can generate as many API keys as needed for your subscription.** We track the total usage from all of them.
+You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
 
-**One Call API 3.0 sets a default limit of 2000 API calls per day** (free plan). If you need to change this limit, check the information in the ["Your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
+The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings. &#x20;
 
 ### Getting Started
 
@@ -528,17 +532,19 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 1. Open your [OpenWeather API key](https://home.openweathermap.org/api_keys) page.
 2. Provide a name for your new API Key.
 
+You are ready to go and make your first API call.
+
 ### Making Your First API Call
-
-
 
 {% hint style="info" %}
 **Free plan calls limit**
 
-The OpenWeather API free plan sets a default limit of 2000 API calls per day. If you need to change this limit, check the standard settings in [Your account billing plans](https://home.openweathermap.org/subscriptions) tab.
+The OpenWeather API free plan sets a _default limit of 2000 API calls per day_. If you need to change this limit, check the standard settings in [Your account billing plans](https://home.openweathermap.org/subscriptions) tab.
 {% endhint %}
 
-**After getting your API Key, you can make your first API call to request for current weather forecast** for a specific latitude and longitude (_latitude=33.44 and longitude =-94.04_ ).&#x20;
+**After obtaining your API key, you can make your first API call** to get the current weather forecast for a specific location. Use the `latitude` and `longitude` parameters as shown in this example:&#x20;
+
+`latitude=33.44&longitude=-94.04`.&#x20;
 
 The API call will look as follows:
 
@@ -547,7 +553,7 @@ _`https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid={AP
 #### **Reading Your First API Response**
 
 {% hint style="info" %}
-Parameters not showing in the API response indicate that the related weather phenomena just did not happen for the data of measurement provided.
+An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
 {% endhint %}
 
 **For the previous API call,** the API response (in JSON format) will look as follows:
