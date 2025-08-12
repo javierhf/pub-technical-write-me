@@ -15,7 +15,6 @@ title: Single-Responsibility Principle for Documentation Projects
 
 **According to Wikipedia, the Single-Responsibility Principle (SRP) is:**
 
-> a computer programming principle that states that "A module should be responsible to one, and only one, actor."
 
 **This term was created by Robert C. Martin** who expresses the principle as:
 
