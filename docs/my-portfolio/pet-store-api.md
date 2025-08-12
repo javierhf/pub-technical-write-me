@@ -9,48 +9,40 @@ description: >-
 
 ## Pet Store API Documentation
 
-
-
-{% hint style="info" %}
-**About this page**
-
-This is my version of the[`Swagger Pet Store API`](https://petstore.swagger.io/)`.`The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
-
-If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
-{% endhint %}
-
 ### Overview
 
-**The Pet Store API is a REST API that provides a comprehensive set of endpoints and functionalities** to manage your pet store business from pets, users, and orders.
+The Pet Store API is a **REST API** that provides a comprehensive set of endpoints and functionalitie**s** **to manage your pet store business** including pets, users, and orders management.
 
-**The Pet Store API implements the following features:**
-
-* reusable data structure,&#x20;
-* request bodies, and security schemes.
-
-**The Pet Store API** **uses two types of authentication**: _OAuth2_ (operations requiring user-specific permissions) and _API Keys_ (operations security).&#x20;
+The Pet Store API implements _**r**eusable data structure_, _request bodies_, and _security schem&#x65;_&#x73;, and uses two types of authentication (_OAuth2_ - for operations requiring user-specific permissions,  and _API Keys -_ for operations securit&#x79;_)_.&#x20;
 
 **To work with the Pet Store API,** we have designed the following endpoints:
-
-
 
 <table><thead><tr><th width="278">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/pet</code></td><td>Get all pets stored in your shop.</td><td>By default, updates occur every 2 minutes.</td></tr><tr><td><code>/pet/findByStatus</code></td><td>Get pets by status (<em>active</em>, <em>sold</em>, <em>reserved</em>, <em>incoming,</em> ).</td><td>Allows combined statuses, for example: <em>reserved</em> and <em>incoming.</em></td></tr><tr><td><code>pet/{petId}</code></td><td>Get pet by ID.</td><td><code>petId</code> format is customizable.</td></tr><tr><td><code>/store/inventory</code></td><td>Get all pets in the store's inventory.</td><td>By default, Inventory is sorted by status.</td></tr><tr><td><code>/store/order/</code></td><td>Get all orders of the store.</td><td>By default, last orders are shown first.</td></tr><tr><td><code>/store/order/{orderId}</code></td><td>Get order by ID.</td><td><code>orderId</code> format is customizable.</td></tr><tr><td><code>/user</code></td><td>Get all users of the store.</td><td>By default, users are updated every day (24 hours).</td></tr><tr><td><code>/user/login</code></td><td>Get all users currently logged in into the system.</td><td>By default, passwords are not shown. Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/logout</code></td><td>Get all logged-out users.</td><td>Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/{username}</code></td><td>Ger user information by username.</td><td>Case sensitive</td></tr></tbody></table>
 
 ### Security Fundamentals
 
-**Regarding authentication and authorization**, the Pet Store API uses _OAuth2_ (operations requiring user-specific permissions) and _API Keys_ (operations security). Check the following table for more information:
+Regarding authentication and authorizatio&#x6E;**,** the Pet Store API uses the following types of authentication:
+
+* _OAuth2 - for_ operations requiring user-specific permissions
+* _API Keys - for_ operations security
+
+Check the following table for more information:
 
 <table><thead><tr><th width="238">Security Method</th><th width="156">Scope</th><th>Description</th></tr></thead><tbody><tr><td><strong>OAuth2 (Implicit flow)</strong></td><td><code>write:pets</code><br><code>read:pets</code></td><td><p>OAuth2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.</p><p></p><p>The Pet Store API uses the implicit flow of OAuth2, which is suitable for public clients that cannot keep a secret (such as single-page applications).<br></p></td></tr><tr><td><strong>API Key</strong></td><td><em>N/A</em></td><td><p>API Key authentication is a simple way of securing access by including a key in the request header.</p><p><br>This method is typically used for server-to-server communication.</p></td></tr></tbody></table>
 
-**Each security method is applied to specific** **endpoints** as shown in the following table:
+#### Security Method and Endpoints&#x20;
+
+**Each security method is applied to specific endpoints** as shown in the following table:
 
 <table><thead><tr><th width="179">Security Method</th><th width="390">Endpoint</th><th>Scope</th></tr></thead><tbody><tr><td><strong>OAuth2 ('petstore_auth')</strong></td><td><code>/pet</code><br><code>/pet/findByStatus</code><br><code>/pet/findByTags</code><br><code>/pet/{petId}</code><br><code>/pet/{petId}</code><br><code>/store/order</code></td><td><code>write:pets</code><br><code>read:pets</code></td></tr><tr><td><strong>API Key ('api_key')</strong></td><td><code>/store/inventory</code><br><code>/pet/{petId}</code></td><td></td></tr></tbody></table>
 
 #### Implementing OAuth2 (Implicit Flow)
 
+To implement OAuth2 authorization flow consider the information disclosed in the following table:
+
 <table><thead><tr><th width="238">Topic</th><th>Information</th></tr></thead><tbody><tr><td><strong>Authorization URL</strong></td><td>https://petstore3.swagger.io/oauth/authorize></td></tr><tr><td><strong>Scopes</strong></td><td><code>write:pets</code>: Allows modification of pets in your account.<br><code>read:pets</code>: Allows reading your pets.</td></tr></tbody></table>
 
-**To implement OAuth2 (Implicit flow)** you have to _request authorization,_ _receive the access token,_ and _use the access token_ as described in the following steps:
+The OAuth2 needs a _request authorization,_ _receive the access token,_ and _uses the access token_ as described in the following steps:
 
 1. **Request authorization:**\
    Redirect the user to the authorization URL with the required parameters (client ID, redirect URI, response type, and scope), for example:  `https://petstore3.swagger.io/oauth/authorize?client_id=<YOUR_CLIENT_ID>&redirect_uri==<YOUR_REDIRECT_URI>&response_type=token&scope=write:pets read:pets`
@@ -68,6 +60,8 @@ If you want to create the product or project documentation your users will love,
 
 
 #### Implementing API Key
+
+To implement the API Key authorization flow consider the information disclosed in the following table:
 
 | Topic                  | Information                                                                                              |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
