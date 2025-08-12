@@ -2,19 +2,12 @@
 title: My Technical Writer Portfolio
 status: new
 description: >-
-  Disclaimer: The following pages contain my version of the public and official
+  Disclaimer: The following pages showcase my version of the public and official
   documentation of the OpenWeather API. The sole purpose of this page is to
   showcase my technical writing practice.
 ---
 
 # OpenWeather API
-
-{% hint style="info" %}
-**About this page**\
-This is my version of the public and official documentation of Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.&#x20;
-
-If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
-{% endhint %}
 
 ## Reference Documentation
 
@@ -24,7 +17,7 @@ If you want to create the product or project documentation your users will love,
 * Short-term and long-term forecasts
 * Aggregated weather data easily
 
-**One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoint&#x73;**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
+**One Call API 3.0 is based on the proprietary OpenWeather model** and provides 4 endpoint&#x73;**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
 
 ### OpenWeather One Call API 3.0 Endpoints
 
