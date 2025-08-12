@@ -3,8 +3,8 @@ title: My Technical Writer Portfolio
 status: new
 description: >-
   Disclaimer: The following pages showcase my version of the public and official
-  documentation of the OpenWeather API. The sole purpose of this page is to
-  showcase my technical writing practice.
+  documentation of the OpenWeather API as a portfolio example of my technical
+  writing practice.
 ---
 
 # OpenWeather API

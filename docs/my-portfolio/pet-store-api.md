@@ -1,7 +1,7 @@
 ---
 description: >-
-  Disclaimer This is my version of the public and official documentation of the
-  Swagger Pet Store API . The sole purpose of this page is to showcase my
+  Disclaimer. The following pages showcase my version of the public and official
+  documentation of the Swagger Pet Store API as a portfolio example of my
   technical writing practice.
 ---
 
