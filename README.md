@@ -12,6 +12,10 @@ I look at technical writing **documentation as a user-centric craft** built on t
 
 This process begins with **strategic communication and content planning**, where I identify key stakeholders, main friction points and challenges, and available resources to develop a project roadmap that aligns business objectives with user needs. I then move into the **creation and structuring** phase, applying a lean mindset and efficient workflows to transform complex information into simple, actionable guides, and reinforcing communication with all the involved parties.
 
+<figure><img src=".gitbook/assets/documentation-crafting (1).png" alt="Flow chart of documentation crafting"><figcaption></figcaption></figure>
+
+_<mark style="color:$info;">Image: Flow chart of my documentation crafting approach.</mark>_
+
 The next phase, **refinement and validation**, involves developing a comprehensive quality assurance process, which includes implementing CI/CD automations (grammar, typos, style and links checks) and gathering user feedback through regular channels.&#x20;
 
 Finally, the **delivery and maintenance** phase ensures long-term value by continuously optimizing information architecture, keeping documentation relevant as the product evolves, and supporting our users' success.
