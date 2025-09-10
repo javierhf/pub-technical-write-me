@@ -9,7 +9,160 @@ description: >-
 
 # OpenWeather API
 
-## <mark style="color:$primary;">Reference Documentation</mark>
+## <mark style="color:$primary;">Quick Start Guide</mark>
+
+Let's start to use the OpenWeather API by following these steps:
+
+1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather to create your account.
+2. Copy your default API key.
+
+_You are ready make your first API call!_
+
+### <mark style="color:$info;">Making Your First API Call</mark>
+
+Once you get your API key, **you can make your first API call.** Let's call the API to get the _current weather forecast for a specific location_ using the latitude (`lat`) and longitude (`lon`) parameters.&#x20;
+
+The API call will look as follows:
+
+_`https://api.openweathermap.org/data/3.0/weather?lat=33.44&lon=-94.04&appid={Paste your API key here}`_
+
+#### **Reading Your First API Response**
+
+The API call will return the current weather information for the provided location as a **response in JSON format**:
+
+```json
+{
+
+`  `"coord": {
+
+`    `"lon": 10.99,
+
+`    `"lat": 44.34
+
+`  `},
+
+`  `"weather": [
+
+`    `{
+
+`      `"id": 501,
+
+`      `"main": "Rain",
+
+`      `"description": "moderate rain",
+
+`      `"icon": "10d"
+
+`    `}
+
+`  `],
+
+`  `"base": "stations",
+
+`  `"main": {
+
+`    `"temp": 298.48,
+
+`    `"feels\_like": 298.74,
+
+`    `"temp\_min": 297.56,
+
+`    `"temp\_max": 300.05,
+
+`    `"pressure": 1015,
+
+`    `"humidity": 64,
+
+`    `"sea\_level": 1015,
+
+`    `"grnd\_level": 933
+
+`  `},
+
+`  `"visibility": 10000,
+
+`  `"wind": {
+
+`    `"speed": 0.62,
+
+`    `"deg": 349,
+
+`    `"gust": 1.18
+
+`  `},
+
+`  `"rain": {
+
+`    `"1h": 3.16
+
+`  `},
+
+`  `"clouds": {
+
+`    `"all": 100
+
+`  `},
+
+`  `"dt": 1661870592,
+
+`  `"sys": {
+
+`    `"type": 2,
+
+`    `"id": 2075663,
+
+`    `"country": "IT",
+
+`    `"sunrise": 1661834187,
+
+`    `"sunset": 1661882248
+
+`  `},
+
+`  `"timezone": 7200,
+
+`  `"id": 3163858,
+
+`  `"name": "Zocca",
+
+`  `"cod": 200
+
+}    
+```
+
+{% hint style="warning" %}
+<mark style="color:$info;">**Empty responses**</mark>\
+An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
+{% endhint %}
+
+### <mark style="color:$info;">Getting New API Keys</mark>
+
+Whenever you need a new API key, follow theses steps:
+
+1. In your OpenWeather home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
+2. Under **Create key**, provide a name of the API key.   &#x20;
+3. Click **Generate.**
+
+### <mark style="color:$info;">Authentication and Authorization</mark>
+
+<mark style="color:$info;">The OpenWeather API uses API keys as authentication and authorization method.</mark>&#x20;
+
+1. [**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather.** &#x20;
+2. Create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys).
+
+### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
+
+You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
+
+The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
+
+ADD LINK TO REFERENCE SECTION
+
+***
+
+## <mark style="color:$primary;">Reference Information</mark>
+
+### Overview
 
 **OpenWeather - One Call 3.0 API provides the following information:**
 
@@ -17,15 +170,13 @@ description: >-
 * Short-term and long-term forecasts
 * Aggregated weather data easily
 
-**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
+**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. as shown in the following table:
 
-### <mark style="color:$info;">OpenWeather One Call API 3.0 Endpoints</mark>
 
-**The One Call API 3.0 provides four endpoints** for various data, as shown in the following table:
 
 <table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily aggregation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
-**One Call API 3.0 data** is available in JSON, XML, or HTML format.
+Based on our proprietary model, **all endpoints are updated every 10 minutes** to ensure you always have access to the most accurate and up-to-date information available in JSON, XML, or HTML format..
 
 {% hint style="warning" %}
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
@@ -36,6 +187,8 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
 
 The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
+
+ADD HERE AL INFO
 
 ### <mark style="color:$info;">Endpoints and Methods</mark>
 
@@ -490,177 +643,11 @@ with light to moderate winds from the west-southwest."
 
 ```
 
-## <mark style="color:$primary;">Conceptual Documentation</mark>
 
-**The OpenWeather - One Call 3.0 API provides the following information:**
 
-* Essential weather data
-* Short-term and long-term forecasts
-* Aggregated weather data easily
+### <mark style="color:$info;">Handling Error Response</mark>
 
-**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
-
-### <mark style="color:$info;">OpenWeather One Call API 3.0 Endpoints</mark>
-
-**One Call API 3.0 contains 4 endpoints**, providing access to various data as shown in the following table:
-
-<table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour.</li><li>Hourly forecast for 48 hours.</li><li>Daily forecast for 8 days.</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily aggreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
-
-**One Call API 3.0 data** is available in JSON, XML, or HTML format.
-
-{% hint style="warning" %}
-If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
-{% endhint %}
-
-### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
-
-You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
-
-The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings. &#x20;
-
-### <mark style="color:$info;">Quick Start Guide</mark>
-
-1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather and create your account.
-2. You'll get a default API key to work with.
-
-_You are ready make your first API call!_
-
-{% hint style="success" %}
-<mark style="color:green;">**Getting new API keys**</mark>\
-
-
-1. In your Home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
-2. Under **Create key**, provide a name of the API key.   &#x20;
-3. Click **Generate.**
-{% endhint %}
-
-### <mark style="color:$info;">Making Your First API Call</mark>
-
-Once you get your API key, **you can make your first API call.** Let's get the _current weather forecast for a specific location_ using the latitude (`lat`) and longitude (`lon`) parameters. The API call will look as follows:
-
-_`https://api.openweathermap.org/data/3.0/weather?lat=33.44&lon=-94.04&appid={API key}`_
-
-#### **Reading Your First API Response**
-
-The API call will return the current weather information for the provided location as a **response in JSON format**:
-
-```json
-{
-
-`  `"coord": {
-
-`    `"lon": 10.99,
-
-`    `"lat": 44.34
-
-`  `},
-
-`  `"weather": [
-
-`    `{
-
-`      `"id": 501,
-
-`      `"main": "Rain",
-
-`      `"description": "moderate rain",
-
-`      `"icon": "10d"
-
-`    `}
-
-`  `],
-
-`  `"base": "stations",
-
-`  `"main": {
-
-`    `"temp": 298.48,
-
-`    `"feels\_like": 298.74,
-
-`    `"temp\_min": 297.56,
-
-`    `"temp\_max": 300.05,
-
-`    `"pressure": 1015,
-
-`    `"humidity": 64,
-
-`    `"sea\_level": 1015,
-
-`    `"grnd\_level": 933
-
-`  `},
-
-`  `"visibility": 10000,
-
-`  `"wind": {
-
-`    `"speed": 0.62,
-
-`    `"deg": 349,
-
-`    `"gust": 1.18
-
-`  `},
-
-`  `"rain": {
-
-`    `"1h": 3.16
-
-`  `},
-
-`  `"clouds": {
-
-`    `"all": 100
-
-`  `},
-
-`  `"dt": 1661870592,
-
-`  `"sys": {
-
-`    `"type": 2,
-
-`    `"id": 2075663,
-
-`    `"country": "IT",
-
-`    `"sunrise": 1661834187,
-
-`    `"sunset": 1661882248
-
-`  `},
-
-`  `"timezone": 7200,
-
-`  `"id": 3163858,
-
-`  `"name": "Zocca",
-
-`  `"cod": 200
-
-}    
-```
-
-{% hint style="info" %}
-<mark style="color:$info;">**Empty responses**</mark>\
-An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
-{% endhint %}
-
-### <mark style="color:$info;">Authentication and Authorization</mark>
-
-1. [**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather.** &#x20;
-2. Create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys).
-
-### <mark style="color:$primary;">Rate Limits and Thresholds</mark>
-
-**The OpenWeather API’s** fr**ee plan has a limit of 2000 calls a day**. If you need to increase the rate limit and thresholds, update the standard settings in the [Billing plans](https://home.openweathermap.org/subscriptions) tab in your account.Status and Error Codes
-
-#### _**Error Response Structure**_
-
-Errors response payload returned for all types of errors has the following structure:
+Opencall 3.0 handles 401, 400, 429, and 5xx error codes. Error response payload returned for all types of errors has the following structure:
 
 ```json
 {
@@ -684,13 +671,13 @@ Check the following table for more information about the status and error codes:
 
 <table><thead><tr><th width="180">Error Code</th><th>Description</th></tr></thead><tbody><tr><td><strong>401</strong></td><td><p>Unauthorized. You can get 401 error if API token did not provided in the request or in case API token provided in the request does not grant access to this API.</p><p></p><p>You must add API token with granted access to the product to the request before returning it.</p></td></tr><tr><td><strong>404</strong></td><td><p>Not Found. You can get 404 error if data with requested parameters (lat, lon, date etc) does not exist in service database.</p><p></p><p>You must not retry the same request.</p></td></tr><tr><td><strong>429</strong></td><td><p>Too Many Requests. You can get 429 error if the key quota of requests for the provided API to this API was exceeded.</p><p></p><p>You may retry the request after some time or after extending your key quota.</p></td></tr><tr><td><strong>5xx</strong></td><td><p>Unexpected Error. You can get '5xx' error in case of other internal errors. Error Response code will be <code>5xx</code>.</p><p></p><p>Please contact us and enclose an example of your API request that receives this error in your email to let us analyse it and find a solution for you promptly.</p><p></p><p>You may retry the request which led to this error.</p></td></tr></tbody></table>
 
-### <mark style="color:$info;">Best Practices</mark>
+## <mark style="color:$primary;">Best Practices</mark>
 
 **The following table provides the best practices** that allow you to get the most out of the OpenWeather API:
 
 <table><thead><tr><th width="255">Scope</th><th>Best Practice</th></tr></thead><tbody><tr><td><strong>API Key Management</strong></td><td><p>Securely store your API key. Do not hardcode it in your application's source code, especially if the code is publicly accessible.</p><p></p><p>Use environment variables or secure app settings for API key management.</p></td></tr><tr><td><strong>Efficient Use of API Calls</strong></td><td><p>To avoid reaching your API call limit, cache responses whenever possible, especially if you're requesting data that doesn't change frequently.</p><p></p><p>OpenWeather data updates every 10 minutes, so plan your requests accordingly.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Handle Errors Gracefully</strong></td><td><p>Implement error handling in your application to manage API request failures or unexpected responses.</p><p></p><p>This includes handling HTTP status codes and parsing error messages returned by the API.</p></td></tr><tr><td><strong>Optimize Requests with Parameters</strong></td><td>Use API request parameters effectively to get only the data you need. For example, you can exclude parts of the data you don't need with the exclude parameter in the One Call API 3.0.</td></tr><tr><td><strong>Respect API Limits</strong></td><td><p>Be aware of your subscription plan's API call limits and ensure your application does not exceed them. </p><p></p><p>Implement logic to throttle requests if necessary.</p></td></tr><tr><td><strong>Use Units and Language Parameters</strong></td><td>Customize API responses for your audience by using the units parameter to specify temperature and wind speed units, and the lang parameter to localize weather descriptions.</td></tr><tr><td><strong>Geocoding</strong></td><td>Use the Geocoding API to convert between city names and geographical coordinates when necessary, as direct requests by city name may be deprecated for some endpoints.</td></tr><tr><td><strong>Subscription Management</strong></td><td><p>Keep track of your subscription status and the features available to you. </p><p></p><p>Some features, like the One Call API 3.0, require a separate subscription.</p></td></tr><tr><td><strong>Stay Updated</strong></td><td><p>OpenWeather periodically updates its APIs and documentation. </p><p></p><p>Stay informed about any changes that might affect your application by regularly checking the OpenWeather website or subscribing to their updates.</p></td></tr></tbody></table>
 
-### Glossary
+## <mark style="color:$primary;">Glossary</mark>
 
 > <mark style="color:blue;">**A**</mark>
 
