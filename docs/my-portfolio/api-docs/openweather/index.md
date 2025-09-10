@@ -156,7 +156,10 @@ You can **generate as many API keys as you need** for your subscription; we'll t
 
 The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
 
-ADD LINK TO REFERENCE SECTION
+{% hint style="info" %}
+**Call limits and billing plans**\
+Learn more about our call limits and billing plans in the [reference section](index.md#api-keys-and-api-call-limit-1).
+{% endhint %}
 
 ***
 
