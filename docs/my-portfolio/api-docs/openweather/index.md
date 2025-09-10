@@ -9,7 +9,7 @@ description: >-
 
 # OpenWeather API
 
-## Reference Documentation
+## <mark style="color:$primary;">Reference Documentation</mark>
 
 **OpenWeather - One Call 3.0 API provides the following information:**
 
@@ -19,11 +19,11 @@ description: >-
 
 **The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
 
-### OpenWeather One Call API 3.0 Endpoints
+### <mark style="color:$info;">OpenWeather One Call API 3.0 Endpoints</mark>
 
 **The One Call API 3.0 provides four endpoints** for various data, as shown in the following table:
 
-<table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
+<table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily aggregation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
@@ -31,19 +31,20 @@ description: >-
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 {% endhint %}
 
-### _API Keys and API Call Limit_
+### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
 
 You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
 
 The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
 
-### Resources: Endpoints and Methods
+### <mark style="color:$info;">Endpoints and Methods</mark>
 
 {% hint style="info" %}
+<mark style="color:$info;">**One Call 3.0**</mark>\
 Please note that One Call 3.0 is included in the One Call by Call subscription _ONLY_. [Learn more](https://openweathermap.org/price).
 {% endhint %}
 
-**The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
+**The root URL for the API** is [https://api.openweathermap.org/data/3.0/onecall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
 
 #### _**`/onecall`**_
 
@@ -51,14 +52,14 @@ _Current and forecast data._
 
 **GET** [https://api.openweathermap.org/data/3.0/onecall](https://api.openweathermap.org/data/3.0/onecall)
 
-**Parameters**
+<mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="162">Name</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>It should be a comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default.</td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
+<table><thead><tr><th width="120">Name</th><th width="102">Required</th><th width="109">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td>list</td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>It should be a comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td><p>Units of measurement.</p><p></p><p>Available values: <em>standard, metrics, imperial.</em><br><br>If the <em>units</em> parameter is left empty, the standard units measure will be applied by default.</p></td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
 
-**Request Example**\
+<mark style="color:orange;">**Request Example**</mark>\
 `https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`
 
-**Response Example**
+<mark style="color:orange;">**Response Example**</mark>
 
 ```json
 {
@@ -100,15 +101,15 @@ _Weather data for timestamp_.
 
 **GET** [https://api.openweathermap.org/data/3.0/onecall/timemachine](https://api.openweathermap.org/data/3.0/onecall/timemachine)
 
-**Parameters**
+<mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="148">Name</th><th width="132">Required</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td><p>Latitude, decimal (-90; 90).</p><p> </p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>dt</strong></td><td><em>Yes</em></td><td><p>Timestamp (Unix time, UTC time zone), e.g. dt=1586468027. </p><p>Data is available from January 1st, 1979 till 4 days ahead.</p></td></tr><tr><td><strong>units</strong></td><td>No</td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td>No</td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
+<table><thead><tr><th width="96">Name</th><th width="117">Required</th><th width="140">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td><p>Latitude, decimal (-90; 90).</p><p> </p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>dt</strong></td><td><em>Yes</em></td><td>integer</td><td><p>Timestamp (Unix time, UTC time zone), e.g. dt=1586468027. </p><p>Data is available from January 1st, 1979 till 4 days ahead.</p></td></tr><tr><td><strong>units</strong></td><td>No</td><td>string</td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td>No</td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
 
-**Request Example**
+<mark style="color:orange;">**Request Example**</mark>
 
 `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API key}`
 
-**Response Example**
+<mark style="color:orange;">**Response Example**</mark>
 
 ```json
 {
@@ -355,15 +356,15 @@ _Aggregated weather data for a particular date from 2nd January 1979 till long-t
 
 **GET** [https://api.openweathermap.org/data/3.0/onecall/day\_summary](https://api.openweathermap.org/data/3.0/onecall/day_summary)
 
-**Parameters**
+<mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="135">Name</th><th width="118">Required</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td><p>Latitude, decimal (-90; 90). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>datet</strong></td><td><em>Yes</em></td><td><p>Date in the <code>YYYY-MM-DD</code> format for which data is requested. </p><p></p><p>Date is available for 45 years archive (starting from 1979-01-02) up to the 1,5 years ahead forecast to the current date.</p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
+<table><thead><tr><th width="119">Name</th><th width="118">Required</th><th width="160">Description</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td><p>Latitude, decimal (-90; 90). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>date</strong></td><td><em>Yes</em></td><td>string</td><td><p>Date in the <code>YYYY-MM-DD</code> format for which data is requested. </p><p></p><p>Date is available for 45 years archive (starting from 1979-01-02) up to the 1,5 years ahead forecast to the current date.</p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
 
-**Request Example**
+<mark style="color:orange;">**Request Example**</mark>
 
 `https://api.openweathermap.org/data/3.0/onecall/day_summary?lat=39.099724&lon=-94.578331&date=2020-03-04&appid={API key}`
 
-**Response Example**
+<mark style="color:orange;">**Response Example**</mark>
 
 ```json
 
@@ -438,20 +439,18 @@ _Weather overview information with a human-readable weather summary for today an
 
 **GET** [https://api.openweathermap.org/data/3.0/onecall/overview](https://api.openweathermap.org/data/3.0/onecall/overview)
 
-**Parameters**
+<mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="129">Name</th><th width="123">Required</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td><p>Latitude, decimal (-90; 90). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>Your unique API key (you can always find it on your account page under the "API key" tab)</td></tr><tr><td><strong>datet</strong></td><td><em>No</em></td><td><p>The date the user wants to get a weather summary in the YYYY-MM-DD format. Data is available for today and tomorrow. </p><p></p><p>If not specified, the current date will be used by default.<br><br>Please note that the date is determined by the timezone relevant to the coordinates specified in the API request.</p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
+<table><thead><tr><th width="119">Name</th><th width="103">Required</th><th width="171">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td><p>Latitude, decimal (-90; 90). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td><p>Longitude, decimal (-180; 180). </p><p></p><p>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</p></td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab)</td></tr><tr><td><strong>date</strong></td><td><em>No</em></td><td>string</td><td><p>The date the user wants to get a weather summary in the YYYY-MM-DD format. Data is available for today and tomorrow. </p><p></p><p>If not specified, the current date will be used by default.<br><br>Please note that the date is determined by the timezone relevant to the coordinates specified in the API request.</p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default. </td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language. </td></tr></tbody></table>
 
-**Request Example**
+<mark style="color:orange;">**Request Example**</mark>
 
 _`https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`_
 
-**Response Example**
+<mark style="color:orange;">**Response Example**</mark>
 
 ```json
- 
-
-{
+ {
 
 `   `"lat": 51.509865,
 
@@ -491,7 +490,7 @@ with light to moderate winds from the west-southwest."
 
 ```
 
-## Conceptual Documentation
+## <mark style="color:$primary;">Conceptual Documentation</mark>
 
 **The OpenWeather - One Call 3.0 API provides the following information:**
 
@@ -501,11 +500,11 @@ with light to moderate winds from the west-southwest."
 
 **The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. Based on our proprietary model, _all endpoints are updated every 10 minutes_ to ensure you always have access to the most accurate and up-to-date information.
 
-### OpenWeather One Call API 3.0 Endpoints
+### <mark style="color:$info;">OpenWeather One Call API 3.0 Endpoints</mark>
 
 **One Call API 3.0 contains 4 endpoints**, providing access to various data as shown in the following table:
 
-<table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour.</li><li>Hourly forecast for 48 hours.</li><li>Daily forecast for 8 days.</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
+<table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour.</li><li>Hourly forecast for 48 hours.</li><li>Daily forecast for 8 days.</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily aggreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
@@ -513,52 +512,37 @@ with light to moderate winds from the west-southwest."
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 {% endhint %}
 
-### _API Keys and API Call Limit_
+### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
 
 You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
 
 The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings. &#x20;
 
-### Getting Started
+### <mark style="color:$info;">Quick Start Guide</mark>
 
-**To get started with the OpenWeather API** follow these steps:
+1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather and create your account.
+2. You'll get a default API key to work with.
 
-1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather to create your account.
-2. Open the [Pricing](https://openweathermap.org/price) page.
-3. Under **Professional Collections**, select [Get API Key](https://home.openweathermap.org/users/sign_up) (free plan).
+_You are ready make your first API call!_
 
-**You will receive a confirmation email.** Complete the email instructions and then follow these steps:
+{% hint style="success" %}
+<mark style="color:green;">**Getting new API keys**</mark>\
 
-1. Open your [OpenWeather API key](https://home.openweathermap.org/api_keys) page.
-2. Provide a name for your new API Key.
 
-You are ready to go and make your first API call.
-
-### Making Your First API Call
-
-{% hint style="info" %}
-**Free plan calls limit**
-
-The OpenWeather API free plan sets a _default limit of 2000 API calls per day_. If you need to change this limit, check the standard settings in [Your account billing plans](https://home.openweathermap.org/subscriptions) tab.
+1. In your Home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
+2. Under **Create key**, provide a name of the API key.   &#x20;
+3. Click **Generate.**
 {% endhint %}
 
-**After obtaining your API key, you can make your first API call** to get the current weather forecast for a specific location. Use the `latitude` and `longitude` parameters as shown in this example:&#x20;
+### <mark style="color:$info;">Making Your First API Call</mark>
 
-`latitude=33.44&longitude=-94.04`.&#x20;
+Once you get your API key, **you can make your first API call.** Let's get the _current weather forecast for a specific location_ using the latitude (`lat`) and longitude (`lon`) parameters. The API call will look as follows:
 
-The API call will look as follows:
-
-_`https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid={API key}`_
+_`https://api.openweathermap.org/data/3.0/weather?lat=33.44&lon=-94.04&appid={API key}`_
 
 #### **Reading Your First API Response**
 
-{% hint style="info" %}
-An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
-{% endhint %}
-
-**For the previous API call,** the API response (in JSON format) will look as follows:
-
-API response (JSON):
+The API call will return the current weather information for the provided location as a **response in JSON format**:
 
 ```json
 {
@@ -660,15 +644,19 @@ API response (JSON):
 }    
 ```
 
-### _<mark style="color:orange;">(Coming soon!)</mark>_ <mark style="color:orange;"></mark><mark style="color:orange;">Authentication</mark>
+{% hint style="info" %}
+<mark style="color:$info;">**Empty responses**</mark>\
+An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
+{% endhint %}
 
-[**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather** as explained in the \[First Steps]\(ADD LINK) section to get your credentials.
+### <mark style="color:$info;">Authentication and Authorization</mark>
 
-### _<mark style="color:orange;">(Coming soon!)</mark>_ <mark style="color:orange;"></mark><mark style="color:orange;">Authorization</mark>
+1. [**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather.** &#x20;
+2. Create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys).
 
-**After signing up,** create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys) as explained in the \[First Steps]\(ADD LINK) section.
+### <mark style="color:$primary;">Rate Limits and Thresholds</mark>
 
-### Status and Error Codes
+**The OpenWeather API’s** fr**ee plan has a limit of 2000 calls a day**. If you need to increase the rate limit and thresholds, update the standard settings in the [Billing plans](https://home.openweathermap.org/subscriptions) tab in your account.Status and Error Codes
 
 #### _**Error Response Structure**_
 
@@ -696,15 +684,11 @@ Check the following table for more information about the status and error codes:
 
 <table><thead><tr><th width="180">Error Code</th><th>Description</th></tr></thead><tbody><tr><td><strong>401</strong></td><td><p>Unauthorized. You can get 401 error if API token did not provided in the request or in case API token provided in the request does not grant access to this API.</p><p></p><p>You must add API token with granted access to the product to the request before returning it.</p></td></tr><tr><td><strong>404</strong></td><td><p>Not Found. You can get 404 error if data with requested parameters (lat, lon, date etc) does not exist in service database.</p><p></p><p>You must not retry the same request.</p></td></tr><tr><td><strong>429</strong></td><td><p>Too Many Requests. You can get 429 error if the key quota of requests for the provided API to this API was exceeded.</p><p></p><p>You may retry the request after some time or after extending your key quota.</p></td></tr><tr><td><strong>5xx</strong></td><td><p>Unexpected Error. You can get '5xx' error in case of other internal errors. Error Response code will be <code>5xx</code>.</p><p></p><p>Please contact us and enclose an example of your API request that receives this error in your email to let us analyse it and find a solution for you promptly.</p><p></p><p>You may retry the request which led to this error.</p></td></tr></tbody></table>
 
-### Rate Limits and Thresholds
-
-**The OpenWeather API’s** fr**ee plan has a limit of 2000 calls a day**. If you need to increase the rate limit and thresholds, update the standard settings in the [Billing plans](https://home.openweathermap.org/subscriptions) tab in your account.
-
-### Best Practices
+### <mark style="color:$info;">Best Practices</mark>
 
 **The following table provides the best practices** that allow you to get the most out of the OpenWeather API:
 
-<table><thead><tr><th width="330">Scope</th><th>Best Practice</th></tr></thead><tbody><tr><td><strong>API Key Management</strong></td><td><p>Securely store your API key. Do not hardcode it in your application's source code, especially if the code is publicly accessible.</p><p></p><p>Use environment variables or secure app settings for API key management.</p></td></tr><tr><td><strong>Efficient Use of API Calls</strong></td><td><p>To avoid reaching your API call limit, cache responses whenever possible, especially if you're requesting data that doesn't change frequently.</p><p></p><p>OpenWeather data updates every 10 minutes, so plan your requests accordingly.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Handle Errors Gracefully</strong></td><td><p>Implement error handling in your application to manage API request failures or unexpected responses.</p><p></p><p>This includes handling HTTP status codes and parsing error messages returned by the API.</p></td></tr><tr><td><strong>Optimize Requests with Parameters</strong></td><td>Use API request parameters effectively to get only the data you need. For example, you can exclude parts of the data you don't need with the exclude parameter in the One Call API 3.0.</td></tr><tr><td><strong>Respect API Limits</strong></td><td><p>Be aware of your subscription plan's API call limits and ensure your application does not exceed them. </p><p></p><p>Implement logic to throttle requests if necessary.</p></td></tr><tr><td><strong>Use Units and Language Parameters</strong></td><td>Customize API responses for your audience by using the units parameter to specify temperature and wind speed units, and the lang parameter to localize weather descriptions.</td></tr><tr><td><strong>Geocoding</strong></td><td>Use the Geocoding API to convert between city names and geographical coordinates when necessary, as direct requests by city name may be deprecated for some endpoints.</td></tr><tr><td><strong>Subscription Management</strong></td><td><p>Keep track of your subscription status and the features available to you. </p><p></p><p>Some features, like the One Call API 3.0, require a separate subscription.</p></td></tr><tr><td><strong>Stay Updated</strong></td><td><p>OpenWeather periodically updates its APIs and documentation. </p><p></p><p>Stay informed about any changes that might affect your application by regularly checking the OpenWeather website or subscribing to their updates.</p></td></tr></tbody></table>
+<table><thead><tr><th width="255">Scope</th><th>Best Practice</th></tr></thead><tbody><tr><td><strong>API Key Management</strong></td><td><p>Securely store your API key. Do not hardcode it in your application's source code, especially if the code is publicly accessible.</p><p></p><p>Use environment variables or secure app settings for API key management.</p></td></tr><tr><td><strong>Efficient Use of API Calls</strong></td><td><p>To avoid reaching your API call limit, cache responses whenever possible, especially if you're requesting data that doesn't change frequently.</p><p></p><p>OpenWeather data updates every 10 minutes, so plan your requests accordingly.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Use the Correct Endpoint</strong></td><td><p>OpenWeather offers various endpoints for different types of data (current weather, forecasts, historical data, etc.).</p><p></p><p>Use the specific endpoint that matches your data needs to ensure efficient use of the API.</p></td></tr><tr><td><strong>Handle Errors Gracefully</strong></td><td><p>Implement error handling in your application to manage API request failures or unexpected responses.</p><p></p><p>This includes handling HTTP status codes and parsing error messages returned by the API.</p></td></tr><tr><td><strong>Optimize Requests with Parameters</strong></td><td>Use API request parameters effectively to get only the data you need. For example, you can exclude parts of the data you don't need with the exclude parameter in the One Call API 3.0.</td></tr><tr><td><strong>Respect API Limits</strong></td><td><p>Be aware of your subscription plan's API call limits and ensure your application does not exceed them. </p><p></p><p>Implement logic to throttle requests if necessary.</p></td></tr><tr><td><strong>Use Units and Language Parameters</strong></td><td>Customize API responses for your audience by using the units parameter to specify temperature and wind speed units, and the lang parameter to localize weather descriptions.</td></tr><tr><td><strong>Geocoding</strong></td><td>Use the Geocoding API to convert between city names and geographical coordinates when necessary, as direct requests by city name may be deprecated for some endpoints.</td></tr><tr><td><strong>Subscription Management</strong></td><td><p>Keep track of your subscription status and the features available to you. </p><p></p><p>Some features, like the One Call API 3.0, require a separate subscription.</p></td></tr><tr><td><strong>Stay Updated</strong></td><td><p>OpenWeather periodically updates its APIs and documentation. </p><p></p><p>Stay informed about any changes that might affect your application by regularly checking the OpenWeather website or subscribing to their updates.</p></td></tr></tbody></table>
 
 ### Glossary
 
