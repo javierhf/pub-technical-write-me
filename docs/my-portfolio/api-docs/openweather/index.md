@@ -1,13 +1,15 @@
 ---
 title: My Technical Writer Portfolio
 status: new
-description: >-
-  Disclaimer: The following pages showcase my version of the public and official
-  documentation of the OpenWeather API as a portfolio example of my technical
-  writing practice.
 ---
 
 # OpenWeather API
+
+{% hint style="danger" %}
+**Disclaimer**\
+The following pages showcase my version of some parts of the OpenWeather API documentation limited to the free plan subscription.  If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
+
+{% endhint %}
 
 ## <mark style="color:$primary;">Overview</mark>
 
@@ -34,126 +36,122 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 Let's start to use the OpenWeather API by following these steps:
 
 1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather to create your account.
-2. Copy your default API key.
+2. Copy your default API key (later `appid`).
 
 _You are ready make your first API call!_
 
 ### <mark style="color:$info;">Making Your First API Call</mark>
 
-Once you get your API key, **you can make your first API call.** Let's call the API to get the _current weather forecast for a specific location_ using the latitude (`lat`) and longitude (`lon`) parameters.&#x20;
+Once you get your API key, **you can make your first API call.** We'll use the **free plan version** (One Call 2.5) to call the OpenWeather API to get our weather forecast for the following locatio&#x6E;_:_
+
+* `lat=33.44` - Latitude
+* `lon=-94.04` - Longitude
 
 The API call will look as follows:
 
-_`https://api.openweathermap.org/data/3.0/weather?lat=33.44&lon=-94.04&appid={Paste your API key here}`_
+_`https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY`_
+
+&#x20;
+
+or in CURL:
+
+```
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=40.7128&lon=-74.0060&appid=YOUR_API_KEY"
+```
+
+{% hint style="info" %}
+**Free plan subscription limitations**\
+Free plan subscriptions (version 2.5) are limited to:
+
+* 60 calls per minute
+* 5 day / 3 hour forecast data
+{% endhint %}
 
 #### **Reading Your First API Response**
 
-The API call will return the current weather information for the provided location as a **response in JSON format**:
+{% hint style="info" %}
+**Response information**
+
+Check the [reference information](index.md#reference-information-one-call-3.0) section for a comprehensive description of the OpenWeather API production version One Call 3.0.
+{% endhint %}
+
+The API call will return all the information of the current weather information for the provided location as a **response in JSON format**:
 
 ```json
 {
-
-`  `"coord": {
-
-`    `"lon": 10.99,
-
-`    `"lat": 44.34
-
-`  `},
-
-`  `"weather": [
-
-`    `{
-
-`      `"id": 501,
-
-`      `"main": "Rain",
-
-`      `"description": "moderate rain",
-
-`      `"icon": "10d"
-
-`    `}
-
-`  `],
-
-`  `"base": "stations",
-
-`  `"main": {
-
-`    `"temp": 298.48,
-
-`    `"feels\_like": 298.74,
-
-`    `"temp\_min": 297.56,
-
-`    `"temp\_max": 300.05,
-
-`    `"pressure": 1015,
-
-`    `"humidity": 64,
-
-`    `"sea\_level": 1015,
-
-`    `"grnd\_level": 933
-
-`  `},
-
-`  `"visibility": 10000,
-
-`  `"wind": {
-
-`    `"speed": 0.62,
-
-`    `"deg": 349,
-
-`    `"gust": 1.18
-
-`  `},
-
-`  `"rain": {
-
-`    `"1h": 3.16
-
-`  `},
-
-`  `"clouds": {
-
-`    `"all": 100
-
-`  `},
-
-`  `"dt": 1661870592,
-
-`  `"sys": {
-
-`    `"type": 2,
-
-`    `"id": 2075663,
-
-`    `"country": "IT",
-
-`    `"sunrise": 1661834187,
-
-`    `"sunset": 1661882248
-
-`  `},
-
-`  `"timezone": 7200,
-
-`  `"id": 3163858,
-
-`  `"name": "Zocca",
-
-`  `"cod": 200
-
-}    
+    "coord": {
+        "lon": -94.04,
+        "lat": 33.44
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 293.03,
+        "feels_like": 293.27,
+        "temp_min": 292.59,
+        "temp_max": 294.19,
+        "pressure": 1019,
+        "humidity": 84,
+        "sea_level": 1019,
+        "grnd_level": 1008
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.45,
+        "deg": 0,
+        "gust": 0.89
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1757575986,
+    "sys": {
+        "type": 2,
+        "id": 62880,
+        "country": "US",
+        "sunrise": 1757591833,
+        "sunset": 1757636909
+    },
+    "timezone": -18000,
+    "id": 4133367,
+    "name": "Texarkana",
+    "cod": 200
+}
 ```
 
 {% hint style="warning" %}
 <mark style="color:$info;">**Empty responses**</mark>\
 An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
+
+An API request without required parameters, such as latitude and longitude, will typically result in an 400 error message (nothing to show as Geocode information).
 {% endhint %}
+
+### <sub>Response Parameters</sub>
+
+## JSON Format API Response Fields
+
+<table><thead><tr><th>Field Path</th><th width="127">Data Type</th><th>Description</th><th>Units/Notes</th></tr></thead><tbody><tr><td><code>cod</code></td><td>Number</td><td>Internal parameter</td><td>HTTP status code</td></tr><tr><td><code>message</code></td><td>String</td><td>Internal parameter</td><td>Error message or status</td></tr><tr><td><code>cnt</code></td><td>Number</td><td>A number of timestamps returned in the API response</td><td>Count of forecast entries</td></tr><tr><td><strong>list</strong></td><td>Array</td><td>Array of forecast data objects</td><td>-</td></tr><tr><td><code>list.dt</code></td><td>Number</td><td>Time of data forecasted, unix, UTC</td><td>Unix timestamp</td></tr><tr><td><strong>list.main</strong></td><td>Object</td><td>Main weather parameters</td><td>-</td></tr><tr><td><code>list.main.temp</code></td><td>Number</td><td>Temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.feels_like</code></td><td>Number</td><td>Human perception temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_min</code></td><td>Number</td><td>Minimum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_max</code></td><td>Number</td><td>Maximum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.pressure</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.sea_level</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.grnd_level</code></td><td>Number</td><td>Atmospheric pressure on ground level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.humidity</code></td><td>Number</td><td>Humidity percentage</td><td>% (0-100)</td></tr><tr><td><code>list.main.temp_kf</code></td><td>Number</td><td>Internal parameter</td><td>-</td></tr><tr><td><strong>list.weather</strong></td><td>Array</td><td>Weather conditions array</td><td>-</td></tr><tr><td><code>list.weather.id</code></td><td>Number</td><td>Weather condition ID</td><td>Weather condition code</td></tr><tr><td><code>list.weather.main</code></td><td>String</td><td>Group of weather parameters</td><td>Rain, Snow, Clouds, etc.</td></tr><tr><td><code>list.weather.description</code></td><td>String</td><td>Weather condition within the group</td><td>Detailed description</td></tr><tr><td><code>list.weather.icon</code></td><td>String</td><td>Weather icon ID</td><td>Icon code (e.g., "01d")</td></tr><tr><td><strong>list.clouds</strong></td><td>Object</td><td>Cloud information</td><td>-</td></tr><tr><td><code>list.clouds.all</code></td><td>Number</td><td>Cloudiness percentage</td><td>% (0-100)</td></tr><tr><td><strong>list.wind</strong></td><td>Object</td><td>Wind information</td><td>-</td></tr><tr><td><code>list.wind.speed</code></td><td>Number</td><td>Wind speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.wind.deg</code></td><td>Number</td><td>Wind direction</td><td>Degrees (0-360, meteorological)</td></tr><tr><td><code>list.wind.gust</code></td><td>Number</td><td>Wind gust speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.visibility</code></td><td>Number</td><td>Average visibility</td><td>Meters (max: 10,000m)</td></tr><tr><td><code>list.pop</code></td><td>Number</td><td>Probability of precipitation</td><td>Decimal (0.0-1.0, where 1.0 = 100%)</td></tr><tr><td><strong>list.rain</strong></td><td>Object</td><td>Rain information (optional)</td><td>-</td></tr><tr><td><code>list.rain.3h</code></td><td>Number</td><td>Rain volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.snow</strong></td><td>Object</td><td>Snow information (optional)</td><td>-</td></tr><tr><td><code>list.snow.3h</code></td><td>Number</td><td>Snow volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.sys</strong></td><td>Object</td><td>System parameters</td><td>-</td></tr><tr><td><code>list.sys.pod</code></td><td>String</td><td>Part of the day</td><td>"n" (night) or "d" (day)</td></tr><tr><td><code>list.dt_txt</code></td><td>String</td><td>Time of data forecasted</td><td>ISO 8601 format, UTC</td></tr><tr><td><strong>city</strong></td><td>Object</td><td>City information</td><td>-</td></tr><tr><td><code>city.id</code></td><td>Number</td><td>City ID</td><td>Numeric identifier (deprecated)</td></tr><tr><td><code>city.name</code></td><td>String</td><td>City name</td><td>City name (deprecated)</td></tr><tr><td><strong>city.coord</strong></td><td>Object</td><td>City coordinates</td><td>-</td></tr><tr><td><code>city.coord.lat</code></td><td>Number</td><td>Geo location latitude</td><td>Decimal degrees (-90 to 90)</td></tr><tr><td><code>city.coord.lon</code></td><td>Number</td><td>Geo location longitude</td><td>Decimal degrees (-180 to 180)</td></tr><tr><td><code>city.country</code></td><td>String</td><td>Country code</td><td>ISO 3166 country code (e.g., "US", "GB")</td></tr><tr><td><code>city.population</code></td><td>Number</td><td>City population</td><td>Number of inhabitants</td></tr><tr><td><code>city.timezone</code></td><td>Number</td><td>Shift in seconds from UTC</td><td>Seconds offset from UTC</td></tr><tr><td><code>city.sunrise</code></td><td>Number</td><td>Sunrise time</td><td>Unix timestamp, UTC</td></tr><tr><td><code>city.sunset</code></td><td>Number</td><td>Sunset time</td><td>Unix timestamp, UTC</td></tr></tbody></table>
+
+### <mark style="color:$info;">How to Exclude Parts of the Weather Forecast</mark>
+
+You can make an API exluding parts of the weather forecast as shown in the follwing example:
+
+```
+https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY
+```
+
+<mark style="color:$info;">or in CURL:</mark>
+
+```
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY"
+```
 
 ### <mark style="color:$info;">Getting New API Keys</mark>
 
@@ -165,7 +163,11 @@ Whenever you need a new API key, follow theses steps:
 
 ### <mark style="color:$info;">Authentication and Authorization</mark>
 
-<mark style="color:$info;">The OpenWeather API uses API keys as authentication and authorization method.</mark>&#x20;
+<mark style="color:$info;">The OpenWeather API uses API keys authentication.</mark> <mark style="color:$info;"></mark><mark style="color:$info;">**Include your API key in every request**</mark> <mark style="color:$info;"></mark><mark style="color:$info;">as follows:</mark>
+
+```
+https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY
+```
 
 1. [**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather.** &#x20;
 2. Create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys).
@@ -183,7 +185,7 @@ Learn more about our call limits and billing plans in the [reference section](in
 
 ***
 
-## <mark style="color:$primary;">Reference Information</mark>
+## <mark style="color:$primary;">Reference Information (One Call 3.0)</mark>
 
 ### Overview
 
@@ -230,7 +232,7 @@ _Current and forecast data._
 
 <mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="120">Name</th><th width="102">Required</th><th width="109">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td>list</td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>It should be a comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td><p>Units of measurement.</p><p></p><p>Available values: <em>standard, metrics, imperial.</em><br><br>If the <em>units</em> parameter is left empty, the standard units measure will be applied by default.</p></td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
+<table><thead><tr><th width="120">Name</th><th width="102">Required</th><th width="109">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td>list</td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>Comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td><p>Units of measurement.</p><p></p><p>Available values: <em>standard, metrics, imperial.</em><br><br>If the <em>units</em> parameter is left empty, the standard units measure will be applied by default.</p></td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
 
 <mark style="color:orange;">**Request Example**</mark>\
 `https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`
@@ -668,7 +670,7 @@ with light to moderate winds from the west-southwest."
 
 
 
-### <mark style="color:$info;">Handling Error Response</mark>
+### <mark style="color:$info;">Errors and Error Handling Error</mark>
 
 Opencall 3.0 handles 401, 400, 429, and 5xx error codes. Error response payload returned for all types of errors has the following structure:
 
@@ -692,7 +694,7 @@ Opencall 3.0 handles 401, 400, 429, and 5xx error codes. Error response payload 
 
 Check the following table for more information about the status and error codes:
 
-<table><thead><tr><th width="180">Error Code</th><th>Description</th></tr></thead><tbody><tr><td><strong>401</strong></td><td><p>Unauthorized. You can get 401 error if API token did not provided in the request or in case API token provided in the request does not grant access to this API.</p><p></p><p>You must add API token with granted access to the product to the request before returning it.</p></td></tr><tr><td><strong>404</strong></td><td><p>Not Found. You can get 404 error if data with requested parameters (lat, lon, date etc) does not exist in service database.</p><p></p><p>You must not retry the same request.</p></td></tr><tr><td><strong>429</strong></td><td><p>Too Many Requests. You can get 429 error if the key quota of requests for the provided API to this API was exceeded.</p><p></p><p>You may retry the request after some time or after extending your key quota.</p></td></tr><tr><td><strong>5xx</strong></td><td><p>Unexpected Error. You can get '5xx' error in case of other internal errors. Error Response code will be <code>5xx</code>.</p><p></p><p>Please contact us and enclose an example of your API request that receives this error in your email to let us analyse it and find a solution for you promptly.</p><p></p><p>You may retry the request which led to this error.</p></td></tr></tbody></table>
+<table><thead><tr><th width="180">Error Code</th><th>Description</th></tr></thead><tbody><tr><td><strong>400</strong></td><td>Nothing to show as Geocode information.</td></tr><tr><td><strong>401</strong></td><td><p>Unauthorized. You can get 401 error if API token did not provided in the request or in case API token provided in the request does not grant access to this API.</p><p></p><p>You must add API token with granted access to the product to the request before returning it.</p></td></tr><tr><td><strong>404</strong></td><td><p>Not Found. You can get 404 error if data with requested parameters (lat, lon, date etc) does not exist in service database.</p><p></p><p>You must not retry the same request.</p></td></tr><tr><td><strong>429</strong></td><td><p>Too Many Requests. You can get 429 error if the key quota of requests for the provided API to this API was exceeded.</p><p></p><p>You may retry the request after some time or after extending your key quota.</p></td></tr><tr><td><strong>5xx</strong></td><td><p>Unexpected Error. You can get '5xx' error in case of other internal errors. Error Response code will be <code>5xx</code>.</p><p></p><p>Please contact us and enclose an example of your API request that receives this error in your email to let us analyse it and find a solution for you promptly.</p><p></p><p>You may retry the request which led to this error.</p></td></tr></tbody></table>
 
 ## <mark style="color:$primary;">Best Practices</mark>
 
