@@ -7,7 +7,9 @@ status: new
 
 {% hint style="danger" %}
 **Disclaimer**\
-The following pages showcase my version of some parts of the OpenWeather API documentation limited to the free plan subscription.  If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
+The sole purpose of this page is to showcase my understanding of APIs and my ability to write clear, user-focused documentation that helps others achieve their goals. The content is intentionally incomplete.  I focused on demonstrating a practical workflow and documentation style rather than providing a comprehensive guide.&#x20;
+
+If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
 
 {% endhint %}
 
@@ -38,11 +40,20 @@ Let's start to use the OpenWeather API by following these steps:
 1. [Sign up](https://home.openweathermap.org/users/sign_up) to OpenWeather to create your account.
 2. Copy your default API key (later `appid`).
 
-_You are ready make your first API call!_
+After completing the sign up process, you'll get a **free plan subscription by default**.
+
+{% hint style="info" %}
+**Free plan subscriptions**
+
+Free plan subscriptions (version 2.5) are limited to:
+
+* 60 calls per minute
+* 5 day / 3 hour forecast data
+{% endhint %}
 
 ### <mark style="color:$info;">Making Your First API Call</mark>
 
-Once you get your API key, **you can make your first API call.** We'll use the **free plan version** (One Call 2.5) to call the OpenWeather API to get our weather forecast for the following locatio&#x6E;_:_
+Once you get your API key, **you can make your first API call.** We'll use the **default** **free plan version** to call the OpenWeather API to get our weather forecast for the following locatio&#x6E;_:_
 
 * `lat=33.44` - Latitude
 * `lon=-94.04` - Longitude
@@ -56,24 +67,11 @@ _`https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOU
 or in CURL:
 
 ```
-curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=40.7128&lon=-74.0060&appid=YOUR_API_KEY"
+curl -X GET 
+  "https://api.openweathermap.org/data/2.5/weather?lat=40.7128&lon=-74.0060&appid=YOUR_API_KEY"
 ```
 
-{% hint style="info" %}
-**Free plan subscription limitations**\
-Free plan subscriptions (version 2.5) are limited to:
-
-* 60 calls per minute
-* 5 day / 3 hour forecast data
-{% endhint %}
-
 #### **Reading Your First API Response**
-
-{% hint style="info" %}
-**Response information**
-
-Check the [reference information](index.md#reference-information-one-call-3.0) section for a comprehensive description of the OpenWeather API production version One Call 3.0.
-{% endhint %}
 
 The API call will return all the information of the current weather information for the provided location as a **response in JSON format**:
 
@@ -126,22 +124,21 @@ The API call will return all the information of the current weather information 
 }
 ```
 
-{% hint style="warning" %}
-<mark style="color:$info;">**Empty responses**</mark>\
-An API response not showing any parameters indicate that the related weather phenomena just did not happen for the data of measurement provided.
+Empty Responses and Required Parameters
 
-An API request without required parameters, such as latitude and longitude, will typically result in an 400 error message (nothing to show as Geocode information).
+An **API response not showing any parameters** indicate that the related weather phenomena just did not happen for the data of measurement provided.
+
+An **API request without required parameters**, such as latitude and longitude, will typically result in an 400 error message (nothing to show as Geocode information).
+
+{% hint style="info" %}
+**Response information**
+
+Check the [reference information](index.md#reference-information-one-call-3.0) section for a comprehensive description of the OpenWeather API production version One Call 3.0.
 {% endhint %}
-
-### <sub>Response Parameters</sub>
-
-## JSON Format API Response Fields
-
-<table><thead><tr><th>Field Path</th><th width="127">Data Type</th><th>Description</th><th>Units/Notes</th></tr></thead><tbody><tr><td><code>cod</code></td><td>Number</td><td>Internal parameter</td><td>HTTP status code</td></tr><tr><td><code>message</code></td><td>String</td><td>Internal parameter</td><td>Error message or status</td></tr><tr><td><code>cnt</code></td><td>Number</td><td>A number of timestamps returned in the API response</td><td>Count of forecast entries</td></tr><tr><td><strong>list</strong></td><td>Array</td><td>Array of forecast data objects</td><td>-</td></tr><tr><td><code>list.dt</code></td><td>Number</td><td>Time of data forecasted, unix, UTC</td><td>Unix timestamp</td></tr><tr><td><strong>list.main</strong></td><td>Object</td><td>Main weather parameters</td><td>-</td></tr><tr><td><code>list.main.temp</code></td><td>Number</td><td>Temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.feels_like</code></td><td>Number</td><td>Human perception temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_min</code></td><td>Number</td><td>Minimum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_max</code></td><td>Number</td><td>Maximum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.pressure</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.sea_level</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.grnd_level</code></td><td>Number</td><td>Atmospheric pressure on ground level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.humidity</code></td><td>Number</td><td>Humidity percentage</td><td>% (0-100)</td></tr><tr><td><code>list.main.temp_kf</code></td><td>Number</td><td>Internal parameter</td><td>-</td></tr><tr><td><strong>list.weather</strong></td><td>Array</td><td>Weather conditions array</td><td>-</td></tr><tr><td><code>list.weather.id</code></td><td>Number</td><td>Weather condition ID</td><td>Weather condition code</td></tr><tr><td><code>list.weather.main</code></td><td>String</td><td>Group of weather parameters</td><td>Rain, Snow, Clouds, etc.</td></tr><tr><td><code>list.weather.description</code></td><td>String</td><td>Weather condition within the group</td><td>Detailed description</td></tr><tr><td><code>list.weather.icon</code></td><td>String</td><td>Weather icon ID</td><td>Icon code (e.g., "01d")</td></tr><tr><td><strong>list.clouds</strong></td><td>Object</td><td>Cloud information</td><td>-</td></tr><tr><td><code>list.clouds.all</code></td><td>Number</td><td>Cloudiness percentage</td><td>% (0-100)</td></tr><tr><td><strong>list.wind</strong></td><td>Object</td><td>Wind information</td><td>-</td></tr><tr><td><code>list.wind.speed</code></td><td>Number</td><td>Wind speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.wind.deg</code></td><td>Number</td><td>Wind direction</td><td>Degrees (0-360, meteorological)</td></tr><tr><td><code>list.wind.gust</code></td><td>Number</td><td>Wind gust speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.visibility</code></td><td>Number</td><td>Average visibility</td><td>Meters (max: 10,000m)</td></tr><tr><td><code>list.pop</code></td><td>Number</td><td>Probability of precipitation</td><td>Decimal (0.0-1.0, where 1.0 = 100%)</td></tr><tr><td><strong>list.rain</strong></td><td>Object</td><td>Rain information (optional)</td><td>-</td></tr><tr><td><code>list.rain.3h</code></td><td>Number</td><td>Rain volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.snow</strong></td><td>Object</td><td>Snow information (optional)</td><td>-</td></tr><tr><td><code>list.snow.3h</code></td><td>Number</td><td>Snow volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.sys</strong></td><td>Object</td><td>System parameters</td><td>-</td></tr><tr><td><code>list.sys.pod</code></td><td>String</td><td>Part of the day</td><td>"n" (night) or "d" (day)</td></tr><tr><td><code>list.dt_txt</code></td><td>String</td><td>Time of data forecasted</td><td>ISO 8601 format, UTC</td></tr><tr><td><strong>city</strong></td><td>Object</td><td>City information</td><td>-</td></tr><tr><td><code>city.id</code></td><td>Number</td><td>City ID</td><td>Numeric identifier (deprecated)</td></tr><tr><td><code>city.name</code></td><td>String</td><td>City name</td><td>City name (deprecated)</td></tr><tr><td><strong>city.coord</strong></td><td>Object</td><td>City coordinates</td><td>-</td></tr><tr><td><code>city.coord.lat</code></td><td>Number</td><td>Geo location latitude</td><td>Decimal degrees (-90 to 90)</td></tr><tr><td><code>city.coord.lon</code></td><td>Number</td><td>Geo location longitude</td><td>Decimal degrees (-180 to 180)</td></tr><tr><td><code>city.country</code></td><td>String</td><td>Country code</td><td>ISO 3166 country code (e.g., "US", "GB")</td></tr><tr><td><code>city.population</code></td><td>Number</td><td>City population</td><td>Number of inhabitants</td></tr><tr><td><code>city.timezone</code></td><td>Number</td><td>Shift in seconds from UTC</td><td>Seconds offset from UTC</td></tr><tr><td><code>city.sunrise</code></td><td>Number</td><td>Sunrise time</td><td>Unix timestamp, UTC</td></tr><tr><td><code>city.sunset</code></td><td>Number</td><td>Sunset time</td><td>Unix timestamp, UTC</td></tr></tbody></table>
 
 ### <mark style="color:$info;">How to Exclude Parts of the Weather Forecast</mark>
 
-You can make an API exluding parts of the weather forecast as shown in the follwing example:
+You can exclude part of the weather forecast in you API call by using the `exclude` parameter as shown in the follwing example:\`
 
 ```
 https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY
@@ -150,7 +147,24 @@ https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hou
 <mark style="color:$info;">or in CURL:</mark>
 
 ```
-curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY"
+curl -X GET 
+  "https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY"
+```
+
+### <mark style="color:$info;">Authentication and Authorization</mark>
+
+The OpenWeather API uses API keys authentication. **Include your API key in every request** as follows using query parameters (recommended):
+
+```
+https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY
+```
+
+You can also use **header authentication** as follows:
+
+```
+curl -X GET \
+  "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0" \
+  -H "X-API-Key: YOUR_API_KEY"
 ```
 
 ### <mark style="color:$info;">Getting New API Keys</mark>
@@ -161,22 +175,65 @@ Whenever you need a new API key, follow theses steps:
 2. Under **Create key**, provide a name of the API key.   &#x20;
 3. Click **Generate.**
 
-### <mark style="color:$info;">Authentication and Authorization</mark>
+### <mark style="color:$info;">Parameters Options</mark>
 
-<mark style="color:$info;">The OpenWeather API uses API keys authentication.</mark> <mark style="color:$info;"></mark><mark style="color:$info;">**Include your API key in every request**</mark> <mark style="color:$info;"></mark><mark style="color:$info;">as follows:</mark>
+<mark style="color:orange;">**`-exclude`**</mark>
 
-```
-https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY
-```
+| Option   | Description                  |
+| -------- | ---------------------------- |
+| current  | Current weather data         |
+| minutely | Minute forecast for 1 hour   |
+| hourly   | Hourly forecast for 48 hours |
+| daily    | Daily forecast for 8 days    |
+| alerts   | Weather alerts               |
 
-1. [**Sign up**](https://home.openweathermap.org/users/sign_up) **to OpenWeather.** &#x20;
-2. Create an [**OpenWeather API key**](https://home.openweathermap.org/api_keys).
+<mark style="color:orange;">**`-units`**</mark>
+
+| Option     | Temperature | Wind Speed | Pressure |
+| ---------- | ----------- | ---------- | -------- |
+| `standard` | Kelvin      | meter/sec  | hPa      |
+| `metric`   | Celsius     | meter/sec  | hPa      |
+| `imperial` | Fahrenheit  | miles/hour | hPa      |
+
+<mark style="color:orange;">**`-lan`**</mark>
+
+| Language   | Code |
+| ---------- | ---- |
+| English    | en   |
+| French     | fr   |
+| Italian    | it   |
+| Russian    | ru   |
+| Chinese    | zh   |
+| Spanish    | es   |
+| German     | de   |
+| Portuguese | pt   |
+| Japanese   | ja   |
+| Arabic     | ar   |
+
+***
+
+### <mark style="color:$info;">Weather Condition IDs</mark>
+
+| Range   | Group        | Description                     |
+| ------- | ------------ | ------------------------------- |
+| 200-299 | Thunderstorm | Various thunderstorm conditions |
+| 300-399 | Drizzle      | Light precipitation             |
+| 500-599 | Rain         | Moderate to heavy rain          |
+| 600-699 | Snow         | Various snow conditions         |
+| 700-799 | Atmosphere   | Fog, haze, dust, etc.           |
+| 800     | Clear        | Clear sky                       |
+| 801-804 | Clouds       | Partially to fully cloudy       |
+
+### <mark style="color:$info;">Security Best Practices</mark>
+
+* **Never expose API keys** in client-side code or public repositories.
+* Use environment variables: `process.env.OPENWEATHER_API_KEY.`
+* Rotate keys regularly through your dashboard.
+* Monitor usage to detect unauthorized access.
 
 ### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
 
-You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
-
-The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
+API keys generation depends on your subscription plan. We track the total usage across all of them.  For instance, the One Call API 3.0 has a **default limit of 2,000 calls per day**.&#x20;
 
 {% hint style="info" %}
 **Call limits and billing plans**\
@@ -204,16 +261,63 @@ Learn more about our call limits and billing plans in the [reference section](in
 Based on our proprietary model, **all endpoints are updated every 10 minutes** to ensure you always have access to the most accurate and up-to-date information available in JSON, XML, or HTML format..
 
 {% hint style="warning" %}
+**About Dark Sky API**
+
 If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 {% endhint %}
 
 ### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
 
-You can **generate as many API keys as you need** for your subscription; we'll track the total usage across all of them.
+API keys generation depends on your subscription plan. We track the total usage across all of them. The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
 
-The One Call API 3.0 has a **default limit of 2,000 calls per day**. To change this limit, navigate to the  ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings.&#x20;
+### Rate Limiting by Plan
 
-ADD HERE AL INFO
+| Plan      | Daily Calls | Calls per Minute | Burst Limit |
+| --------- | ----------- | ---------------- | ----------- |
+| Free      | 2,000       | 60               | 100         |
+| Startup   | 100,000     | 600              | 1,000       |
+| Developer | 1,000,000   | 3,000            | 10,000      |
+
+#### Rate Limiting Details
+
+* **Time Window**: Limits reset at midnight UTC
+* **Per-key Tracking**: All API keys under your account share the quota
+* **Burst Protection**: Short bursts allowed up to burst limit
+* **Geographic**: No geographic restrictions on rate limits
+
+#### Rate Limit Headers
+
+Every response includes rate limiting information:
+
+```http
+HTTP/1.1 200 OK
+X-RateLimit-Limit: 2000
+X-RateLimit-Remaining: 1847
+X-RateLimit-Reset: 1640995200
+X-RateLimit-Used: 153
+```
+
+#### Handling Rate Limits
+
+```javascript
+// Example: JavaScript rate limit handling
+async function makeRequest(url) {
+  try {
+    const response = await fetch(url);
+    
+    if (response.status === 429) {
+      const resetTime = response.headers.get('X-RateLimit-Reset');
+      const waitTime = (resetTime * 1000) - Date.now();
+      console.log(`Rate limited. Retry after ${waitTime}ms`);
+      return null;
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Request failed:', error);
+  }
+}
+```
 
 ### <mark style="color:$info;">Endpoints and Methods</mark>
 
@@ -224,7 +328,7 @@ Please note that One Call 3.0 is included in the One Call by Call subscription _
 
 **The root URL for the API** is [https://api.openweathermap.org/data/3.0/onecall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
 
-#### _**`/onecall`**_
+#### _<mark style="color:green;background-color:$info;">**`/onecall`**</mark>_                                                                               &#x20;
 
 _Current and forecast data._
 
@@ -232,10 +336,10 @@ _Current and forecast data._
 
 <mark style="color:orange;">**Parameters**</mark>
 
-<table><thead><tr><th width="120">Name</th><th width="102">Required</th><th width="109">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td>list</td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>Comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td><p>Units of measurement.</p><p></p><p>Available values: <em>standard, metrics, imperial.</em><br><br>If the <em>units</em> parameter is left empty, the standard units measure will be applied by default.</p></td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
+<table><thead><tr><th width="120">Name</th><th width="121">Required</th><th width="109">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>float</td><td>Geographical latitude.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>float</td><td>Geographical lLongitude. </td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>string</td><td>Unique string of alphanumerical characters used to access One Call API resources. </td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td>list</td><td><p>Comma-delimited list of parameters (without spaces) to exclude in the response. </p><p><br>Learn more in the <a href="index.md#parameters-options">Parameters Options</a> section. </p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>string</td><td><p>Units of measurement.</p><p></p><p>If the <em>units</em> parameter is left empty, the standard units measure will be applied by default. <br><br>Learn more in the <a href="index.md#parameters-options">Parameters Options</a> section. </p></td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>string</td><td>Language of the response.<br><br>Learn more in the <a href="index.md#parameters-options">Parameters Options</a> section. </td></tr></tbody></table>
 
 <mark style="color:orange;">**Request Example**</mark>\
-`https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`
+`https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid=YOUR_API_KEY`
 
 <mark style="color:orange;">**Response Example**</mark>
 
@@ -273,7 +377,7 @@ The sky is covered with overcast clouds, and there is no precipitation expected 
 }
 ```
 
-#### _**`/timemachine`**_
+#### _<mark style="color:green;">**`/timemachine`**</mark>_                                                                             &#x20;
 
 _Weather data for timestamp_.
 
@@ -528,7 +632,7 @@ _Weather data for timestamp_.
 
 ```
 
-#### _**`/day_summary`**_
+#### _<mark style="color:green;">**`/day_summary`**</mark>_                                                                             &#x20;
 
 _Aggregated weather data for a particular date from 2nd January 1979 till long-term forecast for 1,5 years ahead_.
 
@@ -611,7 +715,7 @@ _Aggregated weather data for a particular date from 2nd January 1979 till long-t
 }  
 ```
 
-#### _**`/overview`**_
+#### _<mark style="color:green;">**`/overview`**</mark>_                                                                             &#x20;
 
 _Weather overview information with a human-readable weather summary for today and tomorrow’s forecast, utilizing OpenWeather AI technologies_.
 
@@ -665,10 +769,234 @@ Overall, it is a moderately cool and cloudy day
 with light to moderate winds from the west-southwest."
 
 }  
-
 ```
 
+### <mark style="color:$info;">Response Formats</mark>
 
+The API supports multiple response formats specified via the `mode` parameter:
+
+| Format | Parameter             | Content-Type       | Use Case                 |
+| ------ | --------------------- | ------------------ | ------------------------ |
+| JSON   | `mode=json` (default) | `application/json` | Standard API integration |
+| XML    | `mode=xml`            | `application/xml`  | Legacy systems           |
+| HTML   | `mode=html`           | `text/html`        | Direct browser display   |
+
+#### Examples
+
+**JSON Response (Default)**
+
+```bash
+curl "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0&appid=YOUR_API_KEY"
+```
+
+```json
+{
+  "lat": 40.7,
+  "lon": -74.0,
+  "current": {
+    "temp": 298.15,
+    "humidity": 65
+  }
+}
+```
+
+**XML Response**
+
+```bash
+curl "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0&mode=xml&appid=YOUR_API_KEY"
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<weather>
+  <lat>40.7</lat>
+  <lon>-74.0</lon>
+  <current>
+    <temp>298.15</temp>
+    <humidity>65</humidity>
+  </current>
+</weather>
+```
+
+**HTML Response**
+
+```bash
+curl "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0&mode=html&appid=YOUR_API_KEY"
+```
+
+Returns a formatted HTML page suitable for direct browser display.
+
+### <mark style="color:$info;">Request/Response Headers</mark>
+
+#### Required Request Headers
+
+```http
+Accept: application/json
+User-Agent: YourApp/1.0
+```
+
+#### Optional Request Headers
+
+```http
+Accept-Language: en-US,en;q=0.9
+Cache-Control: no-cache
+X-API-Key: YOUR_API_KEY  # Alternative to query parameter
+```
+
+#### Standard Response Headers
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=600
+X-RateLimit-Limit: 2000
+X-RateLimit-Remaining: 1999
+X-RateLimit-Reset: 1640995200
+ETag: "abc123def456"
+Last-Modified: Wed, 21 Oct 2024 07:28:00 GMT
+```
+
+#### Caching Headers
+
+* **Cache-Control**: Responses cached for 10 minutes (600 seconds)
+* **ETag**: Use for conditional requests to save bandwidth
+* **Last-Modified**: Alternative cache validation method
+
+***
+
+### <mark style="color:$info;">JSON Response Fields</mark>
+
+<table><thead><tr><th>Field Path</th><th width="127">Data Type</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td><code>cod</code></td><td>Number</td><td>Internal parameter</td><td>HTTP status code</td></tr><tr><td><code>message</code></td><td>String</td><td>Internal parameter</td><td>Error message or status</td></tr><tr><td><code>cnt</code></td><td>Number</td><td>A number of timestamps returned in the API response</td><td>Count of forecast entries</td></tr><tr><td><strong>list</strong></td><td>Array</td><td>Array of forecast data objects</td><td>-</td></tr><tr><td><code>list.dt</code></td><td>Number</td><td>Time of data forecasted, unix, UTC</td><td>Unix timestamp</td></tr><tr><td><strong>list.main</strong></td><td>Object</td><td>Main weather parameters</td><td>-</td></tr><tr><td><code>list.main.temp</code></td><td>Number</td><td>Temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.feels_like</code></td><td>Number</td><td>Human perception temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_min</code></td><td>Number</td><td>Minimum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.temp_max</code></td><td>Number</td><td>Maximum forecasted temperature</td><td>Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit</td></tr><tr><td><code>list.main.pressure</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.sea_level</code></td><td>Number</td><td>Atmospheric pressure on sea level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.grnd_level</code></td><td>Number</td><td>Atmospheric pressure on ground level</td><td>hPa (hectopascals)</td></tr><tr><td><code>list.main.humidity</code></td><td>Number</td><td>Humidity percentage</td><td>% (0-100)</td></tr><tr><td><code>list.main.temp_kf</code></td><td>Number</td><td>Internal parameter</td><td>-</td></tr><tr><td><strong>list.weather</strong></td><td>Array</td><td>Weather conditions array</td><td>-</td></tr><tr><td><code>list.weather.id</code></td><td>Number</td><td>Weather condition ID</td><td>Weather condition code</td></tr><tr><td><code>list.weather.main</code></td><td>String</td><td>Group of weather parameters</td><td>Rain, Snow, Clouds, etc.</td></tr><tr><td><code>list.weather.description</code></td><td>String</td><td>Weather condition within the group</td><td>Detailed description</td></tr><tr><td><code>list.weather.icon</code></td><td>String</td><td>Weather icon ID</td><td>Icon code (e.g., "01d")</td></tr><tr><td><strong>list.clouds</strong></td><td>Object</td><td>Cloud information</td><td>-</td></tr><tr><td><code>list.clouds.all</code></td><td>Number</td><td>Cloudiness percentage</td><td>% (0-100)</td></tr><tr><td><strong>list.wind</strong></td><td>Object</td><td>Wind information</td><td>-</td></tr><tr><td><code>list.wind.speed</code></td><td>Number</td><td>Wind speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.wind.deg</code></td><td>Number</td><td>Wind direction</td><td>Degrees (0-360, meteorological)</td></tr><tr><td><code>list.wind.gust</code></td><td>Number</td><td>Wind gust speed</td><td>Default/Metric: m/s, Imperial: mph</td></tr><tr><td><code>list.visibility</code></td><td>Number</td><td>Average visibility</td><td>Meters (max: 10,000m)</td></tr><tr><td><code>list.pop</code></td><td>Number</td><td>Probability of precipitation</td><td>Decimal (0.0-1.0, where 1.0 = 100%)</td></tr><tr><td><strong>list.rain</strong></td><td>Object</td><td>Rain information (optional)</td><td>-</td></tr><tr><td><code>list.rain.3h</code></td><td>Number</td><td>Rain volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.snow</strong></td><td>Object</td><td>Snow information (optional)</td><td>-</td></tr><tr><td><code>list.snow.3h</code></td><td>Number</td><td>Snow volume for last 3 hours</td><td>mm (millimeters)</td></tr><tr><td><strong>list.sys</strong></td><td>Object</td><td>System parameters</td><td>-</td></tr><tr><td><code>list.sys.pod</code></td><td>String</td><td>Part of the day</td><td>"n" (night) or "d" (day)</td></tr><tr><td><code>list.dt_txt</code></td><td>String</td><td>Time of data forecasted</td><td>ISO 8601 format, UTC</td></tr><tr><td><strong>city</strong></td><td>Object</td><td>City information</td><td>-</td></tr><tr><td><code>city.id</code></td><td>Number</td><td>City ID</td><td>Numeric identifier (deprecated)</td></tr><tr><td><code>city.name</code></td><td>String</td><td>City name</td><td>City name (deprecated)</td></tr><tr><td><strong>city.coord</strong></td><td>Object</td><td>City coordinates</td><td>-</td></tr><tr><td><code>city.coord.lat</code></td><td>Number</td><td>Geo location latitude</td><td>Decimal degrees (-90 to 90)</td></tr><tr><td><code>city.coord.lon</code></td><td>Number</td><td>Geo location longitude</td><td>Decimal degrees (-180 to 180)</td></tr><tr><td><code>city.country</code></td><td>String</td><td>Country code</td><td>ISO 3166 country code (e.g., "US", "GB")</td></tr><tr><td><code>city.population</code></td><td>Number</td><td>City population</td><td>Number of inhabitants</td></tr><tr><td><code>city.timezone</code></td><td>Number</td><td>Shift in seconds from UTC</td><td>Seconds offset from UTC</td></tr><tr><td><code>city.sunrise</code></td><td>Number</td><td>Sunrise time</td><td>Unix timestamp, UTC</td></tr><tr><td><code>city.sunset</code></td><td>Number</td><td>Sunset time</td><td>Unix timestamp, UTC</td></tr></tbody></table>
+
+### <mark style="color:$info;">Complete Response Schema</mark>
+
+#### /onecall Response Structure
+
+```json
+{
+  "lat": 40.7128,                    // Number: Latitude
+  "lon": -74.0060,                   // Number: Longitude
+  "timezone": "America/New_York",    // String: IANA timezone
+  "timezone_offset": -18000,         // Number: UTC offset in seconds
+  
+  "current": {                       // Object: Current weather (optional)
+    "dt": 1640995200,               // Number: Unix timestamp
+    "sunrise": 1640951234,          // Number: Sunrise time (Unix)
+    "sunset": 1640983456,           // Number: Sunset time (Unix)
+    "temp": 298.15,                 // Number: Temperature
+    "feels_like": 299.2,            // Number: Perceived temperature
+    "pressure": 1013,               // Number: Atmospheric pressure (hPa)
+    "humidity": 65,                 // Number: Humidity percentage
+    "dew_point": 291.5,             // Number: Dew point temperature
+    "uvi": 5.2,                     // Number: UV index
+    "clouds": 20,                   // Number: Cloudiness percentage
+    "visibility": 10000,            // Number: Visibility in meters
+    "wind_speed": 3.5,              // Number: Wind speed
+    "wind_deg": 220,                // Number: Wind direction (degrees)
+    "wind_gust": 5.1,               // Number: Wind gust speed (optional)
+    "weather": [                    // Array: Weather conditions
+      {
+        "id": 800,                  // Number: Weather condition ID
+        "main": "Clear",            // String: Weather group
+        "description": "clear sky", // String: Weather description
+        "icon": "01d"               // String: Weather icon ID
+      }
+    ]
+  },
+  
+  "minutely": [                      // Array: Minute forecast (optional)
+    {
+      "dt": 1640995260,             // Number: Unix timestamp
+      "precipitation": 0.0          // Number: Precipitation volume (mm/h)
+    }
+  ],
+  
+  "hourly": [                        // Array: Hourly forecast (optional)
+    {
+      "dt": 1640995200,             // Number: Unix timestamp
+      "temp": 298.15,               // Number: Temperature
+      "feels_like": 299.2,          // Number: Perceived temperature
+      "pressure": 1013,             // Number: Atmospheric pressure
+      "humidity": 65,               // Number: Humidity percentage
+      "dew_point": 291.5,           // Number: Dew point
+      "uvi": 5.2,                   // Number: UV index
+      "clouds": 20,                 // Number: Cloudiness percentage
+      "visibility": 10000,          // Number: Visibility in meters
+      "wind_speed": 3.5,            // Number: Wind speed
+      "wind_deg": 220,              // Number: Wind direction
+      "wind_gust": 5.1,             // Number: Wind gust (optional)
+      "weather": [                  // Array: Weather conditions
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "pop": 0.1                    // Number: Probability of precipitation
+    }
+  ],
+  
+  "daily": [                         // Array: Daily forecast (optional)
+    {
+      "dt": 1640995200,             // Number: Unix timestamp
+      "sunrise": 1640951234,        // Number: Sunrise time
+      "sunset": 1640983456,         // Number: Sunset time
+      "moonrise": 1640967890,       // Number: Moonrise time
+      "moonset": 1640945678,        // Number: Moonset time
+      "moon_phase": 0.25,           // Number: Moon phase (0-1)
+      "summary": "Partly cloudy",   // String: Weather summary
+      "temp": {                     // Object: Temperature throughout day
+        "day": 298.15,              // Number: Day temperature
+        "min": 293.2,               // Number: Minimum temperature
+        "max": 301.5,               // Number: Maximum temperature
+        "night": 295.8,             // Number: Night temperature
+        "eve": 299.1,               // Number: Evening temperature
+        "morn": 294.3               // Number: Morning temperature
+      },
+      "feels_like": {               // Object: Perceived temperature
+        "day": 299.2,
+        "night": 296.5,
+        "eve": 300.1,
+        "morn": 295.1
+      },
+      "pressure": 1013,             // Number: Atmospheric pressure
+      "humidity": 65,               // Number: Humidity percentage
+      "dew_point": 291.5,           // Number: Dew point
+      "wind_speed": 3.5,            // Number: Wind speed
+      "wind_deg": 220,              // Number: Wind direction
+      "wind_gust": 5.1,             // Number: Wind gust (optional)
+      "weather": [                  // Array: Weather conditions
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "clouds": 20,                 // Number: Cloudiness percentage
+      "pop": 0.1,                   // Number: Probability of precipitation
+      "rain": 0.0,                  // Number: Rain volume (mm) (optional)
+      "snow": 0.0,                  // Number: Snow volume (mm) (optional)
+      "uvi": 5.2                    // Number: UV index
+    }
+  ],
+  
+  "alerts": [                        // Array: Weather alerts (optional)
+    {
+      "sender_name": "NWS",         // String: Alert source
+      "event": "Winter Storm",      // String: Alert event type
+      "start": 1640995200,          // Number: Alert start time (Unix)
+      "end": 1641081600,            // Number: Alert end time (Unix)
+      "description": "Heavy snow expected...", // String: Alert description
+      "tags": ["snow", "wind"]      // Array: Alert tags
+    }
+  ]
+}
+```
+
+```json
+```
 
 ### <mark style="color:$info;">Errors and Error Handling Error</mark>
 
