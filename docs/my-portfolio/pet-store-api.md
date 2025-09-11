@@ -1,15 +1,57 @@
----
-description: >-
-  Disclaimer. The following pages showcase my version of the public and official
-  documentation of the Swagger Pet Store API as a portfolio example of my
-  technical writing practice.
----
+# Pet Store API - Underconstruction!
 
-# Pet Store API
+{% hint style="danger" %}
+**Disclaimer**\
+\
+This is a portfolio sample.  <mark style="color:red;background-color:$danger;">Please keep in mind that</mark>**:**
 
-## Pet Store API Documentation
+* The sole purpose of this page is to showcase my understanding and practice of API documentation.&#x20;
+* This content is made from the openapi specification of the [Swagger Pet Store](https://editor.swagger.io/?_gl=1*19rcx4y*_gcl_au*MzYxNTk3MTI3LjE3NTYyMjUyNzg.).
+* I've followed an API-design methodology using Claude and Gemini as project companions.
+* I focused on some features of the Pet Store.
+{% endhint %}
 
-### Overview
+## <mark style="color:$primary;">Overview</mark>
+
+The Pet Store API is a **REST API** that provides a comprehensive set of endpoints and functionalitie**s** **to manage your pet store business** including pets, users, and orders management.
+
+The Pet Store API implements _**r**eusable data structure_, _request bodies_, and _security schem&#x65;_&#x73;, and uses two types of authentication (_OAuth2_ - for operations requiring user-specific permissions,  and _API Keys -_ for operations securit&#x79;_)_.
+
+## <mark style="color:$primary;">Quick Start Guide</mark>
+
+### <mark style="color:$info;">Adding Your First Pet to the Store</mark>
+
+
+
+### <mark style="color:$info;">Searching for a Pet in the Store</mark>
+
+
+
+## <mark style="color:$primary;">Tutorials</mark>
+
+## <mark style="color:$primary;">Security</mark>
+
+## <mark style="color:$primary;">Authentication and Authorization</mark>
+
+### <mark style="color:$info;">Authentication and Authorization</mark>
+
+### <mark style="color:$info;">Best Practices</mark>
+
+## <mark style="color:$primary;">Parameters Options</mark>
+
+## <mark style="color:$primary;">API Calls and Thresholds</mark>
+
+
+
+
+
+
+
+
+
+## <mark style="color:$primary;">Reference Documentation</mark>
+
+### <mark style="color:$info;">Overview</mark>
 
 The Pet Store API is a **REST API** that provides a comprehensive set of endpoints and functionalitie**s** **to manage your pet store business** including pets, users, and orders management.
 
@@ -19,7 +61,7 @@ The Pet Store API implements _**r**eusable data structure_, _request bodies_, an
 
 <table><thead><tr><th width="278">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/pet</code></td><td>Get all pets stored in your shop.</td><td>By default, updates occur every 2 minutes.</td></tr><tr><td><code>/pet/findByStatus</code></td><td>Get pets by status (<em>active</em>, <em>sold</em>, <em>reserved</em>, <em>incoming,</em> ).</td><td>Allows combined statuses, for example: <em>reserved</em> and <em>incoming.</em></td></tr><tr><td><code>pet/{petId}</code></td><td>Get pet by ID.</td><td><code>petId</code> format is customizable.</td></tr><tr><td><code>/store/inventory</code></td><td>Get all pets in the store's inventory.</td><td>By default, Inventory is sorted by status.</td></tr><tr><td><code>/store/order/</code></td><td>Get all orders of the store.</td><td>By default, last orders are shown first.</td></tr><tr><td><code>/store/order/{orderId}</code></td><td>Get order by ID.</td><td><code>orderId</code> format is customizable.</td></tr><tr><td><code>/user</code></td><td>Get all users of the store.</td><td>By default, users are updated every day (24 hours).</td></tr><tr><td><code>/user/login</code></td><td>Get all users currently logged in into the system.</td><td>By default, passwords are not shown. Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/logout</code></td><td>Get all logged-out users.</td><td>Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/{username}</code></td><td>Ger user information by username.</td><td>Case sensitive</td></tr></tbody></table>
 
-### Security Fundamentals
+### <mark style="color:$info;">Security Fundamentals</mark>
 
 Regarding authentication and authorizatio&#x6E;**,** the Pet Store API uses the following types of authentication:
 
@@ -78,7 +120,7 @@ To implement the API Key authorization flow consider the information disclosed i
    `api_key: YOUR_API_KEY`    \
 
 
-### _<mark style="color:orange;">(Coming soon!) Resources: Endpoints and Methods</mark>_
+### _<mark style="color:orange;">(Coming soon!) Endpoints and Methods</mark>_
 
 #### `/endpoint`
 

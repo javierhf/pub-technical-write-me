@@ -14,8 +14,7 @@ This is a portfolio sample.  <mark style="color:red;background-color:$danger;">P
 * This content is not made from scratch. It is based on the publicely available [official OpenWeather API documentation](https://openweathermap.org/api).
 * I focused on demonstrating a practical and user-friendly workflow on a best-effort basis.
 * This is content is intentionally incomplemt and _MUST NOT_ be used for production projects.
-* If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
-
+* If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).
 {% endhint %}
 
 ## <mark style="color:$primary;">Overview</mark>
