@@ -7,9 +7,14 @@ status: new
 
 {% hint style="danger" %}
 **Disclaimer**\
-The sole purpose of this page is to showcase my understanding of APIs and my ability to write clear, user-focused documentation that helps others achieve their goals. The content is intentionally incomplete.  I focused on demonstrating a practical workflow and documentation style rather than providing a comprehensive guide.&#x20;
+\
+This is a portfolio sample.  <mark style="color:red;background-color:$danger;">Please keep in mind that</mark>**:**
 
-If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
+* The sole purpose of this page is to showcase my understanding and practice of API documentation.&#x20;
+* The content is based on the publicely available [official OpenWeather API documentation](https://openweathermap.org/api).
+* I focused on demonstrating a practical and user-friendly workflow.
+* It is not a comprehensive guide and _MUST NOT_ be used for production projects.
+* If you need a comprehensive documentation, please check the [official OpenWeather API documentation](https://openweathermap.org/api).\
 
 {% endhint %}
 
