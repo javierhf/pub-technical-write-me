@@ -124,11 +124,23 @@ The API call will return all the information of the current weather information 
 }
 ```
 
-Empty Responses and Required Parameters
+**Empty Responses and Required Parameters**
 
 An **API response not showing any parameters** indicate that the related weather phenomena just did not happen for the data of measurement provided.
 
 An **API request without required parameters**, such as latitude and longitude, will typically result in an 400 error message (nothing to show as Geocode information).
+
+#### Weather Condition IDs
+
+| Range   | Group        | Description                     |
+| ------- | ------------ | ------------------------------- |
+| 200-299 | Thunderstorm | Various thunderstorm conditions |
+| 300-399 | Drizzle      | Light precipitation             |
+| 500-599 | Rain         | Moderate to heavy rain          |
+| 600-699 | Snow         | Various snow conditions         |
+| 700-799 | Atmosphere   | Fog, haze, dust, etc.           |
+| 800     | Clear        | Clear sky                       |
+| 801-804 | Clouds       | Partially to fully cloudy       |
 
 {% hint style="info" %}
 **Response information**
@@ -151,6 +163,14 @@ curl -X GET
   "https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY"
 ```
 
+### <mark style="color:$info;">Getting New API Keys</mark>
+
+Whenever you need a new API key, follow theses steps:
+
+1. In your OpenWeather home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
+2. Under **Create key**, provide a name of the API key.   &#x20;
+3. Click **Generate.**
+
 ### <mark style="color:$info;">Authentication and Authorization</mark>
 
 The OpenWeather API uses API keys authentication. **Include your API key in every request** as follows using query parameters (recommended):
@@ -166,14 +186,6 @@ curl -X GET \
   "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
-
-### <mark style="color:$info;">Getting New API Keys</mark>
-
-Whenever you need a new API key, follow theses steps:
-
-1. In your OpenWeather home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
-2. Under **Create key**, provide a name of the API key.   &#x20;
-3. Click **Generate.**
 
 ### <mark style="color:$info;">Parameters Options</mark>
 
@@ -211,18 +223,6 @@ Whenever you need a new API key, follow theses steps:
 | Arabic     | ar   |
 
 ***
-
-### <mark style="color:$info;">Weather Condition IDs</mark>
-
-| Range   | Group        | Description                     |
-| ------- | ------------ | ------------------------------- |
-| 200-299 | Thunderstorm | Various thunderstorm conditions |
-| 300-399 | Drizzle      | Light precipitation             |
-| 500-599 | Rain         | Moderate to heavy rain          |
-| 600-699 | Snow         | Various snow conditions         |
-| 700-799 | Atmosphere   | Fog, haze, dust, etc.           |
-| 800     | Clear        | Clear sky                       |
-| 801-804 | Clouds       | Partially to fully cloudy       |
 
 ### <mark style="color:$info;">Security Best Practices</mark>
 
