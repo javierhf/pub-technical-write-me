@@ -9,6 +9,26 @@ description: >-
 
 # OpenWeather API
 
+## <mark style="color:$primary;">Overview</mark>
+
+**OpenWeather - One Call 3.0 API provides the following information:**
+
+* Essential weather data
+* Short-term and long-term forecasts
+* Aggregated weather data easily
+
+**The OpenWeather One Call API 3.0 provides four endpoints for comprehensive weather data**. as shown in the following table:
+
+
+
+<table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily aggregation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
+
+Based on our proprietary model, **all endpoints are updated every 10 minutes** to ensure you always have access to the most accurate and up-to-date information available in JSON, XML, or HTML format..
+
+{% hint style="warning" %}
+If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
+{% endhint %}
+
 ## <mark style="color:$primary;">Quick Start Guide</mark>
 
 Let's start to use the OpenWeather API by following these steps:
