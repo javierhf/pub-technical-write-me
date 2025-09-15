@@ -95,6 +95,8 @@ graph TB
 
 For two systems to communicate using an API, systthey need to know the available resources, the method to interact with those resoruces, and the data schema required (JSON or XML are the most frequent) to make a request, and the schema of the responde to be received.
 
+<figure><img src="../../../.gitbook/assets/Gemini_Generated_Image_tp0lbatp0lbatp0l.png" alt=""><figcaption></figcaption></figure>
+
 Once system A knows all that, senda request using a method available. System B receives the request, checks that the requested resource exists - and that System A is who it claims to be (authentication) and has permissions to access the resource (authorization) - and send the required resource using the defined data schema. System B, that knows which data schema to expect, receives the response and manages the data according to its goals.
 
 ## Organizing our API
