@@ -2,6 +2,8 @@
 title: Understanding API Documentation
 tags: draft
 hidden: true
+cover: ../../../.gitbook/assets/Gemini_Generated_Image_xd2ol0xd2ol0xd2o.png
+coverY: 0
 ---
 
 # Understanding API Documentation
