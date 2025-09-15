@@ -105,6 +105,11 @@ We can "organize" our API as we desire, but if we want to engange as many users 
 
 API specification levarages the design process and ensures that our API structure and features are clearly explained and easily understood by our users and customers. Specifications achieve that by standardizing the structure of our API easing the process of communicating our API's story.
 
+| Specification                                                           | Description | Use Cases  |
+| ----------------------------------------------------------------------- | ----------- | ---------- |
+| [OpenAPI](https://www.openapis.org/what-is-openapi)                     | TO BE DONE  | TO BE DONE |
+| [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) | TO BE DONE  | TO BE DONE |
+
 OpenAPI and Azurro specification are build around objects with is own elements (in YAML or JSON format) that are machine and human readable at the same time.
 
 ## What is API Documentation?
