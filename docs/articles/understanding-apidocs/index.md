@@ -24,6 +24,73 @@ An API allos communication between two systems (interfacing) by defining a set o
 
 Resources are also called endpoints and consists of folder paths in a server pointing to the resources that offers our API. The methods allowing interacting with the resources consists of HTTP methods that establish which specific operations are allowed for a specific resource. The most used HTTP methods used in API are _GET_ (read the content of a resource), _PUT_ (Update a resource completely), _POST_ (Adda new resource), and _DELETE_ (Removea resource).
 
+```mermaid
+graph TB
+    subgraph "System A (Client)"
+        A1[Application]
+    end
+    
+    subgraph "API Layer"
+        API[API Interface]
+        
+        subgraph "Resources/Endpoints"
+            R1["/users"]
+            R2["/orders"] 
+            R3["/products"]
+            R4["/inventory"]
+        end
+        
+        subgraph "HTTP Methods"
+            GET["GET<br/>(Read)"]
+            POST["POST<br/>(Create)"]
+            PUT["PUT<br/>(Update)"]
+            DELETE["DELETE<br/>(Remove)"]
+        end
+        
+        subgraph "Data Schema"
+            JSON["JSON Format"]
+            XML["XML Format"]
+        end
+    end
+    
+    subgraph "System B (Server)"
+        B1[Database/Service]
+    end
+    
+    A1 -->|1. Request| API
+    API -->|2. Process Request| R1
+    API --> R2
+    API --> R3
+    API --> R4
+    
+    R1 --> GET
+    R1 --> POST
+    R1 --> PUT
+    R1 --> DELETE
+    
+    R2 --> GET
+    R2 --> POST
+    R2 --> PUT
+    R2 --> DELETE
+    
+    GET --> JSON
+    POST --> JSON
+    PUT --> XML
+    DELETE --> JSON
+    
+    API -->|3. Access Resource| B1
+    B1 -->|4. Return Data| API
+    API -->|5. Response| A1
+    
+    style API fill:#e1f5fe
+    style A1 fill:#f3e5f5
+    style B1 fill:#e8f5e8
+    style GET fill:#fff3e0
+    style POST fill:#fff3e0
+    style PUT fill:#fff3e0
+    style DELETE fill:#fff3e0
+```
+
 ## How do APIs Orchestrate Communication Between Systems?
 
 For two systems to communicate using an API, systthey need to know the available resources, the method to interact with those resoruces, and the data schema required (JSON or XML are the most frequent) to make a request, and the schema of the responde to be received.
