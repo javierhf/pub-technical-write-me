@@ -8,21 +8,19 @@ coverY: 0
 
 # Understanding API Documentation
 
-## Introduction
-
-API documentation seems a straight forward road until you start analyzing the actual API documentation of different companies. That's the moment when the "conceptual" documentation and the "reference" documentation seem to blurry or even merge, and when the only common section seems to be "Getting Started" (or was it "Quick Start"?).
+API documentation seems like a straightforward road until you start analyzing the actual API documentation of different companies. That's the moment when the "conceptual" documentation and the "reference" documentation seem to blur or even merge, and when the only common section seems to be "Getting Started" (or was it "Quick Start"?).   
 
 After a year of self-study I invest some money in the course Master API Documentation just to learn a few things I did not know, but specially to realize how much I had learn by myself. This article intends to provide a mental map or narrative to grasp the fundamentals of API documentation.
 
 ## What is an API?
 
-API stands for Application Progamming Interface ans is a piece of code that acts as interface between two systems by defining a set of availalbe resources, tne methods to interact with them, and the data structure or schemas that ensure a successful communication.
+API stands for Application Programming Interface and is a piece of code that acts as an interface between two systems by defining a set of available resources, the methods to interact with them, and the data structure or schemas that ensure successful communication.
 
 ## How does an API work?
 
-An API allos communication between two systems (interfacing) by defining a set of available resources, the methods to interact with those resrouces, and the data structures or schema to be used during communication.
+An API allows communication between two systems (interfacing) by defining a set of available resources, the methods to interact with those resources, and the data structures or schema to be used during communication.   
 
-Resources are also called endpoints and consists of folder paths in a server pointing to the resources that offers our API. The methods allowing interacting with the resources consists of HTTP methods that establish which specific operations are allowed for a specific resource. The most used HTTP methods used in API are _GET_ (read the content of a resource), _PUT_ (Update a resource completely), _POST_ (Adda new resource), and _DELETE_ (Removea resource).
+Resources are also called endpoints and consist of folder paths in a server pointing to the resources that our API offers. The methods allowing interaction with the resources consist of HTTP methods that establish which specific operations are allowed for a specific resource. The most commonly used HTTP methods in APIs are _GET_ (read the content of a resource), _PUT_ (update a resource completely), _POST_ (add a new resource), and _DELETE_ (remove a resource).  
 
 ```mermaid
 graph TB
@@ -94,6 +92,7 @@ graph TB
 ## How do APIs Orchestrate Communication Between Systems?
 
 For two systems to communicate using an API, systthey need to know the available resources, the method to interact with those resoruces, and the data schema required (JSON or XML are the most frequent) to make a request, and the schema of the responde to be received.
+For two systems to communicate using an API, they need to know the available resources, the methods to interact with those resources, and the data schema required (JSON or XML are the most frequent) to make a request, and the schema of the response to be received. 
 
 <figure><img src="../../../.gitbook/assets/Gemini_Generated_Image_tp0lbatp0lbatp0l.png" alt=""><figcaption></figcaption></figure>
 
@@ -111,10 +110,19 @@ API specification levarages the design process and ensures that our API structur
 | [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) | TO BE DONE  | TO BE DONE |
 
 OpenAPI and Azurro specification are build around objects with is own elements (in YAML or JSON format) that are machine and human readable at the same time.
+API documentation is a set of documents or sections in a single document that tell our users and customers the story of our API and the _what_ and _how_ of our features. It is commonly structured around two main abstract sections: conceptual documentation and reference documentation.  
+
+The conceptual documentation briefly introduces our API (what it is, what it does, why it is useful) and engages users to get started with our API (first API call, security basics, how-tos for most used actions); the reference documentation provides comprehensive information about the ins and outs of our API (list of resources and the available methods, data schemas for both requests and responses, HTTP errors and how to handle them, security topics, rate limiting, code samples). 
 
 ## What is API Documentation?
 
 API documentation is a set of documentas or sections in a single document that tell our users and customers the story of our API abd the _What_ and _How_ of our features. It is commonly structure aroung two main abstract sections: conceptual documentation and reference documentation.
+To tell the story of our API and help our users get started with it, we should cover, at least, the following topics to enable our users and support our customers' success:  
+  
+| Type of Documentation | Topics |  
+| -------------------- | --------- |  
+| Conceptual documentation | <ol><li>Overview</li><li>Quick Start/Getting Started</li><li>How-Tos/Tutorials</li><li>FAQ</li></ol>     |  
+| Reference documentation |  <ol><li>Overview</li><li>Authentication and Authorization</li><li>Endpoints and Methods<ol><li>Request Parameters</li><li>Response Schema</li></ol></li><li>Error Codes and Error Handling</li><li>Rate Limiting and Thresholds</li><li>Code Examples</li><li>Glossary</li><li>Best Practices</li><li>Changelog</li></ol>      |
 
 The conceptual documentation briefly introduces our API (what it is ,what it does, why it is useful), engange users to get started with our API (first API call, security basics, How-Tos for most used actions); the reference documentation provides comprehensive information about the ins and outs of our API (list of resources and the available methods, data schemas for both request and responses, HTTP errors and how to handle them, security topics, rate limiting, code samples).
 
