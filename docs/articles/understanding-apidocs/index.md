@@ -10,23 +10,23 @@ coverY: 0
 
 ## Introduction
 
-As with any other technical documentation, API documentation tells a story, the story of our API and it does so in a very specific way. Following this line of thought, we could even state that API documentation is the most distinctive type of documentation within the software product's technical documentation universe.&#x20;
+As with any other technical documentation, **API documentation tells a story, the story of our API** and it does so in a very specific way. Following this line of thought, we could even state that API documentation is the most distinctive type of documentation within the software product's technical documentation universe.&#x20;
 
-What makes API documentation that special? API documentation shares with users the intricacies of its design and features, supporting the story with technical information targeted to its favorite cohort: developers, testers, and engineers.
+**What makes API documentation that special?** API documentation shares with users the intricacies of its design and features, supporting the story with technical information targeted to its favorite cohort: developers, testers, and engineers.
 
 Of course, there is a section called _Quick Start_ or _Getting Started_ that other roles could understand, but those three roles are the ones dealing with API implementation in depth.
 
-When we start learning about API documentation, we are often introduced to the two types of API docs: conceptual documentation and reference documentation. Conceptual documentation is intended to engage and enable users quickly, and reference documentation provides users with the comprehensive information needed to allow a deeper understanding.&#x20;
+When we start learning about API documentation, we are often introduced to the two types of API docs: _conceptual documentation and reference documentation_. **Conceptual documentation** is intended to engage and enable users quickly, and **reference documentation** provides users with the comprehensive information needed to allow a deeper understanding.&#x20;
 
 While this may help us understand the goal of each of these blocks of documentation and their constituent parts, it seems insufficient to understand and evaluate the current API documentation practices we can find online.
 
-In this article, I share with you my framework for understanding what an API is and how it relates to the different parts of any good API documentation. It took me a year of self-study and some money invested in online courses to develop this understanding. I hope you find it helpful.
+In this article, I share with you my framework for understanding what an API is and how it relates to the different parts of any good API documentation. It took me a year of self-study and some money invested in online courses to develop this understanding. **I hope you find it helpful.**
 
 ## What is an API?
 
-API stands for Application Programming Interface, a piece of code that acts as an interface between two systems by defining a set of available resources, the methods to interact with them in a request-response setup including error messages, authentication and authorization means of communication, and the data structures or schemas that ensure a successful communication.
+API stands for Application Programming Interface, **a piece of code that acts as an interface between two systems** by defining a set of available resources, the methods to interact with them in a request-response setup including error messages, authentication and authorization means of communication, and the data structures or schemas that ensure a successful communication.
 
-Here it is our first API-related vocabulary table:
+Here it is our first **API-related vocabulary table**:
 
 | API Vocabulary                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,75 +41,34 @@ Here it is our first API-related vocabulary table:
 
 ## How Does an API Workflow Look Like?
 
-Imagine System A want to communicate with System B using an API. To do so, System A must send a request to System B using on of the available method of the API (described in the documentation!) and, if needed, provinding any required data in the structure that the API understand (also described in the documentation!).&#x20;
+Imagine System A want to communicate with System B using an API. To do so, System A must send a request to System B using on of the available methods of the API (described in the documentation!) and, if needed, provinding any required data in the structure that the API understand (also described in the documentation!).&#x20;
 
 When System B receives the request, it will confirm that it can serve it back, for example, confirming that the required resource exists, and send back a status code of the operation and the information required (in case of a `GET`request) and as the data structure defined for the API. If something goes wrong, System B will send back the corresponding error code and message.
 
-Here is flow diagram of this workflow: &#x20;
+Here is a basic API flow diagram of this workflow:&#x20;
 
-````mermaid
-```mermaid
-graph TD
-  Mermaid --> Diagram
-        
-  subgraph "Client (Your Application)"
-      A[Start: User Action / System Trigger]:::mainNode
-      B{Construct API Request}:::subNode
-  end
-  
-  subgraph "API Gateway / Load Balancer"
-      C(Receive Request):::mainNode
-      D{Validate & Route}:::subNode
-  end
-  
-  subgraph "API Server"
-      E(Process Request):::mainNode
-      F{Access Data Layer}:::subNode
-      G(Generate Response):::mainNode
-  end
-  
-  subgraph "Client (Your Application)"
-      H{Handle Response}:::subNode
-      I[End: Display Data / Action Complete]:::mainNode
-  end
+<figure><img src="../../../.gitbook/assets/mermaid-ai-diagram-2025-09-16-145630.png" alt=""><figcaption></figcaption></figure>
 
-  A --> B
-  B -- "HTTP Request" --> C
-  C --> D
-  D -- "Forward Request" --> E
-  E --> F
-  F -- "Data from DB/Service" --> E
-  E --> G
-  G -- "HTTP Response" --> H
-  H --> I
-  
-  linkStyle 2 stroke:#4285f4,stroke-width:2px,fill:none
-  linkStyle 7 stroke:#4285f4,stroke-width:2px,fill:none
-
-````
-
-If you prefer a Lord of the Rings like, here it is:
+If you prefer a **Lord of the Rings-like map**:
 
 <figure><img src="../../../.gitbook/assets/Gemini_Generated_Image_v2zxgov2zxgov2zx.png" alt=""><figcaption></figcaption></figure>
 
 ## Organizing our API
 
-We can design APIs in different ways, each with its pros and cons. From a technical writing perspective, the API Design-First approach appears to be the most documentation-friendly.&#x20;
-
-This is because it gives us the chance to:
-
-* Familiarize ourselves with the API's business goals and context.
-* Participate in all design stages.
-* Access the API contract or specification from the beginning.
-* Start the documentation process early on, allowing us to anticipate the documentation structure.
-
-For informative purposes, in the following table, you'll find a description of the different API design approaches.
+**We can design APIs following different approaches**, each with its pros and cons. For informative purposes, in the following table, you'll find a description of the different API design approaches:
 
 | API Coding Approach  | Description                                                                                                                                                                                                                             | Pros                                                                                                                                                                                                                                                                                                                                                                                                                                             | Cons                                                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Code-First**       | You start by writing your API's implementation code, then use tools or annotations within your code to generate the API specification (like OpenAPI/Swagger) automatically. The code is the source of truth.                            | <p>- <strong>Faster initial development:</strong> You can jump straight into coding.</p><p> - <strong>Always in sync:</strong> The documentation is automatically updated with code changes.</p><p>- <strong>Less overhead:</strong> No need to manually maintain separate spec files.</p>                                                                                                                                                       | <p>- <strong>Design can be an afterthought:</strong> May lead to less consistent or well-thought-out API designs.  </p><p>- <strong>Tool dependency:</strong> Relies heavily on code generation tools, which might have limitations.</p><p> - <strong>Harder to get early feedback:</strong> Design reviews can only happen after implementation starts.</p>                                             |
 | **API Design-First** | You begin by designing and defining your API using an API specification language (like OpenAPI/Swagger, RAML, API Blueprint) before writing any code. Tools then generate boilerplate code or documentation from this specification.    | <p>- <strong>Improved API consistency and quality:</strong> Forces thoughtful design from the start. </p><p>- <strong>Early feedback:</strong> Stakeholders can review the API design before development begins. </p><p> - <strong>Better developer experience:</strong> Clear, well-documented APIs are easier to consume. </p><p>- <strong>Parallel development:</strong> Frontend and backend teams can work concurrently using the spec.</p> | <p>- <strong>Slower initial setup:</strong> Requires an extra design step before coding begins. </p><p>- <strong>Syncing challenges:</strong> If code deviates from the spec, manual updates are needed or a continuous integration process must be robust. </p><p>- <strong>Requires design expertise:</strong> Needs team members proficient in API design principles and specification languages.</p> |
 | **Hybrid Approach**  | Combines elements of both Code-First and Design-First. You might start with a high-level design document or a rough spec, then implement the core API with Code-First tools, and finally refine the specification and code iteratively. | <p>- <strong>Balances speed and quality:</strong> Get started quickly but still benefit from design principles. </p><p>- <strong>Flexibility:</strong> Can adapt to project needs and team strengths. </p><p>- <strong>Iterative improvement:</strong> Allows for continuous refinement of both code and documentation.</p>                                                                                                                      | <p>- <strong>Complexity:</strong> Can be harder to manage the workflow and keep everything synchronized. </p><p>- <strong>Requires discipline:</strong> Needs a clear process to ensure design and code remain aligned. </p><p>- <strong>Potential for inconsistency:</strong> If not managed well, you might end up with the drawbacks of both approaches.</p>                                          |
+
+From a technical writing perspective, the **API Design-First approach appears to be the most documentation-friendly** because it gives us the chance to:
+
+* Familiarize ourselves with the API's business goals and context.
+* Participate in all design stages.
+* Access the API contract or specification from the beginning.
+* Start the documentation process early on, allowing us to anticipate the documentation structure.
 
 ## About API Specifications
 
