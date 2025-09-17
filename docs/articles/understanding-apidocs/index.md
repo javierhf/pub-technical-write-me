@@ -146,7 +146,7 @@ Here's what I discovered when I looked at real API documentation in the wild: co
 
 > an API documentation should provide, at least, the following information
 
-What does it mean? It means that **we can provide the information under different sections naming** (and even add more sections or merge them!) as far as we address our API business goals and user's needs. In other words:&#x20;
+What does it mean? It means that **we can provide the information under different sections' naming** (and even add more sections or merge them!) as far as we address our API business goals and user's needs. In other words:&#x20;
 
 > _Know your API's business, know your users' needs_.
 
