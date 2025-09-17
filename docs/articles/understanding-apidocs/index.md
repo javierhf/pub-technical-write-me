@@ -29,13 +29,15 @@ layout:
 
 Last year, in 2024, I started learning about (REST) API documentation partly out of pure curiosity, partly as a way to extend my technical writing knowledge. I completed the [I'd Rather Be Writing - API doc course](https://idratherbewriting.com/learnapidoc/) in both its written and [youtube video series](https://www.youtube.com/watch?v=NawxzLB4aro) formats, then dove directly into the [OpenAPI specification](https://swagger.io/specification/). But I still felt that something was missing: the coding part! So I jumped to learn the basics of API coding in Python, enough to build a **conceptual bridge between API documentation theory, OpenAPI specification, and actual code**. It was enlightening to finally connect core API concepts (_endpoints_, _methods_, _requests/responses_, _data schemas_, _HTTP error codes_) with real code, specifications, and documentation.
 
-Still, the **division of API documentation into "conceptual" and "reference" documentation** remained confusing to me. Reference documentation made sense—it's the comprehensive content for deeper system integration. But why call the practical, enablement-focused sections "conceptual"? Why not _"Hands-on documentation"_ or _"Enablement documentation"_? Looking at real API docs from various companies helped me realize that beyond reference documentation, most companies simply offer getting started guides and tutorials—the truly practical stuff.
+Still, the **division of API documentation into "conceptual" and "reference" documentation** remained confusing to me. Reference documentation made sense—it's the comprehensive content for deeper system integration. But why call the practical, enablement-focused sections "conceptual"? Why not _"Hands-on documentation"_ or _"Enablement documentation"_?&#x20;
+
+Looking at real API docs from various companies helped me realize that beyond reference documentation, most companies give different names to their API documentation sections and offer getting started guides and tutorials—the truly practical stuff.
 
 Now that I'm reviewing my own API documentation samples, I decided to share the framework that helped me connect theory with practice. It cleared up my confusion and gave me a better way to think about API documentation structure. I hope you find it helpful too.
 
 ## What is an API?
 
-API stands for Application Programming Interface, **a piece of code that allows communication and interaction (interface) between two systems** by defining available _resources_, interaction _methods_, _error codes_ and _how to handle them_, _authentication_ and _authorization_ means, and _data structures_ (schemas) for successful communication.&#x20;
+API stands for Application Programming Interface, **a piece of code that allows communication and interaction (interface) between two systems** by defining available _resources_, interaction _methods_, _error codes_ and _how to handle them_, _authentication_ and _authorization_ means, and _data structures_ (schemas) for successful communication.
 
 Communication between systems using an API is based in a **request-response architecture** with the following workflow:
 
@@ -68,15 +70,17 @@ This content will **prioritize the technical aspects of API usage**, rather than
 {% hint style="info" %}
 **Check the appendix**
 
-Learn more in the [Appendix](index.md#appendix): &#x20;
+Learn more in the [Appendix](index.md#appendix):
 
-* [API core concepts](index.md#api-core-concepts) &#x20;
+* [API core concepts](index.md#api-core-concepts)
 * A [Lord of the Rings version](index.md#visual-api-workflow-epic-alternative-diagram) of the API flow diagram.
 {% endhint %}
 
 ## Organizing our API
 
-Now that we understand what an API is, let's explore how we organize and design them. **There are different approaches to design APIs**, for example _Code First_, _API Design-First_, and hybrid approaches. Each approach has its pros and cons and picking one over the other depends on our company or product developer team culture (or preferences). In any case, **technical writers have to follow-up the design process closely** (or prepare for a round of Subject-Matter Expert interviews) to increase the chances of a successful documentation with minimal rework.
+Now that we understand what an API is, let's explore how we organize and design them. **There are different approaches to design APIs**, for example _Code First_, _API Design-First_, and hybrid approaches. Each approach has its pros and cons and picking one over the other depends on our company or product developer team culture (or preferences).&#x20;
+
+In any case, **technical writers have to follow-up the design process closely** (or prepare for a round of Subject-Matter Expert interviews) to increase the chances of a successful documentation with minimal rework.
 
 From a technical writing perspective, the **API Design-First approach appears to be the most documentation-friendly** because it gives us the chance to:
 
@@ -85,7 +89,7 @@ From a technical writing perspective, the **API Design-First approach appears to
 * Access the API contract or specification from the beginning.
 * Start the documentation process early on, allowing us to anticipate the documentation structure.
 
-If you're new to API documentation or the first technical writer in your product development team, **insist in participating in all API design meetings and discussions**. &#x20;
+If you're new to API documentation or the first technical writer in your product development team, **insist in participating in all API design meetings and discussions**.
 
 {% hint style="info" %}
 **Check the Appendix**
@@ -95,16 +99,16 @@ Learn more about [API Design](index.md#api-design-approaches) approaches.
 
 ## API Specifications
 
-An API specification file is a **human and machine-readable file that describes an API's features, functionality, requirements, and resources** (mostly in YAML or JSON) . The most common API specifications are: &#x20;
+An API specification file is a **human and machine-readable file that describes an API's features, functionality, requirements, and resources** (mostly in YAML or JSON) . The most common API specifications are:
 
-* &#x20;[OpenAPI](https://www.openapis.org/what-is-openapi) - Focused on resource management) &#x20;
-* [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) - Focused on user workflows.  &#x20;
+* [OpenAPI](https://www.openapis.org/what-is-openapi) - Focused on resource management)
+* [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) - Focused on user workflows.
 
 The API specification file serves as **coding and documentation reference**, and even as a **contract among the parties** where we can find all the features, data schemas, and means of communication provided by the API.
 
 Think of [**OpenAPI**](https://www.openapis.org/what-is-openapi) **and** [**Arazzo**](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) **specifications as storytellers**—they're lists of objects that tell our API's story, abut how our API supports our customers' success. Each object has its own set of mandatory and optional elements. These objects provide us, technical writers, with the **source material to create user-friendly and complete documentation**, both from scratch or using [Postman](https://learning.postman.com/)-like tools.
 
-Remember: The more complete our API specification file is, our chances of crafting a complete and successful documentation increase. &#x20;
+Remember: The more complete our API specification file is, our chances of crafting a complete and successful documentation increase.
 
 {% hint style="info" %}
 **Check the Appendix**
@@ -128,8 +132,6 @@ On the one hand, what we called **Hands-on documentation** introduces our API to
 * How to get started quickly and securely
 * Common workflows
 
-
-
 The objective here is to **engage and enable our users to get started** and work with our API securely and effectively.
 
 On the other hand, **Reference documentation** provides comprehensive information about the intricacies of our API:
@@ -150,7 +152,7 @@ Keeping all of that in mind, an API documentation should provide, at least, the 
 
 {% hint style="success" %}
 **Recommendation**\
-**R**ead the appendix sections to refresh what you have just read, and read this section again.  It may help to visualize the API docs better.
+**R**ead the appendix sections to refresh what you have just read, and read this section again. It may help to visualize the API docs better.
 {% endhint %}
 
 ### How is it in the Real World?
@@ -159,7 +161,7 @@ Here's what I discovered when I looked at real API documentation in the wild: co
 
 > an API documentation should provide, at least, the following information
 
-What does it mean? It means that **we can provide the information under different sections' naming** (and even add more sections or merge them!) as far as we address our API business goals and users' needs. In other words:&#x20;
+What does it mean? It means that **we can provide the information under different sections' naming** (and even add more sections or merge them!) as far as we address our API business goals and users' needs. In other words:
 
 > _Know your API's business, know your users' needs_.
 
@@ -192,7 +194,7 @@ In the following table, you will find basic API-related vocabulary descriptions:
 | **Authorization**                 | The process of checking if an authenticated user or client has permission to access a specific resource or perform a certain action.                                                                                                                                                                                                                                                                                                                                                               |
 | **Data Structure** or **Schema**  | <p>The blueprint or rules for organizing the data that is exchanged between the client and the server. It defines what fields are required, their data types, and how the information should be organized.</p><p>The most popular formats for this are <strong>JSON</strong> and <strong>XML</strong>.</p>                                                                                                                                                                                         |
 
-### Visual API Workflow (Epic Alternative Diagram) &#x20;
+### Visual API Workflow (Epic Alternative Diagram)
 
 <figure><img src="../../../.gitbook/assets/Gemini_Generated_Image_v2zxgov2zxgov2zx.png" alt=""><figcaption></figcaption></figure>
 
