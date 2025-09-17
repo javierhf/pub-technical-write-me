@@ -53,6 +53,18 @@ Therefore, a basic API flow diagram could look like this:
 
 <figure><img src="../../../.gitbook/assets/mermaid-ai-diagram-2025-09-16-145630.png" alt=""><figcaption></figcaption></figure>
 
+The **key discovery** **here** is the following:
+
+> We'll be writing about the fundamental API concepts, covering how API resources, interaction methods, error codes (and how to handle them), authentication and authorization mechanisms, and data structures (schemas) relate and interact.
+>
+> These core API concepts directly inform and shape the structure of effective API documentation. Remember that API documentation have:
+>
+> 1. To enable users to get started quickly and implement further integrations.
+> 2. To explain how to effectively and seamlessly use the API components—all within the boundaries defined by the API code and its specification file.
+> 3. To help users understand our API thoroughly to allow customer's integrations.
+
+This content will **prioritize the technical aspects of API usage**, rather than user-interface-based workflows like configuration guides, tutorials, or how-to articles.
+
 {% hint style="info" %}
 **Check the appendix**
 
