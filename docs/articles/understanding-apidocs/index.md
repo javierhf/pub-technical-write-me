@@ -1,6 +1,7 @@
 ---
 title: Understanding API Documentation
 tags: draft
+description: 'Estimated reading time: 11-12 minutes'
 cover: ../../../.gitbook/assets/Gemini_Generated_Image_xd2ol0xd2ol0xd2o.png
 coverY: 0
 layout:
@@ -11,7 +12,7 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
