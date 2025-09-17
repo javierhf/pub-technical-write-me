@@ -140,7 +140,7 @@ Keeping all of that in mind, an API documentation should provide, at least, the 
 **R**ead the appendix sections to refresh what you have just read, and read this section again.  It may help to visualize the API docs better.
 {% endhint %}
 
-### How Is It in the Real World?
+### How is it in the Real World?
 
 Here's what I discovered when I looked at real API documentation in the wild: companies follow differnet naming conventions (with some touch points) to convey they API content. So remember that I said that:
 
