@@ -58,12 +58,12 @@ Therefore, a basic API flow diagram could look like this:
 Learn more in the [Appendix](index.md#appendix): &#x20;
 
 * [API core concepts](index.md#api-core-concepts) &#x20;
-* A [Lord of the Rings version](index.md#lord-of-the-rings-flow-diagram-version) of the API flow diagram.
+* A [Lord of the Rings version](index.md#visual-api-workflow-epic-alternative-diagram) of the API flow diagram.
 {% endhint %}
 
 ## Organizing our API
 
-**There are different approaches to design APIs**, for example _Code First_, _API Design-First_, and hybrid approaches. Each approach has its pros and cons and picking one over the other depends on our company or product developer team culture (or preferences). In any case, **technical writers have to follow-up the design process closely** (or prepare for a round of Subject-Matter Expert interviews) to increase the chances of a successful documentation with minimal rework.
+Now that we understand what an API is, let's explore how we organize and design them. **There are different approaches to design APIs**, for example _Code First_, _API Design-First_, and hybrid approaches. Each approach has its pros and cons and picking one over the other depends on our company or product developer team culture (or preferences). In any case, **technical writers have to follow-up the design process closely** (or prepare for a round of Subject-Matter Expert interviews) to increase the chances of a successful documentation with minimal rework.
 
 From a technical writing perspective, the **API Design-First approach appears to be the most documentation-friendly** because it gives us the chance to:
 
@@ -82,16 +82,16 @@ Learn more about [API Design](index.md#api-design-approaches) approaches.
 
 ## API Specifications
 
-An API specification is a **human and machine-readable file that describes an API's features, functionality, requirements, and resources** (mostly in YAML or JSON) . The most common API specifications are: &#x20;
+An API specification file is a **human and machine-readable file that describes an API's features, functionality, requirements, and resources** (mostly in YAML or JSON) . The most common API specifications are: &#x20;
 
 * &#x20;[OpenAPI](https://www.openapis.org/what-is-openapi) - Focused on resource management) &#x20;
 * [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) - Focused on user workflows.  &#x20;
 
-An specification file serves as **coding and documentation reference**, and even as a **contract among the parties** where we can find all the features, data schemas and means of communication provided by the API.
+The API specification file serves as **coding and documentation reference**, and even as a **contract among the parties** where we can find all the features, data schemas and means of communication provided by the API.
 
-We could explain [**OpenAPI**](https://www.openapis.org/what-is-openapi) **and** [**Arazzo**](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) **specifications files as a list of objects** telling the story of our API, about how our API supports our customers' success. Each object has its own set of mandatory and optional constituent elements. These objects provide us, technical writers, with the **source material to create user-friendly and complete documentation**, both from scratch or using [Postman](https://learning.postman.com/)-like tools.
+Think of [**OpenAPI**](https://www.openapis.org/what-is-openapi) **and** [**Arazzo**](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) **specifications as storytellers**—they're lists of objects that tell our API's story, abut how our API supports our customers' success. Each object has its own set of mandatory and optional constituent elements. These objects provide us, technical writers, with the **source material to create user-friendly and complete documentation**, both from scratch or using [Postman](https://learning.postman.com/)-like tools.
 
-Remeber: The more complete our specification file is, our chances of crafting a complete and successful documentation increase. &#x20;
+Remeber: The more complete our API specification file is, our chances of crafting a complete and successful documentation increase. &#x20;
 
 {% hint style="info" %}
 **Check the Appendix**
@@ -100,11 +100,6 @@ Learn more about [Open API and Arazzo specifications](index.md#openapi-and-arazz
 {% endhint %}
 
 ## So, What is API Documentation?
-
-{% hint style="success" %}
-**Recommendation**\
-Before continuing you may find it useful to read all the appendix sections to refresh all what you have just read.
-{% endhint %}
 
 Until now we have so far learn about what an API is, how it works, its basic concepts, and the different API design approaches and specificationts. To connect all the dots, we could define API documentation as follows:
 
@@ -139,27 +134,33 @@ Keeping all of that in mind, an API documentation should provide, at least, the 
 | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p><strong>Hands-on documentation</strong><br>(<em>traditionally referred as Conceptual documentation</em>)</p> | <ol><li>Overview</li><li>Quick Start/Getting Started<br><em>Note: Include security procedure</em>s</li><li>How-Tos/Use-Case Tutorials</li><li>FAQ</li></ol>                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Reference documentation                                                                                         | <ol><li>Overview</li><li>Authentication and Authorization</li><li><p>Endpoints and Methods</p><ol><li>Request Parameters</li><li>Response Schema</li><li>Request/Response Examples (beyond just schema, actual JSON/XML bodies)</li></ol></li><li>Error Codes and Error Handling</li><li>Rate Limiting and Thresholds</li><li>Code Examples</li><li>Glossary</li><li>Best Practices</li><li>Changelog</li><li>SDKs/Libraries (if available, with links and usage info)</li><li>Environments (e.g., Sandbox, Production URLs)</li><li>Support/Contact Information</li></ol> |
-|                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+{% hint style="success" %}
+**Recommendation**\
+**R**ead the appendix sections to refresh what you have just read, and read this section again.  It may help to visualize the API docs better.
+{% endhint %}
 
 ### How Is It in the Real World?
 
-In the real world, you will find different naming for the API documentation sections. But remember that I said that:
+Here's what I discovered when I looked at real API documentation in the wild: companies follow differnet naming conventions (with some touch points) to convey they API content. So remember that I said that:
 
 > an API documentation should provide, at least, the following information
 
-What does it mean? It means that we can provide the information under different sections naming (and even add more sections) as far as it addresses our API business goals and user's needs. In other words:&#x20;
+What does it mean? It means that **we can provide the information under different sections naming** (and even add more sections or merge them!) as far as we address our API business goals and user's needs. In other words:&#x20;
 
-**Know your API's business, know your users' needs**.
+> _Know your API's business, know your users' needs_.
 
 The previous list of topics represents the main topics to cover in your API documentation topics, but it is not written in stone. Your API documentation have to address specific needs. So, _Know your API's business, know your users' needs_... _Then, craft and test!_
 
 For example, if you customer or support department points out an increasing demand from customer to have specific API workflows documented, it makes sense to add them in your tutorials' section. Or, provide all the information regarding _Endpoint, Methods_ and _Code Examples_ under a single section, including _Error Codes and Error Handling_.
 
-**Know your API's business, know your users' needs**.
+> _**Know your API's business, know your users' needs.**_
 
 ## Final Thoughts
 
 Making sense of what we are learning helps us to go further, to take the next step. If APIs and API documentation seem like a complicated topic, think of it as a means of sharing with your users the story of your API, the story of how you API supports them to succeed.
+
+This framework helped me make sense of API documentation—I hope it does the same for you.
 
 ## Appendix
 
@@ -178,11 +179,7 @@ In the following table, you will find a basic API-related vocabulary description
 | **Authorization**                 | The process of checking if an authenticated user or client has permission to access a specific resource or perform a certain action.                                                                                                                                                                                                                                                                                                                                                               |
 | **Data Structure** or **Schema**  | <p>The blueprint or rules for organizing the data that is exchanged between the client and the server. It defines what fields are required, their data types, and how the information should be organized.</p><p>The most popular formats for this are <strong>JSON</strong> and <strong>XML</strong>.</p>                                                                                                                                                                                         |
 
-The blueprint or rules for organizing the data that is exchanged between the client and the server. It defines what fields are required, their data types, and how the information should be organized.
-
-The most popular formats for this are **JSON** and **XML**.
-
-### Lord of the Rings Flow Diagram Version &#x20;
+### Visual API Workflow (Epic Alternative Diagram) &#x20;
 
 <figure><img src="../../../.gitbook/assets/Gemini_Generated_Image_v2zxgov2zxgov2zx.png" alt=""><figcaption></figcaption></figure>
 
@@ -326,4 +323,8 @@ paths:
 components:
 ```
 
-ADD LNK TIO COMPLETE SAMPLE
+{% hint style="info" %}
+**Complete openAPI specification**
+
+Check a [complete example](https://editor.swagger.io/) of an openAPI specification to have a wider view of its content.
+{% endhint %}
