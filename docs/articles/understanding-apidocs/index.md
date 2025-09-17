@@ -100,11 +100,11 @@ An API specification file is a **human and machine-readable file that describes 
 * &#x20;[OpenAPI](https://www.openapis.org/what-is-openapi) - Focused on resource management) &#x20;
 * [Arazzo](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) - Focused on user workflows.  &#x20;
 
-The API specification file serves as **coding and documentation reference**, and even as a **contract among the parties** where we can find all the features, data schemas and means of communication provided by the API.
+The API specification file serves as **coding and documentation reference**, and even as a **contract among the parties** where we can find all the features, data schemas, and means of communication provided by the API.
 
-Think of [**OpenAPI**](https://www.openapis.org/what-is-openapi) **and** [**Arazzo**](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) **specifications as storytellers**—they're lists of objects that tell our API's story, abut how our API supports our customers' success. Each object has its own set of mandatory and optional constituent elements. These objects provide us, technical writers, with the **source material to create user-friendly and complete documentation**, both from scratch or using [Postman](https://learning.postman.com/)-like tools.
+Think of [**OpenAPI**](https://www.openapis.org/what-is-openapi) **and** [**Arazzo**](https://swagger.io/blog/the-arazzo-specification-a-deep-dive/) **specifications as storytellers**—they're lists of objects that tell our API's story, abut how our API supports our customers' success. Each object has its own set of mandatory and optional elements. These objects provide us, technical writers, with the **source material to create user-friendly and complete documentation**, both from scratch or using [Postman](https://learning.postman.com/)-like tools.
 
-Remeber: The more complete our API specification file is, our chances of crafting a complete and successful documentation increase. &#x20;
+Remember: The more complete our API specification file is, our chances of crafting a complete and successful documentation increase. &#x20;
 
 {% hint style="info" %}
 **Check the Appendix**
@@ -114,7 +114,7 @@ Learn more about [Open API and Arazzo specifications](index.md#openapi-and-arazz
 
 ## So, What is API Documentation?
 
-Until now we have so far learn about what an API is, how it works, its basic concepts, and the different API design approaches and specificationts. To connect all the dots, we could define API documentation as follows:
+Until now we have so far learned about what an API is, how it works, its basic concepts, and the different API design approaches and specifications. To connect all the dots, we could define API documentation as follows:
 
 > API documentation is a piece of documentation focused on a developer audience. It describes what the API is, all the resources and means of interaction available for two systems to communicate successfully while providing working code examples to ensure user enablement. It also must include comprehensive reference content to support deeper system integration.
 
@@ -130,7 +130,7 @@ On the one hand, what we called **Hands-on documentation** introduces our API to
 
 
 
-The objective here is to **engage and enable our users to get started** working with our API securely and effectively.
+The objective here is to **engage and enable our users to get started** and work with our API securely and effectively.
 
 On the other hand, **Reference documentation** provides comprehensive information about the intricacies of our API:
 
@@ -159,7 +159,7 @@ Here's what I discovered when I looked at real API documentation in the wild: co
 
 > an API documentation should provide, at least, the following information
 
-What does it mean? It means that **we can provide the information under different sections' naming** (and even add more sections or merge them!) as far as we address our API business goals and user's needs. In other words:&#x20;
+What does it mean? It means that **we can provide the information under different sections' naming** (and even add more sections or merge them!) as far as we address our API business goals and users' needs. In other words:&#x20;
 
 > _Know your API's business, know your users' needs_.
 
@@ -171,7 +171,7 @@ For example, if you customer or support department points out an increasing dema
 
 ## Final Thoughts
 
-Making sense of what we are learning helps us to go further, to take the next step. If APIs and API documentation seem like a complicated topic, think of it as a means of sharing with your users the story of your API, the story of how you API supports them to succeed.
+Making sense of what we learn helps us to go further and take the next step. If APIs and API documentation seem like a complicated topic, think of it as a means of sharing with your users the story of your API, the story of how you API supports them to succeed.
 
 This framework helped me make sense of API documentation—I hope it does the same for you.
 
@@ -179,7 +179,7 @@ This framework helped me make sense of API documentation—I hope it does the sa
 
 ### API Core Concepts
 
-In the following table, you will find a basic API-related vocabulary descriptions:
+In the following table, you will find basic API-related vocabulary descriptions:
 
 | API Vocabulary                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
