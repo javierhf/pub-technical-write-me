@@ -167,31 +167,7 @@ curl -X GET
   "https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=YOUR_API_KEY"
 ```
 
-### <mark style="color:$info;">Getting New API Keys</mark>
-
-Whenever you need a new API key, follow theses steps:
-
-1. In your OpenWeather home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
-2. Under **Create key**, provide a name of the API key.   &#x20;
-3. Click **Generate.**
-
-### <mark style="color:$info;">Authentication and Authorization</mark>
-
-The OpenWeather API uses API keys authentication. **Include your API key in every request** as follows using query parameters (recommended):
-
-```
-https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY
-```
-
-You can also use **header authentication** as follows:
-
-```
-curl -X GET \
-  "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0" \
-  -H "X-API-Key: YOUR_API_KEY"
-```
-
-### <mark style="color:$info;">Parameters Options</mark>
+#### Parameters Options
 
 <mark style="color:orange;">**`-exclude`**</mark>
 
@@ -226,23 +202,31 @@ curl -X GET \
 | Japanese   | ja   |
 | Arabic     | ar   |
 
-***
+### <mark style="color:$info;">Getting New API Keys</mark>
 
-### <mark style="color:$info;">Security Best Practices</mark>
+Whenever you need a new API key, follow theses steps:
 
-* **Never expose API keys** in client-side code or public repositories.
-* Use environment variables: `process.env.OPENWEATHER_API_KEY.`
-* Rotate keys regularly through your dashboard.
-* Monitor usage to detect unauthorized access.
+1. In your OpenWeather home page, navigate to the [API keys](https://home.openweathermap.org/api_keys) tab.
+2. Under **Create key**, provide a name of the API key.   &#x20;
+3. Click **Generate.**
 
-### _<mark style="color:$info;">API Keys and API Call Limit</mark>_
+### <mark style="color:$info;">Authentication and Authorization</mark>
 
-API keys generation depends on your subscription plan. We track the total usage across all of them.  For instance, the One Call API 3.0 has a **default limit of 2,000 calls per day**.&#x20;
+The OpenWeather API uses API keys authentication. **Include your API key in every request** as follows using query parameters (recommended):
 
-{% hint style="info" %}
-**Call limits and billing plans**\
-Learn more about our call limits and billing plans in the [reference section](index.md#api-keys-and-api-call-limit-1).
-{% endhint %}
+```
+https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=YOUR_API_KEY
+```
+
+You can also use **header authentication** as follows:
+
+```
+curl -X GET \
+  "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0" \
+  -H "X-API-Key: YOUR_API_KEY"
+```
+
+
 
 ***
 
@@ -775,7 +759,7 @@ with light to moderate winds from the west-southwest."
 }  
 ```
 
-### <mark style="color:$info;">Response Formats</mark>
+### <mark style="color:$info;">Supported Response Formats</mark>
 
 The API supports multiple response formats specified via the `mode` parameter:
 
@@ -830,7 +814,7 @@ curl "https://api.openweathermap.org/data/3.0/onecall?lat=40.7&lon=-74.0&mode=ht
 
 Returns a formatted HTML page suitable for direct browser display.
 
-### <mark style="color:$info;">Request/Response Headers</mark>
+### <mark style="color:$info;">Request/Response Header Details</mark> &#x20;
 
 #### Required Request Headers
 
