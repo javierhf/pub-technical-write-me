@@ -39,9 +39,23 @@ Keeping all of that in mind, an API documentation should provide, at least, the 
 **R**ead the appendix sections to refresh what you have just read, and read this section again. It may help to visualize the API docs better.
 {% endhint %}
 
+**Think about it this way:**
+
+> An API describes a group of _available resources_ (those paths on our server, remember?) and _which HTTP methods are available_ for our customers to use in the API's _request-response architecture_.
+>
+> So, _for every resource we'll have specific methods available_ to work with. These methods will ask for or transfer data from one system to another. In other words, every piece of data, requested or sent, will follow a predefined _data structure or schema_ (not as raw data) with its data types, descriptions, examples, etc.
+>
+> Communication can fail or not end successfully, so our HTTP methods have to be able to inform users about it. How? Sending back the specific _error code and message_ corresponding to the result of the request/responset.&#x20;
+>
+> All of this happens in a context where users or systems must be authenticated and authorized (or rejected) and within the time, call requests, and other limits imposed by the API design to handle the amount of allowed API calls. (Nobody wants to saturate our API!)
+>
+>
+
+### Think about it this way
+
 ### How is it in the Real World?
 
-Here's what I discovered when I looked at real API documentation in the wild: companies follow differnet naming conventions (with some touch points) to convey they API content. So remember that I said that:
+Here's what I discovered when I looked at real API documentation in the wild: companies follow different naming conventions (with some touchpoints) to convey their API content. So remember that I said that:
 
 > an API documentation should provide, at least, the following information
 
@@ -49,14 +63,14 @@ What does it mean? It means that **we can provide the information under differen
 
 > _Know your API's business, know your users' needs_.
 
-The previous list of topics represents the main topics to cover in your API documentation topics, but it is not written in stone. Your API documentation have to address specific needs. So, _Know your API's business, know your users' needs_... _Then, craft and test!_
+The previous list of topics represents the main topics to cover in your API documentation topics, but it is not written in stone. Your API documentation have to address specific needs. So, &#x6B;_&#x6E;ow your API's business, know your users' needs_... _Then, craft and test!_
 
-For example, if you customer or support department points out an increasing demand from customer to have specific API workflows documented, it makes sense to add them in your tutorials' section. Or, provide all the information regarding _Endpoint, Methods_ and _Code Examples_ under a single section, including _Error Codes and Error Handling_.
+For example, if your customer or support department points out an increasing demand from customer to have specific API workflows documented, it makes sense to add them in your tutorials' section. Or, provide all the information regarding _Endpoint, Methods_ and _Code Examples_ under a single section, including _Error Codes and Error Handling_.
 
 > _**Know your API's business, know your users' needs.**_
 
 ## Final Thoughts
 
-Making sense of what we learn helps us to go further and take the next step. If APIs and API documentation seem like a complicated topic, think of it as a means of sharing with your users the story of your API, the story of how you API supports them to succeed.
+Making sense of what we learn helps us to go further and take the next step. If APIs and API documentation seem like a complicated topic, think of it as a means of sharing with your users the story of your API, the story of how your API supports them to succeed.
 
 This framework helped me make sense of API documentation—I hope it does the same for you.
