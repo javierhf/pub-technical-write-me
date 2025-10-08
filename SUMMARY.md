@@ -6,6 +6,7 @@
     * [Pet Store API - Underconstruction!](docs/my-portfolio/pet-store-api.md)
   * [Getting Started Samples](readme/getting-started-samples/README.md)
     * [Getting Started with Sendgrid](readme/getting-started-samples/getting-started-with-sendgrid.md)
+    * [Getting Started with PayPal REST APIs](readme/getting-started-samples/getting-started-with-paypal-rest-apis.md)
   * [Learning About...](docs/learning-notes/README.md)
     * [Diataxis](docs/learning-notes/diataxis/README.md)
       * [Diátaxis Documentation Framework](docs/learning-notes/diataxis/index.md)

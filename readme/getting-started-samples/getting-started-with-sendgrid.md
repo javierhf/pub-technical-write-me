@@ -8,7 +8,7 @@ This is a portfolio sample.  <mark style="color:red;background-color:$danger;">P
 * The sole purpose of this page is to showcase my understanding and practice of API documentation.&#x20;
 * This content is not made from scratch. It is based on the publicely available[ official Sendgrid API documentation](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started).
 * I focused on demonstrating a practical and user-friendly workflow on a best-effort basis.
-* This is content is intentionally incomplemt and _MUST NOT_ be used for production projects.
+* This is content is **intentionally incomplete** and _MUST NOT_ be used for production projects.
 * If you need a comprehensive documentation, please check the available[ official Sendgrid API documentation](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started).
 {% endhint %}
 
