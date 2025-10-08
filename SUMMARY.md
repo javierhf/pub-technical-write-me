@@ -21,3 +21,4 @@
       * [Tutorials](docs/learning-notes/diataxis/index-1.md)
       * [How-Tos](docs/learning-notes/diataxis/how-tos/index.md)
       * [Tutorials or How-to Guides](docs/learning-notes/diataxis/index-3.md)
+  * [Getting Started Samples](readme/getting-started-samples.md)
