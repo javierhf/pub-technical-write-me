@@ -24,3 +24,4 @@
       * [Part 2 of 3](docs/articles/how-to-improve-developer-documentation-projects/index-1.md)
       * [Part 3 of 3](docs/articles/how-to-improve-developer-documentation-projects/index-2.md)
     * [Documentation Project Swiss-Knife](docs/articles/index-2.md)
+    * [Two Common Misconceptions that Threaten Your Product Success: "Updated" and "Consistent"](readme/articles/two-common-misconceptions-that-threaten-your-product-success-updated-and-consistent.md)
