@@ -1,21 +1,21 @@
 ---
 description: >-
-  Documentation misconceptions and the absence of a documentation plan threatens
+  Documentation misconceptions and the absence of a documentation plan threaten
   your product success.
 hidden: true
 ---
 
 # Two Common Misconceptions that Threaten Your Product Success: "Updated" and "Consistent"
 
-The story surely sounds familiar—the well-meaning product owners, stakeholders, or team members who reduce documentation to simple checkboxes: _"Is it updated?"_ and _"Is it consistent?"_ **While these questions aren't wrong, they represent a dangerous shortage of documentation work understanding** and of what makes documentation truly valuable. It's a warning sign.
+The story surely sounds familiar—the well-meaning product owners, stakeholders, or team members who reduce documentation to simple checkboxes: _"Is it updated?"_ and _"Is it consistent?"_ **While these questions aren't wrong, they represent a limited and dangerous understanding of documentation work** and of what makes documentation truly valuable. It's a warning sign.
 
-If you, as Technical Writer, have witnessed firsthand how those deficits work, you know how **they undermine not just documentation quality, but ultimately product success**. To put it simply, _oversimplified documentation thinking and the absence of a documentation strategy penalizes your product's users and your product's success_.
+If you, as a Technical Writer, have witnessed firsthand how those deficits work, you know how **they undermine not just documentation quality, but ultimately product success**. To put it simply, _oversimplified documentation thinking and the absence of a documentation strategy penalize your product's users and your product's success_.
 
 ## The Fallacy: "Updated = Valuable"
 
 _"The documentation is updated, so it's good."_ Does it sound familiar? **This limited mindset treats documentation like a Wikipedia page**—as long as the documentation reflects the latest product updates (new features are mentioned, outdated screenshots are replaced, and version numbers are updated) the job is done: _"We have met our commitment to the client."_
 
-However, **this approach completely ignores the human experience of using documentation and the realities of documentation work**. What's the use of updated information if it is poorly organized, hard to find, and difficult to understand or action? The information might be correct, but it's functionally useless and your product's users will have a poor image of your product.
+However, **this approach completely ignores the human experience of using documentation and the realities of documentation work**. What's the use of updated information if it is poorly organized, hard to find, and difficult to understand or act upon? The information might be correct, but it's functionally useless and your product's users will have a poor impression of your product your product.
 
 **The real impact?** When documentation is merely "updated" without considering usability, users experience:
 
@@ -30,22 +30,22 @@ _"All headings should be the same style. All buttons should be described the sam
 
 But **true consistency** in documentation isn't about making everything look the same—**it's about creating predictable, logically structured experiences** that reduce cognitive load and guide users to find the information they need consistently and making informed decisions about when to break patterns for the user's benefit.&#x20;
 
-At minimum, **it means developing a documentation strategy** (including consistency review and implementation) that allows your technical writer to make informed decisions while addressing both business/team and users' needs.
+At a minimum, **it means developing a documentation strategy** (including consistency review and implementation) that allows your technical writer to make informed decisions while addressing both business/team and users' needs.
 
-**Blind uniformity and ignoring the importance of designing a documentation strategy harm your technical writer's work and your users' experience**. When there is no documentation strategy, your technical writer has to make decisions in the dark without knowing what to do when documentation issues emerge —while dealing with a great and unnecessary degree of frustration if the documentation is in a real bad condition.&#x20;
+**Blind uniformity and ignoring the importance of designing a documentation strategy harm your technical writer's work and your users' experience**. When there is no documentation strategy, your technical writer has to make decisions in the dark without knowing what to do when documentation issues emerge—while dealing with a great and unnecessary degree of frustration if the documentation is in a really bad condition.&#x20;
 
 **Blind uniformity and ignoring the importance of designing a documentation strategy** condemn your product's users to:
 
-* **Not finding a clear content hierarchy** when each page is different no matter what similitudes between them
+* **Not finding a clear content hierarchy** when each page is different no matter what similarities between them
 * **Being forced to scroll dysfunctional/inappropriate templates** that don't match the user's mental models
 * **Dealing with confusing content** that does not support their goals
 * **Empty appearance** that does not make information easy to find, understand and action upon
 
 ## The Hidden Costs of Absent Documentation Strategy
 
-When documentation is created and maintained and yet does not serve our product's users, it becomes a barrier to product adoption rather than an enabler. And users who can't quickly understand and use your product will seek alternatives, regardless of how "updated" or "consistent" your docs appear.
+When documentation is created and maintained but does not serve our product's users, **it becomes a barrier to product adoption** rather than an enabler. And users who can't quickly understand and use your product will seek alternatives, regardless of how "updated" or "consistent" your docs appear.
 
-An absent documentation strategy creates a direct pipeline to customer support. Every confusing explanation, every hard-to-find answer, every task that users can't complete independently becomes a barrier to conversion and renewal, directly penalizing your sales.
+An absent documentation strategy creates a direct pipeline to customer support. Every confusing explanation, every hard-to-find answer, every task that users can't complete independently become a barrier to conversion and renewal, directly penalizing your sales.
 
 The same happens with internal or project documentation. Won't your team suffer if the internal documentation, if the documentation they have to rely on to do their job doesn't effectively communicate product decisions, feature requirements, or technical specifications? Development cycles slow down as teams spend time re-clarifying and re-communicating. Bugs start to breed.
 
@@ -69,7 +69,7 @@ Professional consistency means making deliberate choices about when and how to i
 
 Real documentation value is measurable through metrics like task completion rates, time-to-comprehension, user satisfaction scores, and reduction in support tickets. These metrics reveal whether documentation actually helps users succeed.
 
-## <sub>Question That Matter</sub>
+## <sub>Questions That Matter</sub>
 
 Instead of asking "Is it updated?" and "Is it consistent?", product teams should ask:
 
