@@ -2,7 +2,6 @@
 description: >-
   Documentation misconceptions and the absence of a documentation plan threaten
   your product success.
-hidden: true
 ---
 
 # Two Common Misconceptions that Threaten Your Product Success: "Updated" and "Consistent"
