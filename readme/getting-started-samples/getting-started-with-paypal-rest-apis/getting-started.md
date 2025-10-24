@@ -1,4 +1,4 @@
-# Getting Started with PayPal REST APIs
+# Getting Started
 
 {% hint style="danger" %}
 **Disclaimer**\
@@ -11,35 +11,6 @@ This is a portfolio sample.  <mark style="color:red;background-color:$danger;">P
 * This is content is **intentionally incomplete** and _MUST NOT_ be used for production projects.
 * If you need a comprehensive documentation, please check the available [official PayPal REST APIs documentation](https://developer.paypal.com/api/rest/).
 {% endhint %}
-
-## Overview <a href="#get-started-with-paypal-rest-apis" id="get-started-with-paypal-rest-apis"></a>
-
-The PayPal APIs use **REST** and **OAuth 2.0 Access Tokens** for secure, standard integration, returning all data as JSON with clear HTTP response codes.&#x20;
-
-You can test US integrations with a PayPal Developer account, or immediately explore, generate client code, and import our OpenAPI specs using Postman (check out our [Postman guide](https://developer.paypal.com/api/rest/postman)) without one.
-
-Explore our REST API descriptions, generate code for your API clients, and import OpenAPI documents into compatible [third-party tools](https://tools.openapis.org/).
-
-{% hint style="info" %}
-**About Integrations**
-
-You'll need a [PayPal Business account](https://www.paypal.com/business/open-business-account) to do the following: &#x20;
-
-* Go live with integrations.
-* Test integrations outside the US.
-{% endhint %}
-
-### Core Concepts
-
-PayPal integrations use a **client ID** and **client secret** to authenticate API calls as described in the following table: &#x20;
-
-| Cencept       | Description                                                                                                                                                                       |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Client ID     | A client ID identifies an app. You only need a client ID to get a PayPal payment button and standard credit and debit card fields.                                                |
-| Client Secret | <p>A client secret authenticates a client ID. </p><p></p><p>To call PayPal APIs, you'll exchange your client ID and client secret for an access token. Keep this secret safe.</p> |
-| Access Token  | An access token authenticates your app when calling PayPal REST APIs.                                                                                                             |
-
-
 
 Before starting to use PayPal's REST APIs, you need to get your **client ID** and **client secret** as described in the following steps:&#x20;
 
@@ -58,7 +29,7 @@ Before starting to use PayPal's REST APIs, you need to get your **client ID** an
 Curl installed.
 {% endhint %}
 
-After successfully getting your client ID and client secret, you can generate an [access token](getting-started-with-paypal-rest-apis.md#core-concepts) by completing the following steps:
+After successfully getting your client ID and client secret, you can generate an [access token](getting-started.md#core-concepts) by completing the following steps:
 
 1. Open a text/code editor.
 2. Copy and paste the following code:
